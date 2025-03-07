@@ -128,8 +128,8 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-medium text-slate-900">How do I register for an event?</h4>
                     <p className="text-slate-600 text-sm mt-1">Visit our Events page and select the event you&apos;re interested in. Each event page has registration details.</p>
-                  </div>
-                  <div>
+              </div>
+              <div>
                     <h4 className="font-medium text-slate-900">Do you offer scholarships?</h4>
                     <p className="text-slate-600 text-sm mt-1">We have limited scholarship opportunities for exceptional talent. Contact us for more information.</p>
                   </div>
@@ -141,55 +141,55 @@ export default function ContactPage() {
             <div className="md:col-span-3">
               <div className="bg-white p-8 rounded-xl shadow-md border-t-4 border-blue-600">
                 <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
-                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div>
+                <div>
                       <Label htmlFor="name" className="text-slate-700">Full Name</Label>
-                      <Input
-                        id="name"
+                  <Input
+                    id="name"
                         placeholder="John Doe"
-                        {...register('name', { required: 'Name is required' })}
+                    {...register('name', { required: 'Name is required' })}
                         className={`mt-1 ${errors.name ? 'border-red-500' : ''}`}
-                      />
-                      {errors.name && (
-                        <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
-                      )}
-                    </div>
+                  />
+                  {errors.name && (
+                    <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+                  )}
+                </div>
 
-                    <div>
+                <div>
                       <Label htmlFor="email" className="text-slate-700">Email Address</Label>
-                      <Input
-                        id="email"
-                        type="email"
+                  <Input
+                    id="email"
+                    type="email"
                         placeholder="john@example.com"
-                        {...register('email', {
-                          required: 'Email is required',
-                          pattern: {
-                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                            message: 'Invalid email address',
-                          },
-                        })}
+                    {...register('email', {
+                      required: 'Email is required',
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: 'Invalid email address',
+                      },
+                    })}
                         className={`mt-1 ${errors.email ? 'border-red-500' : ''}`}
-                      />
-                      {errors.email && (
-                        <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
-                      )}
+                  />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+                  )}
                     </div>
-                  </div>
+                </div>
 
-                  <div>
+                <div>
                     <Label htmlFor="message" className="text-slate-700">Your Message</Label>
-                    <Textarea
-                      id="message"
+                  <Textarea
+                    id="message"
                       placeholder="How can we help you?"
-                      {...register('message', { required: 'Message is required' })}
+                    {...register('message', { required: 'Message is required' })}
                       className={`mt-1 ${errors.message ? 'border-red-500' : ''}`}
                       rows={6}
-                    />
-                    {errors.message && (
-                      <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
-                    )}
-                  </div>
+                  />
+                  {errors.message && (
+                    <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+                  )}
+                </div>
 
                   <div className="flex items-center">
                     <input
@@ -208,9 +208,9 @@ export default function ContactPage() {
                     disabled={isSubmitting}
                     size="lg"
                   >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
-                  </Button>
-                </form>
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </Button>
+              </form>
               </div>
             </div>
           </div>

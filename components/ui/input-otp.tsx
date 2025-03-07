@@ -1,3 +1,5 @@
+// This file is intentionally left empty as the OTP input component is not used in the application
+
 'use client';
 
 import * as React from 'react';
@@ -68,4 +70,15 @@ const InputOTPSeparator = React.forwardRef<
 ));
 InputOTPSeparator.displayName = 'InputOTPSeparator';
 
-export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator };
+// Create a simple fallback OTP input component
+const OTPInputFallback = React.forwardRef<HTMLInputElement, React.InputHTMLAttributes<HTMLInputElement>>(
+  ({ className, ...props }, ref) => (
+    <input ref={ref} className={cn("border p-2", className)} {...props} />
+  )
+);
+
+const OTPInputContextFallback = React.createContext({});
+
+OTPInputFallback.displayName = 'OTPInputFallback';
+
+export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator, OTPInputFallback, OTPInputContextFallback };
