@@ -138,9 +138,7 @@
 }
 
 /* Hero section enhancements */
-.hero-content {
-  @apply px-4 sm:px-6 lg:px-8 text-white;
-}
+
 
 .hero-title {
   @apply text-4xl md:text-6xl font-bold mb-6;

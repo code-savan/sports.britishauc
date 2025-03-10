@@ -12,59 +12,107 @@ export default function Home() {
   const testimonials = [
     {
       quote: "The Manchester Football Trial was a turning point in my career. The exposure to professional scouts and the feedback I received were invaluable. I'm now playing for a League One club's academy, which would not have been possible without British AUC Sports.",
-      name: "James Wilson",
+      name: "Knowledge Omovoh",
       role: "Academy Player, League One Club",
-      image: "https://images.unsplash.com/photo-1564135624576-c5c88640f235?q=80&w=256"
+      image: "/t1.webp"
+    },
+    // {
+    //   quote: "The West Ham United Summer Trip was an incredible experience. The coaching was world-class and I learned so much about the professional game. The connections I made have opened doors I never thought possible.",
+    //   name: "Sarah Johnson",
+    //   role: "University Football Scholar",
+    //   image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=256"
+    // },
+    // {
+    //   quote: "British AUC Sports provided me with the platform to showcase my abilities to scouts from across Europe. Their professional approach and connections in the football world are second to none.",
+    //   name: "Michael Thompson",
+    //   role: "Semi-Professional Player",
+    //   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=256"
+    // }
+  ];
+
+  // New state for hero image slider
+  const [activeHeroImage, setActiveHeroImage] = useState(0);
+  const heroImages = [
+    {
+      src: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=2000",
+      alt: "Football stadium",
+      sport: "Football"
     },
     {
-      quote: "The West Ham United Summer Trip was an incredible experience. The coaching was world-class and I learned so much about the professional game. The connections I made have opened doors I never thought possible.",
-      name: "Sarah Johnson",
-      role: "University Football Scholar",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=256"
+      src: "https://images.unsplash.com/photo-1626003573503-2e088d82c647?q=80&w=2940",
+      alt: "Basketball court",
+      sport: "Basketball"
     },
     {
-      quote: "British AUC Sports provided me with the platform to showcase my abilities to scouts from across Europe. Their professional approach and connections in the football world are second to none.",
-      name: "Michael Thompson",
-      role: "Semi-Professional Player",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=256"
+      src: "https://images.unsplash.com/photo-1589492342521-1cc18248fffc?q=80&w=3024",
+      alt: "Sprint track",
+      sport: "Sprinting"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1545809074-59472b3f5ecc?q=80&w=2940",
+      alt: "Tennis court",
+      sport: "Tennis"
     }
   ];
 
   // Auto-rotate testimonials
   useEffect(() => {
-    const interval = setInterval(() => {
+    const testimonialInterval = setInterval(() => {
       setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
     }, 6000);
-    return () => clearInterval(interval);
+    return () => clearInterval(testimonialInterval);
   }, [testimonials.length]);
+
+  // Auto-rotate hero images
+  useEffect(() => {
+    const heroInterval = setInterval(() => {
+      setActiveHeroImage((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(heroInterval);
+  }, [heroImages.length]);
 
   return (
     <>
-      {/* Hero Section with Parallax Effect - Fixed z-index issues */}
-      <section className="relative h-screen flex items-center overflow-hidden">
+      {/* Hero Section with Image Slider - Keeping layout exactly the same */}
+      <section className="relative h-screen flex items-center justify-start overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="relative h-[120%] w-full" style={{ transform: 'translateY(-10%)' }}>
-            <Image
-              src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=2000"
-              alt="Football stadium"
-              fill
-              className="object-cover"
-              priority
-              quality={90}
-            />
-          </div>
+          {heroImages.map((image, index) => (
+            <div
+              key={index}
+              className="relative h-[120%] w-full transition-opacity duration-1000"
+              style={{
+                transform: 'translateY(-10%)',
+                opacity: activeHeroImage === index ? 1 : 0,
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                zIndex: activeHeroImage === index ? 1 : 0
+              }}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover"
+                priority={index === 0}
+                quality={90}
+              />
+            </div>
+          ))}
           {/* Darker gradient with blue accent */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30 z-[2]" />
         </div>
 
         {/* Ensure hero content is visible with proper z-index */}
-        <div className="relative z-10 hero-content">
+        <div className="relative z-10 px-6 md:px-[120px] md:max-w-7xl text-white">
           <div className="animate-fade-in">
             <h1 className="hero-title text-white">
-              Elevate Your Football Career with British AUC Sports
+              Elevate Your Sports Career with British AUC Sports
             </h1>
             <p className="hero-description text-white">
-              Connecting talented athletes with exceptional opportunities through professional football trials, academy experiences, and elite training programs.
+              Connecting talented athletes with exceptional opportunities through professional trials, academy experiences, and elite training programs in football, basketball, sprinting, and tennis.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="text-lg bg-white text-primary hover:bg-gray-100">
@@ -79,6 +127,27 @@ export default function Home() {
               </Button>
             </div>
           </div>
+        </div>
+
+        {/* Sport indicator dots */}
+        <div className="absolute bottom-8 left-0 right-0 z-10 flex justify-center gap-2">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveHeroImage(index)}
+              className={`w-3 h-3 rounded-full transition-colors ${
+                activeHeroImage === index ? 'bg-white' : 'bg-white/40'
+              }`}
+              aria-label={`View ${heroImages[index].sport}`}
+            />
+          ))}
+        </div>
+
+        {/* Current sport indicator */}
+        <div className="absolute bottom-16 left-0 right-0 z-10 flex justify-center">
+          <span className="bg-white/20 backdrop-blur-sm text-white px-4 py-1 rounded-full text-sm font-medium">
+            {heroImages[activeHeroImage].sport}
+          </span>
         </div>
       </section>
 
