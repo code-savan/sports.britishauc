@@ -123,7 +123,7 @@ export default function ManchesterTrialPage() {
                   size="lg"
                 >
                   <a
-                    href="https://forms.gle/nPdqCs7BL6bWYgsm7"
+                    href="https://forms.gle/6xL6rkvGfoQSzy4J9"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
