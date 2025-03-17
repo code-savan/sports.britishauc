@@ -11,7 +11,7 @@ export default function Home() {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const testimonials = [
     {
-      quote: "The Manchester Football Trial was a turning point in my career. The exposure to professional scouts and the feedback I received were invaluable. I'm now playing for a League One club's academy, which would not have been possible without British AUC Sports.",
+      quote: "British AUC Sports assisted me in my football journey through their Manchester trials and development programs. Their support and guidance helped me improve my game significantly. I'm now playing football at the University of East London and represented Nigeria at the U20 Women's World Cup qualifiers.",
       name: "Knowledge Omovoh",
       role: "Academy Player, League One Club",
       image: "/t1.webp"

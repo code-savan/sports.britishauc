@@ -164,18 +164,19 @@ export default function WestHamTripPage() {
                     </div>
                   </div>
                 </div>
-                {showInterestMessage ? (
+                {/* {showInterestMessage ? (
                   <div className="bg-green-100 text-green-800 p-4 rounded-md mb-4 text-center">
                     Thank you for your interest! We&apos;ll contact you soon.
                   </div>
-                ) : null}
+                ) : null} */}
+                  <Link href="/events/west-ham-trip/register">
                 <Button
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                   size="lg"
-                  onClick={handleRegisterInterest}
                 >
-                  Register Interest
+                        Register Now
                 </Button>
+                    </Link>
               </div>
             </div>
           </div>

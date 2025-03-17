@@ -12,7 +12,7 @@ interface EventCardProps {
   price: string;
   image: string;
   tag: string;
-  tagColor?: 'red' | 'blue'; // Default to red if not specified
+  tagColor?: 'red' | 'blue' | 'orange'; // Added orange as a color option
 }
 
 export function EventCard({
@@ -26,9 +26,33 @@ export function EventCard({
   tag,
   tagColor = 'red'
 }: EventCardProps) {
-  const tagBgColor = tagColor === 'blue' ? 'bg-blue-600' : 'bg-primary';
-  const iconColor = tagColor === 'blue' ? 'text-blue-600' : 'text-primary';
-  const buttonBgColor = tagColor === 'blue' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-primary hover:bg-red-700';
+  const getColors = (color: string) => {
+    switch (color) {
+      case 'blue':
+        return {
+          bg: 'bg-blue-600',
+          hover: 'hover:bg-blue-700',
+          text: 'text-blue-600'
+        };
+      case 'orange':
+        return {
+          bg: 'bg-yellow-600',
+          hover: 'hover:bg-yellow-700',
+          text: 'text-yellow-600'
+        };
+      default:
+        return {
+          bg: 'bg-primary',
+          hover: 'hover:bg-red-700',
+          text: 'text-primary'
+        };
+    }
+  };
+
+  const colors = getColors(tagColor);
+  const tagBgColor = colors.bg;
+  const iconColor = colors.text;
+  const buttonBgColor = `${colors.bg} ${colors.hover}`;
 
   return (
     <Card className="overflow-hidden card-hover border-0 shadow-md">
