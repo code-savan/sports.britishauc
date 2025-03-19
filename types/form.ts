@@ -66,4 +66,5 @@ export interface FormData {
   // Submission metadata
   submittedAt: string;
   status: 'pending' | 'approved' | 'rejected';
+  event?: string; // The event identifier (e.g., 'west-ham-trip', 'new-york-trip', etc.)
 }

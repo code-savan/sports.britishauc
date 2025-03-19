@@ -12,7 +12,7 @@ interface EventCardProps {
   price: string;
   image: string;
   tag: string;
-  tagColor?: 'red' | 'blue' | 'orange'; // Added orange as a color option
+  tagColor?: 'red' | 'blue' | 'orange' | 'yellow'; // Added yellow as a color option
 }
 
 export function EventCard({
@@ -39,6 +39,12 @@ export function EventCard({
           bg: 'bg-yellow-600',
           hover: 'hover:bg-yellow-700',
           text: 'text-yellow-600'
+        };
+      case 'yellow':
+        return {
+          bg: 'bg-yellow-500',
+          hover: 'hover:bg-yellow-600',
+          text: 'text-yellow-500'
         };
       default:
         return {

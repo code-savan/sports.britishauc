@@ -9,7 +9,7 @@ export default function ManchesterTrialPage() {
       <section className="relative h-[50vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=2000"
+            src="/manchester.jpeg"
             alt="Manchester Football Trial"
             fill
             className="object-cover"
@@ -21,8 +21,8 @@ export default function ManchesterTrialPage() {
           <div className="inline-block mb-4">
             <span className="bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">Manchester Football Trial 2025</h1>
-          <p className="text-xl md:text-2xl text-white">Showcase Your Talent and Be Scouted!</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">MANCHESTER FOOTBALL TRIAL 2025</h1>
+          <p className="text-xl md:text-2xl text-white">UK PROFESSIONAL CLUB TRIAL EXPERIENCE</p>
         </div>
       </section>
 
@@ -36,24 +36,60 @@ export default function ManchesterTrialPage() {
                 <div className="inline-block mb-2">
                   <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Event Details</span>
                 </div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">About the Trial</h2>
+                <h2 className="text-3xl font-bold mb-6 text-gray-900">PROFESSIONAL SCOUTING TRIAL</h2>
                 <p className="text-lg text-gray-600 mb-4">
-                  Limited spots are available for the Football Trial 2025—a unique opportunity for aspiring players to showcase their skills and talents to professional football scouts. This event provides a pathway for players to gain recognition and potentially secure opportunities with football clubs and academies across the UK, Europe, and beyond.
+                  Limited spots are available for the Manchester Football Trial 2025—a unique opportunity for aspiring players to showcase their skills and talents to professional football scouts. This event provides a pathway for players to gain recognition and potentially secure opportunities with football clubs and academies across the UK, Europe, and beyond.
                 </p>
                 <p className="text-lg text-gray-600">
-                  Participants will have the chance to be scouted by professional clubs, including teams in the English Football League (EFL) and other competitive tiers of British and European football. The trial offers invaluable exposure within one of the world&apos;s most prestigious football systems, enabling players to take the next step in their football careers.
+                  Participants will have the chance to be scouted by professional clubs, including teams in the English Premier League, Championship, and other competitive tiers of British and European football. The trial offers invaluable exposure within one of the world&apos;s most prestigious football systems, enabling players to take the next step in their football careers.
                 </p>
               </div>
 
               <div className="bg-white p-8 rounded-xl shadow-sm">
-                <h2 className="text-2xl font-bold mb-4 text-gray-900">Host</h2>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900">TRIAL PROGRAM</h2>
+                <ul className="space-y-3 text-lg text-gray-600">
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Professional coaching and evaluation from UEFA licensed coaches</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Competitive match play to showcase skills in game situations</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Technical training sessions focused on key skill development</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Individual player assessment and personalized feedback</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Opportunity to be identified by attending scouts and coaches</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <h2 className="text-2xl font-bold mb-4 text-gray-900">HOST</h2>
                 <p className="text-lg text-gray-600">
                   Alex Armstrong, Southampton FC, Wolves FC, Cardiff FC, and Sheffield Wed FC Assistant Coach. The trial is led by Alex Armstrong of Active4Sport International in partnership with British AUC Sports. With over 600 matches of experience as an Assistant Manager and Coach, Alex brings a wealth of expertise in player development and football management.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-gray-900">Location</h2>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900">LOCATION</h2>
                 <p className="text-lg text-gray-600 mb-4">
                   Platt Lane (former Manchester City Training Ground)<br />
                   Yew Tree Road, Fallowfield<br />
@@ -76,7 +112,7 @@ export default function ManchesterTrialPage() {
             {/* Registration Panel */}
             <div className="md:col-span-1">
               <div className="bg-white p-8 rounded-xl shadow-md sticky top-24 border-t-4 border-primary">
-                <h3 className="text-2xl font-bold mb-6 text-gray-900">Registration Details</h3>
+                <h3 className="text-2xl font-bold mb-6 text-gray-900">REGISTRATION DETAILS</h3>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,7 +129,16 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Date</p>
-                      <p>TBD</p>
+                      <p>July 15, 2025</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    <div>
+                      <p className="text-gray-600 font-medium">Age Group</p>
+                      <p>14-21 years</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -102,7 +147,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Registration Deadline</p>
-                      <p>15th April 2025</p>
+                      <p>15th June 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">

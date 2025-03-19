@@ -21,8 +21,11 @@ export default function SpainTrialPage() {
           <div className="inline-block mb-4">
             <span className="bg-yellow-600 text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">Spain Football Trial 2025</h1>
-          <p className="text-xl md:text-2xl text-white">Showcase Your Talent and Be Scouted!</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">SPAIN FOOTBALL TRIAL 2025</h1>
+          <p className="text-xl md:text-2xl text-white">EUROPEAN PROFESSIONAL CLUB TRIAL EXPERIENCE</p>
+          <div className="mt-4 inline-block">
+            <span className="bg-white/20 backdrop-blur-sm text-white text-sm font-medium px-3 py-1 rounded-full">Hosted with CF Intercity International Academy</span>
+          </div>
         </div>
       </section>
 
@@ -36,24 +39,128 @@ export default function SpainTrialPage() {
                 <div className="inline-block mb-2">
                   <span className="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Event Details</span>
                 </div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">About the Trial</h2>
+                <h2 className="text-3xl font-bold mb-6 text-gray-900">PROFESSIONAL SCOUTING TRIAL</h2>
                 <p className="text-lg text-gray-600 mb-4">
-                  Limited spots are available for the Football Trial 2025—a unique opportunity for aspiring players to showcase their skills and talents to professional football scouts. This event provides a pathway for players to gain recognition and potentially secure opportunities with football clubs and academies across the UK, Europe, and beyond.
+                  Limited spots are available for the Spain Football Trial 2025—a unique opportunity for aspiring players to showcase their skills and talents to professional football scouts. This event provides a pathway for players to gain recognition and potentially secure opportunities with football clubs and academies across Spain, Europe, and beyond.
                 </p>
                 <p className="text-lg text-gray-600">
-                  Participants will have the chance to be scouted by professional clubs, including teams in the English Football League (EFL) and other competitive tiers of British and European football. The trial offers invaluable exposure within one of the world's most prestigious football systems, enabling players to take the next step in their football careers.
+                  Participants will have the chance to be scouted by professional clubs, including teams in La Liga, Segunda División, and other competitive tiers of Spanish and European football. The trial offers invaluable exposure within one of the world&apos;s most technical football systems, enabling players to take the next step in their football careers.
                 </p>
               </div>
 
               <div className="bg-white p-8 rounded-xl shadow-sm">
-                <h2 className="text-2xl font-bold mb-4 text-gray-900">Host</h2>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900">TRIAL PROGRAM</h2>
+                <ul className="space-y-3 text-lg text-gray-600">
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-yellow-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Professional coaching and evaluation from UEFA licensed coaches</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-yellow-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Competitive match play to showcase skills in game situations</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-yellow-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Technical training sessions focused on key skill development</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-yellow-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Individual player assessment and personalized feedback</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-yellow-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Opportunity to be identified by attending scouts and coaches</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-yellow-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Video analysis sessions for tactical understanding</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="text-2xl font-bold text-gray-900">CF INTERCITY: INTERNATIONAL ACADEMY</h2>
+                </div>
+                <p className="text-lg text-gray-600 mb-4">
+                  The Spain trial is hosted in partnership with CF Intercity International Academy, offering a unique &quot;Different Way&quot; approach to football development. The academy brings its methodology and work model to players worldwide through training, clinics, tryouts, and personalized programs.
+                </p>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Club History</h3>
+                <p className="text-lg text-gray-600 mb-4">
+                  Founded in 2017 with the purchase of GCD Sant Joan, CF Intercity has experienced remarkable growth, advancing from Regional leagues to the RFEF First Division (third tier in Spanish football) in just five years. In 2021, the club made history by becoming the first Spanish football club to go public on the stock exchange, marking the beginning of an innovative and disruptive project in football.
+                </p>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Academy Training Structure</h3>
+                <div className="grid md:grid-cols-2 gap-6 mb-4">
+                  <div className="bg-yellow-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-yellow-800 mb-2">Morning Sessions</h4>
+                    <ul className="space-y-1 text-gray-600">
+                      <li className="flex items-center">
+                        <span className="h-1.5 w-1.5 rounded-full bg-yellow-600 mr-2"></span>
+                        2 High-performance technical/tactical trainings
+                      </li>
+                      <li className="flex items-center">
+                        <span className="h-1.5 w-1.5 rounded-full bg-yellow-600 mr-2"></span>
+                        1 Beach football training for technical skills
+                      </li>
+                      <li className="flex items-center">
+                        <span className="h-1.5 w-1.5 rounded-full bg-yellow-600 mr-2"></span>
+                        2 Functional trainings (strength & prevention)
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-yellow-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-yellow-800 mb-2">Evening Sessions</h4>
+                    <ul className="space-y-1 text-gray-600">
+                      <li className="flex items-center">
+                        <span className="h-1.5 w-1.5 rounded-full bg-yellow-600 mr-2"></span>
+                        2 Video analysis sessions weekly
+                      </li>
+                      <li className="flex items-center">
+                        <span className="h-1.5 w-1.5 rounded-full bg-yellow-600 mr-2"></span>
+                        3 Club training sessions with academy teams
+                      </li>
+                      <li className="flex items-center">
+                        <span className="h-1.5 w-1.5 rounded-full bg-yellow-600 mr-2"></span>
+                        Potential integration with CF Intercity teams
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Club Values</h3>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Responsibility</span>
+                  <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Discipline</span>
+                  <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Honesty</span>
+                  <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Perseverance</span>
+                  <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Commitment</span>
+                  <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Personal improvement</span>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <h2 className="text-2xl font-bold mb-4 text-gray-900">HOST</h2>
+                <p className="text-lg text-gray-600 mb-4">
+                  The trial is led by Alex Armstrong of Active4Sport International in partnership with British AUC Sports and CF Intercity. Alex Armstrong brings experience as an Assistant Coach at Southampton FC, Wolves FC, Cardiff FC, and Sheffield Wed FC. With over 600 matches of experience as an Assistant Manager and Coach, Alex offers a wealth of expertise in player development and football management.
+                </p>
                 <p className="text-lg text-gray-600">
-                  Alex Armstrong, Southampton FC, Wolves FC, Cardiff FC, and Sheffield Wed FC Assistant Coach. The trial is led by Alex Armstrong of Active4Sport International in partnership with British AUC Sports. With over 600 matches of experience as an Assistant Manager and Coach, Alex brings a wealth of expertise in player development and football management.
+                  CF Intercity provides local expertise within the Spanish football system, with connections to clubs across all tiers of Spanish football. Their extensive youth academy system hosts over 400 children across various age groups, offering genuine pathways for talented players.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-gray-900">Location</h2>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900">LOCATION</h2>
                 <p className="text-lg text-gray-600 mb-4">
                   Campo Municipal Antonio Solana<br />
                   C. Barítono Paco Latorre, 6<br />
@@ -76,7 +183,7 @@ export default function SpainTrialPage() {
             {/* Registration Panel */}
             <div className="md:col-span-1">
               <div className="bg-white p-8 rounded-xl shadow-md sticky top-24 border-t-4 border-yellow-600">
-                <h3 className="text-2xl font-bold mb-6 text-gray-900">Registration Details</h3>
+                <h3 className="text-2xl font-bold mb-6 text-gray-900">REGISTRATION DETAILS</h3>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,7 +200,16 @@ export default function SpainTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Date</p>
-                      <p>TBD</p>
+                      <p>August 10, 2025</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    <div>
+                      <p className="text-gray-600 font-medium">Age Group</p>
+                      <p>14-21 years</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -102,7 +218,7 @@ export default function SpainTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Registration Deadline</p>
-                      <p>15th April 2025</p>
+                      <p>15th July 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -115,6 +231,26 @@ export default function SpainTrialPage() {
                         collins@britishauc.com
                       </a>
                     </div>
+                  </div>
+                  <div className="border-t border-gray-200 pt-4 mt-4">
+                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Extend Your Experience</h4>
+                    <p className="text-gray-600 mb-2">
+                      Players identified during the trial may be invited to join CF Intercity&apos;s extended programs:
+                    </p>
+                    <ul className="space-y-1 text-gray-600 mb-4">
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-yellow-600 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Extended training programs (4+ months)</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="h-5 w-5 text-yellow-600 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Team integration opportunities</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <Button

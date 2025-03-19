@@ -49,7 +49,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1547019431-9d2f0518bb5b?q=80&w=1000"
+                src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2940"
                 alt="Football training session"
                 fill
                 className="object-cover"
