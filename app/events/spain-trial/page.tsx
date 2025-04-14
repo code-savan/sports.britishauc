@@ -254,15 +254,11 @@ export default function SpainTrialPage() {
                     </ul>
                   </div>
                 </div>
-                <Button
-                  asChild
-                  className="w-full bg-primary hover:bg-blue-600 text-white"
-                  size="lg"
-                >
-                  <Link href="/events/football-trial-2025/register?event=spain">
+                <Link href="/events/football-trial-2025/register?event=spain">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                     Register Now
-                  </Link>
-                </Button>
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

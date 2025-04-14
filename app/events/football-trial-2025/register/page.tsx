@@ -1,9 +1,12 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import TrialRegistration from '@/components/TrialRegistration';
 
-export default function FootballTrial2025RegistrationPage() {
+export const dynamic = 'force-dynamic';
+
+function RegistrationContent() {
   const searchParams = useSearchParams();
   const eventParam = searchParams.get('event');
 
@@ -35,5 +38,13 @@ export default function FootballTrial2025RegistrationPage() {
       paymentLink={config.paymentLink}
       eventType={config.eventType}
     />
+  );
+}
+
+export default function FootballTrial2025RegistrationPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <RegistrationContent />
+    </Suspense>
   );
 }
