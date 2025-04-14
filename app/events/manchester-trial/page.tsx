@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import TrialRegistration from '@/components/TrialRegistration';
 
 export default function ManchesterTrialPage() {
   return (
@@ -129,7 +130,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Date</p>
-                      <p>July 15, 2025</p>
+                      <p>July 17, 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -147,7 +148,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Registration Deadline</p>
-                      <p>15th June 2025</p>
+                      <p>15th July 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -164,10 +165,10 @@ export default function ManchesterTrialPage() {
                 </div>
                 <Button
                   asChild
-                  className="w-full bg-primary hover:bg-red-700 text-white"
+                  className="w-full bg-primary hover:bg-blue-600 text-white"
                   size="lg"
                 >
-                  <Link href="https://flutterwave.com/pay/obauyeqmgu4l">
+                  <Link href="/events/football-trial-2025/register?event=manchester">
                     Register Now
                   </Link>
                 </Button>
@@ -176,6 +177,14 @@ export default function ManchesterTrialPage() {
           </div>
         </div>
       </section>
+
+      {/* <TrialRegistration
+        eventTitle="Manchester Football Trial 2025"
+        heroImage="/images/manchester-trial.jpg"
+        accentColor="blue"
+        successRedirectPath="/events/football-trial-2025/trial-reg-success"
+        paymentLink="https://flutterwave.com/pay/obauyeqmgu4l"
+      /> */}
     </div>
   );
 }

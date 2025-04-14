@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import TrialRegistration from '@/components/TrialRegistration';
 
 export default function SpainTrialPage() {
   return (
@@ -200,7 +201,7 @@ export default function SpainTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Date</p>
-                      <p>August 10, 2025</p>
+                      <p>July 19, 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -255,10 +256,10 @@ export default function SpainTrialPage() {
                 </div>
                 <Button
                   asChild
-                  className="w-full bg-yellow-600 hover:bg-yellow-700 text-white"
+                  className="w-full bg-primary hover:bg-blue-600 text-white"
                   size="lg"
                 >
-                  <Link href="https://flutterwave.com/pay/ahdplredysps">
+                  <Link href="/events/football-trial-2025/register?event=spain">
                     Register Now
                   </Link>
                 </Button>
@@ -267,6 +268,14 @@ export default function SpainTrialPage() {
           </div>
         </div>
       </section>
+
+      {/* <TrialRegistration
+        eventTitle="Spain Football Trial 2025"
+        heroImage="/images/spain-trial.jpg"
+        accentColor="orange"
+        successRedirectPath="/events/football-trial-2025/trial-reg-success"
+        paymentLink="https://flutterwave.com/pay/ahdplredysps"
+      /> */}
     </div>
   );
 }

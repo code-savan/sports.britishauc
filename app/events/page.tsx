@@ -7,7 +7,7 @@ const events = [
   {
     id: 'spain-trial',
     title: 'Spain Football Trial 2025',
-    date: 'August 10, 2025 (Deadline: July 15, 2025)',
+    date: 'July 19, 2025 (Deadline: July 15, 2025)',
     description: 'Showcase your skills to professional scouts at this exclusive trial in Spain and take a step toward your professional football career.',
     image: 'https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=1000',
     location: 'Alicante, Spain',
@@ -18,7 +18,7 @@ const events = [
   {
     id: 'manchester-trial',
     title: 'Manchester Football Trial 2025',
-    date: 'July 15, 2025 (Deadline: June 15, 2025)',
+    date: 'July 17, 2025 (Deadline: June 15, 2025)',
     description: 'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
     image: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1000',
     location: 'Manchester, UK',
