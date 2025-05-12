@@ -84,10 +84,10 @@ export default function AlicanteAcademy() {
       <section className="relative h-[60vh] flex items-center justify-start overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/alicantehero.jpg"
+            src="https://images.unsplash.com/photo-1533224081996-0a96a8481e89?q=80&w=2400"
             alt="Alicante Football Academy"
             fill
-            className="object-cover"
+            className="object-cover object-bottom"
             priority
             quality={100}
           />
@@ -135,7 +135,7 @@ export default function AlicanteAcademy() {
 
             <div className="flex-1 relative min-h-[500px]">
               <Image
-                src="/alicante-training.jpg"
+                src="https://images.unsplash.com/photo-1662977976870-e143fc829319?q=80&w=2940"
                 alt="Alicante Football Training"
                 fill
                 className="object-cover"
@@ -152,7 +152,7 @@ export default function AlicanteAcademy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
             <div className="relative">
               <Image
-                src="/alicante-city.jpg"
+                src="https://images.unsplash.com/photo-1557998751-7e1d753f6676?q=80&w=2940"
                 alt="Alicante City"
                 width={600}
                 height={700}
@@ -202,7 +202,7 @@ export default function AlicanteAcademy() {
             <div className="col-span-12 mb-6">
               <div className="relative w-full h-[500px]">
                 <Image
-                  src="/alicante-facility.jpg"
+                  src="/training-ground.jpg"
                   alt="Alicante Training Facility"
                   fill
                   className="object-cover"
@@ -212,7 +212,7 @@ export default function AlicanteAcademy() {
             <div className="col-span-12 md:col-span-4">
               <div className="relative w-full h-[300px]">
                 <Image
-                  src="/alicante-training2.jpg"
+                  src="/training2.jpg"
                   alt="Training Pitch"
                   fill
                   className="object-cover"
@@ -222,7 +222,7 @@ export default function AlicanteAcademy() {
             <div className="col-span-12 md:col-span-4">
               <div className="relative w-full h-[300px]">
                 <Image
-                  src="/alicante-training3.jpg"
+                  src="/training3.jpg"
                   alt="Football Equipment"
                   fill
                   className="object-cover"
@@ -232,7 +232,7 @@ export default function AlicanteAcademy() {
             <div className="col-span-12 md:col-span-4">
               <div className="relative w-full h-[300px]">
                 <Image
-                  src="/alicante-training4.jpg"
+                  src="/training4.jpg"
                   alt="Indoor Facility"
                   fill
                   className="object-cover"
@@ -293,7 +293,7 @@ export default function AlicanteAcademy() {
             <div className="grid grid-cols-1 gap-6">
               <div className="relative w-full h-[250px]">
                 <Image
-                  src="/alicante-schedule1.jpg"
+                  src="/schedule1.png"
                   alt="Training Session"
                   fill
                   className="object-cover"
@@ -301,7 +301,7 @@ export default function AlicanteAcademy() {
               </div>
               <div className="relative w-full h-[250px]">
                 <Image
-                  src="/alicante-schedule2.jpg"
+                  src="/schedule2.png"
                   alt="Football Training"
                   fill
                   className="object-cover"
@@ -338,7 +338,7 @@ export default function AlicanteAcademy() {
             <div className="space-y-6">
               <div className="relative w-full h-[250px]">
                 <Image
-                  src="/alicante-devplan1.jpg"
+                  src="/devplan1.png"
                   alt="Football Development"
                   fill
                   className="object-cover"
@@ -346,7 +346,7 @@ export default function AlicanteAcademy() {
               </div>
               <div className="relative w-full h-[250px]">
                 <Image
-                  src="/alicante-devplan2.jpg"
+                  src="/devplan2.png"
                   alt="Skills Training"
                   fill
                   className="object-cover"
