@@ -6,6 +6,84 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useState, useEffect } from 'react';
 
+// Academy data
+const ACADEMIES = [
+  {
+    id: 'manchester',
+    name: 'Manchester Football Academy',
+    description: 'For students studying in the Manchester area and environs who wish to develop their football skills alongside their studies.',
+    image: '/manchesterhero.jpg',
+    alt: 'Manchester Football Academy',
+    href: '/academy/manchester'
+  },
+  {
+    id: 'london',
+    name: 'London Football Academy',
+    description: 'Premier football development program in London for students combining education with elite football training.',
+    image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1000',
+    alt: 'London Football Academy',
+    href: '/academy/london'
+  },
+  {
+    id: 'alicante',
+    name: 'Alicante Football Academy',
+    description: 'Experience Spanish football culture and training methodology while continuing your education in Alicante.',
+    image: 'https://images.unsplash.com/photo-1605719125065-3dd9e3f79057?q=80&w=1000',
+    alt: 'Alicante Football Academy',
+    href: '/academy/alicante'
+  }
+];
+
+// Events data
+const EVENTS = [
+  {
+    id: 'manchester-trial',
+    name: 'Manchester Football Trial 2025',
+    description: 'Showcase your skills to professional scouts at this exclusive trial in Manchester.',
+    date: 'TBD (Registration Deadline: 15th April 2025)',
+    badge: {
+      text: 'Limited Spots',
+      className: 'bg-primary'
+    },
+    image: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1000',
+    alt: 'Manchester Football Trial',
+    href: '/events/manchester-trial',
+    buttonClassName: 'bg-primary hover:bg-red-700',
+    iconColor: 'text-primary'
+  },
+  {
+    id: 'west-ham-trip',
+    name: 'West Ham United Summer Trip 2025',
+    description: 'Train like a professional at West Ham United Academy in this London experience.',
+    date: '29 July - 4 August 2025',
+    badge: {
+      text: 'Premium Experience',
+      className: 'bg-blue-600'
+    },
+    image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1000',
+    alt: 'West Ham United Academy',
+    href: '/events/west-ham-trip',
+    buttonClassName: 'bg-blue-600 hover:bg-blue-700',
+    iconColor: 'text-blue-400'
+  }
+];
+
+// Fee data
+const ACADEMY_FEES = [
+  {
+    academy: 'London Football Academy',
+    fee: '£14,950'
+  },
+  {
+    academy: 'Manchester Football Academy',
+    fee: '£12,950'
+  },
+  {
+    academy: 'Alicante Football Academy',
+    fee: '£10,950'
+  }
+];
+
 export default function Home() {
   // State for testimonials slider
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -112,12 +190,12 @@ export default function Home() {
               Elevate Your Sports Career with British AUC Sports
             </h1>
             <p className="hero-description text-white">
-              Connecting talented athletes with exceptional opportunities through professional trials, academy experiences, and elite training programs in football, basketball, sprinting, and tennis.
+              Connecting talented athletes with exceptional opportunities through professional trials, academy experiences, and elite training programs.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="text-lg bg-white text-primary hover:bg-gray-100">
                 <Link href="/events">
-                  Explore Events
+                  Explore Programs
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-lg bg-transparent text-white hover:bg-white/20 border-white">
@@ -151,55 +229,87 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Program Section with Blue Accents */}
-      <section className="py-16 bg-gradient-to-b from-white to-blue-50">
+      {/* About British AUC SPORT Section */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <div className="inline-block mb-2">
-              <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Our Programs</span>
+              <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">About Us</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Elite Football Opportunities</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              British AUC Sports connects aspiring athletes with professional clubs and academies through our exclusive programs and events.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">British AUC SPORT</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl shadow-md p-8 text-center card-hover border-t-4 border-primary">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Professional Trials</h3>
-              <p className="text-gray-600">Showcase your talent to scouts from professional clubs across the UK and Europe.</p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-lg text-gray-600 mb-6">
+                British AUC SPORT is a UK-based sports agency that trains and mentors young talents to become professional footballers while studying for their degrees. The aim of this is to help potential students try their football skills while studying, giving them the opportunity to either progress to play at a Professional or semi-professional level.
+              </p>
+              <p className="text-lg text-gray-600 mb-6">
+                British AUC SPORT connects extensively with most English and European football clubs and academies, giving each player an ample opportunity of being scouted into Premiership clubs around the world.
+              </p>
+              <p className="text-lg text-gray-600 mb-6">
+                British AUC SPORT is proud to be a member of PFSA (Professional Football Scouts Association United Kingdom) an umbrella body for all professional scouts worldwide. Therefore, prospective players are exposed to scouts around the world. Recently, Man United has contracted the body to help recruit for its first team.
+              </p>
             </div>
-
-            <div className="bg-white rounded-xl shadow-md p-8 text-center card-hover border-t-4 border-blue-600">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Academy Training</h3>
-              <p className="text-gray-600">Train with elite coaches at Premier League academies and develop your skills.</p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-md p-8 text-center card-hover border-t-4 border-primary">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Educational Programs</h3>
-              <p className="text-gray-600">Combine football training with educational courses and leadership development.</p>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1000"
+                alt="British AUC SPORT"
+                width={600}
+                height={400}
+                className="object-cover w-full h-full"
+              />
             </div>
           </div>
         </div>
       </section>
 
+      {/* What We Do Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-block mb-2">
+              <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Services</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">WHAT WE DO</h2>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-md p-8 mb-12">
+            <h3 className="text-2xl font-bold mb-4 text-primary">FOOTBALL ACADEMY</h3>
+            <p className="text-lg text-gray-600">
+              We train and help every potential young player to realize his or her potential of becoming a professional footballer. This is a bespoke training and mentorship programme for each player. This means that each player will receive an extensive interview and discussion with our highly qualified FA Coach to enable us to understand each player&apos;s peculiarity before a progress road map is drawn for the player. The aim of this is to guide, train, and expose every player to professional clubs in the UK and Europe.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {ACADEMIES.map((academy) => (
+              <div key={academy.id} className="relative overflow-hidden rounded-xl shadow-md group h-[350px]">
+                <Image
+                  src={academy.image}
+                  alt={academy.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 p-6 text-white z-10">
+                  <h3 className="text-xl font-bold mb-2 text-white">{academy.name}</h3>
+                  <p className="text-sm text-white/90 mb-4">
+                    {academy.description}
+                  </p>
+                  <Button asChild variant="outline" className="border-white text-white bg-transparent font-semibold">
+                    <Link href={academy.href}>
+                      Learn More
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Upcoming Events Section with Blue Accents */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block mb-2">
@@ -212,79 +322,39 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Manchester Football Trial Card */}
-            <Card className="overflow-hidden card-hover border-0 shadow-md">
-              <div className="relative h-64">
+            {EVENTS.map((event) => (
+              <div key={event.id} className="relative overflow-hidden rounded-xl shadow-md group h-[400px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1000"
-                  alt="Manchester Football Trial"
+                  src={event.image}
+                  alt={event.alt}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6 text-white">
-                  <p className="text-sm font-medium bg-primary text-white px-3 py-1 rounded-full inline-block mb-2">Limited Spots</p>
-                  <h3 className="text-2xl font-bold text-white">Manchester Football Trial 2025</h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 p-6 text-white z-10 w-full">
+                  <p className={`text-sm font-medium ${event.badge.className} text-white px-3 py-1 rounded-full inline-block mb-2`}>{event.badge.text}</p>
+                  <h3 className="text-2xl font-bold text-white mb-2">{event.name}</h3>
+                  <div className="flex items-center text-sm text-white/90 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 mr-2 ${event.iconColor}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>{event.date}</span>
+                  </div>
+                  <p className="text-white/90 mb-6">
+                    {event.description}
+                  </p>
+                  <Button asChild className={`${event.buttonClassName} text-white font-semibold`}>
+                    <Link href={event.href}>
+                      Learn More
+                    </Link>
+                  </Button>
                 </div>
               </div>
-              <CardContent className="pt-6">
-                <div className="flex items-center text-sm text-gray-500 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <span>TBD (Registration Deadline: 15th April 2025)</span>
-                </div>
-                <p className="text-gray-600 mb-6">
-                  Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.
-                </p>
-              </CardContent>
-              <CardFooter className="pt-0">
-                <Button asChild className="w-full bg-primary text-white hover:bg-red-700">
-                  <Link href="/events/manchester-trial">
-                    Learn More
-                  </Link>
-                </Button>
-              </CardFooter>
-            </Card>
-
-            {/* West Ham United Summer Trip Card */}
-            <Card className="overflow-hidden card-hover border-0 shadow-md">
-              <div className="relative h-64">
-                <Image
-                  src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1000"
-                  alt="West Ham United Academy"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6 text-white">
-                  <p className="text-sm font-medium bg-blue-600 text-white px-3 py-1 rounded-full inline-block mb-2">Premium Experience</p>
-                  <h3 className="text-2xl font-bold text-white">West Ham United Summer Trip 2025</h3>
-                </div>
-              </div>
-              <CardContent className="pt-6">
-                <div className="flex items-center text-sm text-gray-500 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <span>29 July - 4 August 2025</span>
-                </div>
-                <p className="text-gray-600 mb-6">
-                  Train like a professional at West Ham United Academy in this unforgettable London experience combining elite coaching and education.
-                </p>
-              </CardContent>
-              <CardFooter className="pt-0">
-                <Button asChild className="w-full bg-blue-600 text-white hover:bg-blue-700">
-                  <Link href="/events/west-ham-trip">
-                    Learn More
-                  </Link>
-                </Button>
-              </CardFooter>
-            </Card>
+            ))}
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+            <Button asChild variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold">
               <Link href="/events">
                 View All Events
               </Link>
@@ -293,8 +363,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Fees Overview Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-block mb-2">
+              <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Pricing</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Academy Fees</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              January and September are our major intake periods. However, we are flexible with start dates.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-md">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-gray-200">
+                    <th className="text-left py-4 px-6 text-lg font-bold text-gray-900">ACADEMY</th>
+                    <th className="text-left py-4 px-6 text-lg font-bold text-gray-900">FEES PER YEAR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {ACADEMY_FEES.map((item, index) => (
+                    <tr key={index} className={index < ACADEMY_FEES.length - 1 ? "border-b border-gray-200" : ""}>
+                      <td className="py-4 px-6 text-gray-600">{item.academy}</td>
+                      <td className="py-4 px-6 text-gray-900 font-semibold">{item.fee}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Button asChild className="bg-primary text-white hover:bg-red-700 font-semibold">
+              <Link href="/contact">
+                Contact Us For More Information
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonial Section with Slider */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block mb-2">
@@ -369,12 +483,12 @@ export default function Home() {
             Join our upcoming events and start your journey toward a professional football career.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button asChild size="lg" variant="secondary" className="text-primary bg-white hover:bg-gray-100">
+            <Button asChild size="lg" variant="secondary" className="text-primary bg-white hover:bg-gray-100 font-semibold">
               <Link href="/events">
                 Explore Events
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white bg-transparent hover:bg-white">
+            <Button asChild size="lg" variant="outline" className="text-white border-white bg-transparent hover:bg-white/20 font-semibold">
               <Link href="/contact" className='hover:text-black text-white'>
                 Contact Us
               </Link>

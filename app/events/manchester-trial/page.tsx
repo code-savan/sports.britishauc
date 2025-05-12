@@ -148,7 +148,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Registration Deadline</p>
-                      <p>15th July 2025</p>
+                      <p>23rd May 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -169,7 +169,7 @@ export default function ManchesterTrialPage() {
                   size="lg"
                 >
                   <Link href="/events/football-trial-2025/register?event=manchester">
-                    Register Now
+                    Register and Pay
                   </Link>
                 </Button>
               </div>

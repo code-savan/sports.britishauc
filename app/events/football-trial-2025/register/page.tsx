@@ -15,7 +15,7 @@ function RegistrationContent() {
       title: "Manchester Football Trial 2025",
       heroImage: "/manchester.jpeg",
       accentColor: "blue",
-      paymentLink: "https://flutterwave.com/pay/obauyeqmgu4l",
+      paymentLink: "https://buy.stripe.com/bIY4jA8a1fD66LSaEE",
       eventType: "manchester_trial" as const
     },
     spain: {
