@@ -112,7 +112,7 @@ export default function Home() {
   const [activeHeroImage, setActiveHeroImage] = useState(0);
   const heroImages = [
     {
-      src: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=2000",
+      src: "https://images.unsplash.com/photo-1650409590770-79bad78b5a16?q=80&w=2940",
       alt: "Football stadium",
       sport: "Football"
     },

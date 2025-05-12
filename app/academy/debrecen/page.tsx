@@ -8,7 +8,8 @@ import { Button } from '@/components/ui/button';
 const ACADEMY_FEES = [
   { academy: 'London Football Academy', fee: '£14,950' },
   { academy: 'Manchester Football Academy', fee: '£12,950' },
-  { academy: 'Alicante Football Academy', fee: '£10,950' }
+  { academy: 'Alicante Football Academy', fee: '£10,950' },
+  { academy: 'Debrecen Football Academy', fee: '$7,950' }
 ];
 
 const SKILLS = [
@@ -41,7 +42,7 @@ const BENEFITS = [
   },
   {
     title: "Football Trial with Pro Clubs",
-    description: "Players will be exposed to Pro football trials around Spain. These are both trials organized by professional clubs and in-house trials."
+    description: "Players will be exposed to Pro football trials around Hungary. These are both trials organized by professional clubs and in-house trials."
   },
   {
     title: "Training Kits",
@@ -69,25 +70,25 @@ const BENEFITS = [
   },
   {
     title: "League Club Tours",
-    description: "There is a regular visit to La Liga clubs around Alicante, and tickets for matches are also provided for players."
+    description: "There is a regular visit to Hungarian league clubs around Debrecen, and tickets for matches are also provided for players."
   },
   {
     title: "Professional Football Trials",
-    description: "All players are taken to professional football trials held in the Alicante area. Scouts from all over Spain and Europe attend these trials, allowing each player to be scouted."
+    description: "All players are taken to professional football trials held in the Debrecen area. Scouts from all over Hungary and Europe attend these trials, allowing each player to be scouted."
   }
 ];
 
-export default function AlicanteAcademy() {
+export default function DebrecenAcademy() {
   return (
     <main className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-start overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1533224081996-0a96a8481e89?q=80&w=2400"
-            alt="Alicante Football Academy"
+            src="https://images.unsplash.com/photo-1576660016182-af8a90e6ffda?q=80&w=2918"
+            alt="Debrecen Football Academy"
             fill
-            className="object-cover object-bottom"
+            className="object-cover object-center"
             priority
             quality={100}
           />
@@ -96,10 +97,10 @@ export default function AlicanteAcademy() {
 
         <div className="relative z-10 px-6 md:px-[120px] container max-w-7xl mx-auto text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white/90">
-            Alicante Football Academy
+            Debrecen Football Academy
           </h1>
           <p className="text-lg max-w-2xl text-white/80">
-            Developing elite footballers in Spain&apos;s beautiful Mediterranean coast
+            Developing elite footballers in Hungary&apos;s historic sporting city
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <Button asChild size="lg" className="bg-primary hover:bg-red-700 text-white">
@@ -118,25 +119,25 @@ export default function AlicanteAcademy() {
           <div className="flex flex-col md:flex-row gap-20">
             <div className="flex-1">
               <span className="text-primary font-semibold mb-4 block">ACADEMY OVERVIEW</span>
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">Alicante Football Academy</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">Debrecen Football Academy</h2>
 
               <div className="space-y-6 text-gray-600 text-base">
                 <p>
-                  Alicante Football Academy is for students studying in the Alicante region who wish to enhance their football skills alongside their studies at the University. Most students who enrolled into this academy are students studying at the University of Alicante, Universidad Miguel Hernandez of Elche, Fundesem Business School, etc.
+                  Debrecen Academy is for students studying within Debrecen territory who wish to develop their football skills alongside their studies at the University. Most students who joined this academy are students studying at the University of Debrecen, Debrecen Reformed University of Religious Studies DRHE, University of Debrecen Medical School and Health Science Center, etc.
                 </p>
                 <p>
-                  Our academy benefits from top-class football facilities, including the use of top-quality training pitches, state of the art gym where the aim is to deliver intensive coaching sessions designed to improve and develop your individual game level.
+                  Debrecen Academy&apos;s mission aligns with the Hungarian Football Association&apos;s development strategy, focusing on nurturing young talent capable of competing at a high level in adulthood. It serves as the primary talent pipeline for Debreceni Vasutas Sport Club first team, emphasizing professional training while instilling values to shape players into future professionals.
                 </p>
                 <p>
-                  We relate to the passion and desire of aspiring football players and we know how to help you accomplish your dream of becoming a successful football player.
+                  The coaching staff comprises of UEFA-licensed professionals with experience in youth and senior football. The academy collaborates with the Hungarian Football Federation and international partners to adopt best practices, including methodologies from top European academies.
                 </p>
               </div>
             </div>
 
             <div className="flex-1 relative min-h-[500px]">
               <Image
-                src="https://images.unsplash.com/photo-1662977976870-e143fc829319?q=80&w=2940"
-                alt="Alicante Football Training"
+                src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=2940"
+                alt="Debrecen Football Training"
                 fill
                 className="object-cover"
               />
@@ -146,14 +147,14 @@ export default function AlicanteAcademy() {
         </div>
       </section>
 
-      {/* Alicante City Section */}
+      {/* Debrecen City Section */}
       <section className="py-32 bg-gray-50">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1557998751-7e1d753f6676?q=80&w=2940"
-                alt="Alicante City"
+                src="/lid.jpeg"
+                alt="Debrecen City"
                 width={600}
                 height={700}
                 className="object-cover h-[500px] w-full object-bottom"
@@ -163,23 +164,23 @@ export default function AlicanteAcademy() {
 
             <div className="flex flex-col justify-center">
               <span className="text-primary font-semibold mb-4 block">CITY OVERVIEW</span>
-              <h2 className="text-4xl font-bold mb-8 text-gray-900">Life in Alicante</h2>
+              <h2 className="text-4xl font-bold mb-8 text-gray-900">Life in Debrecen</h2>
 
               <div className="space-y-6 text-gray-600 text-base">
                 <p>
-                  Alicante is a very notable city when it comes to the game of football. The city of Alicante is home to well-known clubs such as Villareal FC, Valencia FC, Elche FC, Granada FC, Hercules FC, etc. This offers players the chance to be seen and potentially recruited by these professional football teams.
+                  Debrecen is a widely-known city when it comes to the game of football. Debrecen is home to well-known clubs such as Debrecen VSC, DVSC Futball Zrt, TBG Palya-Debrecen Sports Club, etc. This gives player direct exposure to professional football environment and recruitment.
                 </p>
                 <p>
-                  Alicante&apos;s climate comes with mild winters and warm summers (avg. 23.3°C), supports year-round sports like sailing, cycling, triathlon, rock climbing, and water sports (snorkeling, kite-surfing, kayaking). This attracts European teams, especially in winter, to facilities like Torrevieja Sports City.
+                  Debrecen offers different sport activities via University of Debrecen (tennis, football, gym, 200+ courses), local clubs (DVSC Football, Handball), and events (marathons, cycling). Outdoor options include rowing and skiing trip. The weather climate, warm summer (20-30°C) and mild spring/autumn (10-20°C) ideal for outdoor sport activities.
                 </p>
                 <p>
-                  Beaches like San Juan offer volleyball and football, while mountains provide hiking via Ferrata. Top facilities, including Torrevieja Sport City and Joaquin Villar Stadium, attracts international athletes. Events like The Ocean Race, MTRI Triathlon and Rafa Nadal Tour offer competitive opportunities.
+                  Debrecen organizes day trips, skiing holiday in winter, and rowing tours in summer. Popular sports include football, basketball, athletics, and water sports with facilities like the Nagyerdei Stadium and local swimming pools supporting these activities.
                 </p>
                 <p>
-                  In Alicante, athletes can explore job opportunities within sports brands, focusing on area like sports marketing, sales, or even product development. These roles often involves working with brands to create marketing campaigns, manage sponsorships, or develop new products and equipment.
+                  Debrecen is a hub for companies like BMW, Continental, and IT firms (e.g EPAM NI), offering well-paid roles in engineering, IT, and manufacturing. These jobs provide financial stability for those pursuing sports recreationally.
                 </p>
                 <p>
-                  Alicante&apos;s transport network, primarily the Alicante Metropolitan TRAM, connects the city with several surrounding towns and other cities through a mix of tram-train, and commuters rail services.
+                  Debrecen is a major railway hub in Hungary, connecting to various cities within the country and internationally. Debrecen Central Station, the largest in the city, offers numerous train routes to destinations like Vienna, Munich, Paris, and Amsterdam. Additionally, within Hungary, you can reach cities like Budapest, Szolnok, Pecs, Gyor, Szeged, and Szekesfehervar by train.
                 </p>
               </div>
             </div>
@@ -194,7 +195,7 @@ export default function AlicanteAcademy() {
             <span className="text-primary font-semibold mb-4 block">FACILITIES</span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Training Ground</h2>
             <p className="text-base text-gray-600 max-w-4xl mx-auto">
-              Our Alicante training facilities offer state-of-the-art pitches, advanced gym equipment, and comprehensive amenities to support the development of elite footballers in the heart of Spain&apos;s Mediterranean coast.
+              Our Debrecen training facilities offer state-of-the-art pitches, advanced gym equipment, and comprehensive amenities to support the development of elite footballers in the heart of Hungary.
             </p>
           </div>
 
@@ -203,7 +204,7 @@ export default function AlicanteAcademy() {
               <div className="relative w-full h-[500px]">
                 <Image
                   src="/training-ground.jpg"
-                  alt="Alicante Training Facility"
+                  alt="Debrecen Training Facility"
                   fill
                   className="object-cover"
                 />
@@ -242,7 +243,7 @@ export default function AlicanteAcademy() {
           </div>
 
           <div className="mt-16 flex flex-wrap gap-8 justify-center">
-            {['Torrevieja Sports City', '4G Astroturf pitches', 'Fitness suites & studios', 'High performance gym', 'Recovery facilities', 'Free parking'].map((item, i) => (
+            {['Nagyerdei Stadium', '4G Astroturf pitches', 'Fitness suites & studios', 'High performance gym', 'Recovery facilities', 'Free parking'].map((item, i) => (
               <div key={i} className="bg-gray-50 py-3 px-6">
                 <span className="text-gray-800 text-sm">{item}</span>
               </div>
@@ -422,9 +423,9 @@ export default function AlicanteAcademy() {
       {/* CTA Section */}
       <section className="py-24 bg-primary">
         <div className="container max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Link with Spanish Pro Football Clubs</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Link with Hungarian Pro Football Clubs</h2>
           <p className="text-base text-white/90 max-w-3xl mx-auto mb-12">
-            British AUC Sport connects with various Spanish and European league clubs, academies, and Scouts on a regular basis to ensure that our players have many opportunities and exposure to becoming professional footballers.
+          British AUC Sport connects with various Hungarian and European league clubs, academies, and Scouts on a regular basis to ensure that our players have many opportunities and exposure to becoming professional footballers.
           </p>
           <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-primary px-8 py-6">
             <Link href="/contact">Apply Now</Link>

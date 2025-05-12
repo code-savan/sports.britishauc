@@ -421,7 +421,7 @@ export default function ManchesterAcademy() {
         <div className="container max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Link with Pro Football Clubs</h2>
           <p className="text-base text-white/90 max-w-3xl mx-auto mb-12">
-            B-SPORT connects with various UK and European league clubs, academies, and Scouts on a regular basis to ensure that our players have many opportunities and exposure to becoming professional footballers.
+          British AUC Sport connects with various UK and European league clubs, academies, and Scouts on a regular basis to ensure that our players have many opportunities and exposure to becoming professional footballers.
           </p>
           <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-primary px-8 py-6">
             <Link href="/contact">Apply Now</Link>
