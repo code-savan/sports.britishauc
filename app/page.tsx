@@ -28,7 +28,7 @@ const ACADEMIES = [
     id: 'alicante',
     name: 'Alicante Football Academy',
     description: 'Experience Spanish football culture and training methodology while continuing your education in Alicante.',
-    image: 'https://images.unsplash.com/photo-1605719125065-3dd9e3f79057?q=80&w=1000',
+    image: '/apd1.jpeg',
     alt: 'Alicante Football Academy',
     href: '/academy/alicante'
   }
