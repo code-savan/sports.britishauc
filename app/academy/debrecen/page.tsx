@@ -203,7 +203,7 @@ export default function DebrecenAcademy() {
             <div className="col-span-12 mb-6">
               <div className="relative w-full h-[500px]">
                 <Image
-                  src="/training-ground.jpg"
+                  src="/dtg1.png"
                   alt="Debrecen Training Facility"
                   fill
                   className="object-cover"
@@ -213,7 +213,7 @@ export default function DebrecenAcademy() {
             <div className="col-span-12 md:col-span-4">
               <div className="relative w-full h-[300px]">
                 <Image
-                  src="/training2.jpg"
+                  src="/dtg2.png"
                   alt="Training Pitch"
                   fill
                   className="object-cover"
@@ -223,7 +223,7 @@ export default function DebrecenAcademy() {
             <div className="col-span-12 md:col-span-4">
               <div className="relative w-full h-[300px]">
                 <Image
-                  src="/training3.jpg"
+                  src="/dtg3.png"
                   alt="Football Equipment"
                   fill
                   className="object-cover"
@@ -233,7 +233,7 @@ export default function DebrecenAcademy() {
             <div className="col-span-12 md:col-span-4">
               <div className="relative w-full h-[300px]">
                 <Image
-                  src="/training4.jpg"
+                  src="/dtg4.png"
                   alt="Indoor Facility"
                   fill
                   className="object-cover"
@@ -294,7 +294,7 @@ export default function DebrecenAcademy() {
             <div className="grid grid-cols-1 gap-6">
               <div className="relative w-full h-[250px]">
                 <Image
-                  src="/schedule1.png"
+                  src="/dts1.png"
                   alt="Training Session"
                   fill
                   className="object-cover"
@@ -302,7 +302,7 @@ export default function DebrecenAcademy() {
               </div>
               <div className="relative w-full h-[250px]">
                 <Image
-                  src="/schedule2.png"
+                  src="/dts2.jpg"
                   alt="Football Training"
                   fill
                   className="object-cover"
@@ -347,7 +347,7 @@ export default function DebrecenAcademy() {
               </div>
               <div className="relative w-full h-[250px]">
                 <Image
-                  src="/devplan2.png"
+                  src="/debdevplan2.jpg"
                   alt="Skills Training"
                   fill
                   className="object-cover"
