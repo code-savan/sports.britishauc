@@ -94,7 +94,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Location</h3>
-                    <p className="text-slate-700">United Kingdom</p>
+                    <p className="text-slate-700">128 City Road, London, EC1V 2NX United Kingdom</p>
                   </div>
                 </div>
 

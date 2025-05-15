@@ -61,7 +61,7 @@ export function Footer() {
 
 <div className='space-y-2'>
                 <p className="text-sm text-gray-600 hover:text-primary">
-                128 City Road, London, United Kingdom
+                128 City Road, London, EC1V 2NX United Kingdom
                 </p>
                 <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19858.10829900693!2d-0.088244!3d51.526726000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca671d5df0b%3A0x368e18d29207f698!2s128%20City%20Rd%2C%20London%20EC1V%202NX%2C%20UK!5e0!3m2!1sen!2sng!4v1747032924279!5m2!1sen!2sng"  style={{border:0}} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
