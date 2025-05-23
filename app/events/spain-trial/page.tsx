@@ -210,7 +210,7 @@ export default function SpainTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Age Group</p>
-                      <p>14-21 years</p>
+                      <p>7 - 24 years (other ages ages are welcome to apply as well)</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -219,7 +219,7 @@ export default function SpainTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Registration Deadline</p>
-                      <p>23rd May 2025</p>
+                      <p>1 July 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -255,7 +255,7 @@ export default function SpainTrialPage() {
                   </div>
                 </div>
                 <Link href="/events/football-trial-2025/register?event=spain">
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                  <Button className="w-full bg-primary hover:bg-red-500 text-white">
                     Register and Pay
                   </Button>
                 </Link>

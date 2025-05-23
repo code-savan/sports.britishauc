@@ -139,7 +139,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Age Group</p>
-                      <p>14-21 years</p>
+                      <p>7 - 24 years (other ages ages are welcome to apply as well)</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -148,7 +148,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Registration Deadline</p>
-                      <p>23rd May 2025</p>
+                      <p>1 July 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -165,7 +165,7 @@ export default function ManchesterTrialPage() {
                 </div>
                 <Button
                   asChild
-                  className="w-full bg-primary hover:bg-blue-600 text-white"
+                  className="w-full bg-primary hover:bg-red-500 text-white"
                   size="lg"
                 >
                   <Link href="/events/football-trial-2025/register?event=manchester">
