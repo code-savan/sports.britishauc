@@ -25,12 +25,12 @@ const ACADEMIES = [
     href: '/academy/london'
   },
   {
-    id: 'alicante',
-    name: 'Alicante Football Academy',
-    description: 'Experience Spanish football culture and training methodology while continuing your education in Alicante.',
-    image: '/apd1.jpeg',
-    alt: 'Alicante Football Academy',
-    href: '/academy/alicante'
+    id: 'debrecen',
+    name: 'Debrecen Football Academy',
+    description: 'Experience Hungarian football excellence and top-tier training while pursuing your education in Debrecen.',
+    image: '/dts2.jpg',
+    alt: 'Debrecen Football Academy',
+    href: '/academy/debrecen'
   }
 ];
 
