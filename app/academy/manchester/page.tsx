@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button';
 
 // Data
 const ACADEMY_FEES = [
-    { academy: 'London Football Academy', fee: '£14,950' },
     { academy: 'Manchester Football Academy', fee: '£12,950' },
+    { academy: 'London Football Academy', fee: '£14,950' },
     { academy: 'Alicante Football Academy', fee: '£10,950' },
     { academy: 'Debrecen Football Academy', fee: '$7,950' }
   ];
