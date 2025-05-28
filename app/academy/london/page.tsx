@@ -6,10 +6,11 @@ import { Button } from '@/components/ui/button';
 
 // Data
 const ACADEMY_FEES = [
-  { academy: 'London Football Academy', fee: '£14,950' },
-  { academy: 'Manchester Football Academy', fee: '£12,950' },
-  { academy: 'Alicante Football Academy', fee: '£10,950' }
-];
+    { academy: 'London Football Academy', fee: '£14,950' },
+    { academy: 'Manchester Football Academy', fee: '£12,950' },
+    { academy: 'Alicante Football Academy', fee: '£10,950' },
+    { academy: 'Debrecen Football Academy', fee: '$7,950' }
+  ];
 
 const SKILLS = [
   "Dribbling/Ball manipulation",
@@ -366,13 +367,13 @@ export default function LondonAcademy() {
               </p>
 
               <div className="mb-12">
-                <h3 className="text-2xl font-bold mb-6 text-gray-900">Fees Per Year</h3>
+                <h3 className="text-2xl font-bold mb-6 text-gray-900">Fees</h3>
                 <div className="bg-white p-8">
                   <table className="w-full">
                     <thead>
                       <tr className="border-b-2 border-gray-200">
                         <th className="text-left py-4 text-base font-bold text-gray-900">ACADEMY</th>
-                        <th className="text-right py-4 text-base font-bold text-gray-900">FEES PER YEAR</th>
+                        <th className="text-right py-4 text-base font-bold text-gray-900">FEES PER FULL SEASON (36 WEEKS)</th>
                       </tr>
                     </thead>
                     <tbody>

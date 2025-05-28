@@ -382,7 +382,7 @@ export default function Home() {
                 <thead>
                   <tr className="border-b border-gray-200">
                     <th className="text-left py-4 px-6 text-lg font-bold text-gray-900">ACADEMY</th>
-                    <th className="text-left py-4 px-6 text-lg font-bold text-gray-900">FEES PER YEAR</th>
+                    <th className="text-left py-4 px-6 text-lg font-bold text-gray-900">FEES PER FULL SEASON (36 WEEKS)</th>
                   </tr>
                 </thead>
                 <tbody>
