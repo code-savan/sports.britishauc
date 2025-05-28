@@ -81,6 +81,10 @@ const ACADEMY_FEES = [
   {
     academy: 'Alicante Football Academy',
     fee: '£10,950'
+  },
+  {
+    academy: 'Debrecen Football Academy',
+    fee: '$7,950'
   }
 ];
 
