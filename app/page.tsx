@@ -116,7 +116,7 @@ export default function Home() {
   const [activeHeroImage, setActiveHeroImage] = useState(0);
   const heroImages = [
     {
-      src: "https://images.unsplash.com/photo-1650409590770-79bad78b5a16?q=80&w=2940",
+      src: "/footballheroimage.jpeg",
       alt: "Football stadium",
       sport: "Football"
     },
@@ -191,7 +191,7 @@ export default function Home() {
         <div className="relative z-10 px-6 md:px-[120px] md:max-w-7xl text-white">
           <div className="animate-fade-in">
             <h1 className="hero-title text-white">
-              Elevate Your Sports Career with British AUC Sports
+            Elevate Your Football/Sports Career with British AUC Sport
             </h1>
             <p className="hero-description text-white">
               Connecting talented athletes with exceptional opportunities through professional trials, academy experiences, and elite training programs.
