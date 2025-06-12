@@ -356,6 +356,7 @@ export default function LondonAcademy() {
       </section>
 
       {/* Fees and Registration Section */}
+      {/*
       <section className="py-32 bg-gray-50">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
@@ -416,6 +417,7 @@ export default function LondonAcademy() {
           </div>
         </div>
       </section>
+      */}
 
       {/* CTA Section */}
       <section className="py-24 bg-primary">

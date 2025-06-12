@@ -23,7 +23,7 @@ const navigation: NavigationItem[] = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about' },
   {
-    name: 'Academy',
+    name: 'Football Academy',
     href: '#',
     dropdown: [
       { name: 'Manchester Football Academy', href: '/academy/manchester' },
@@ -32,6 +32,7 @@ const navigation: NavigationItem[] = [
       { name: 'Debrecen Football Academy', href: '/academy/debrecen' },
     ]
   },
+  { name: 'Fees', href: '/fees' },
   { name: 'Events', href: '/events' },
   { name: 'Contact', href: '/contact' },
 ];
