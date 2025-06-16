@@ -201,6 +201,9 @@ export function Navbar() {
                   )}
                 </div>
               ))}
+              <Button asChild className="ml-4 bg-red-600 hover:bg-red-700 text-white px-6 py-2 font-semibold rounded shadow">
+                <Link href="/applynow">Apply now</Link>
+              </Button>
             </div>
 
             {/* Mobile menu button */}
@@ -239,7 +242,7 @@ export function Navbar() {
                           onClick={(e) => toggleDropdown(index, e)}
                         >
                           <span>{item.name}</span>
-                          <ChevronDown className={cn("h-4 w-4 transition-transform", openDropdown === index ? "transform rotate-180" : "")} />
+                          <ChevronDown className={cn("h-4 w-4 transition-transform", openDropdown === index ? "transform rotate-180" : "")}/>
                         </div>
 
                         {openDropdown === index && (
@@ -276,6 +279,9 @@ export function Navbar() {
                     )}
                   </div>
                 ))}
+                <Button asChild className="w-full mt-3 bg-red-600 hover:bg-red-700 text-white px-6 py-3 font-semibold rounded shadow">
+                  <Link href="/applynow">Apply now</Link>
+                </Button>
               </div>
             </div>
           )}
