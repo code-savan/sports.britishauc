@@ -57,7 +57,7 @@ const ApplyNowPage = () => (
         src={heroImage}
         alt="Elite Football Training"
         fill
-        className="object-cover object-center z-0"
+        className="object-cover object-top z-0"
         priority
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent z-1" />
