@@ -52,7 +52,7 @@ const HOW_TO_JOIN = [
 const ApplyNowPage = () => (
   <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 pt-0">
     {/* Hero Section */}
-    <section className="relative h-[60vh] flex items-center justify-center overflow-hidden shadow-lg">
+    <section className="relative md:h-[60vh] h-[80vh] flex items-center justify-center overflow-hidden shadow-lg">
       <Image
         src={heroImage}
         alt="Elite Football Training"
@@ -63,7 +63,7 @@ const ApplyNowPage = () => (
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent z-1" />
       <div className="relative z-10 text-center w-full flex flex-col items-center justify-center px-4">
         <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg animate-fade-in">Apply Now</h1>
-        <p className="text-2xl md:text-3xl text-white/90 max-w-3xl mx-auto animate-fade-in font-light">
+        <p className="text-[18px] md:text-3xl text-white/90 max-w-3xl mx-auto animate-fade-in font-light">
           Take the next step in your football journey. Join our High Elite Performance Football Development Programme.
         </p>
         <Button asChild size="lg" className="mt-10 bg-primary hover:bg-red-700 text-white px-12 py-5 text-xl font-bold shadow-xl animate-fade-in rounded-full">
