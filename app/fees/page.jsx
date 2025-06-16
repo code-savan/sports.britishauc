@@ -2,11 +2,25 @@ import React from 'react'
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-const ACADEMY_FEES = [
-  { academy: 'Debrecen Football Academy', fee: '$7,950' },
-  { academy: 'London Football Academy', fee: '£14,950' },
-  { academy: 'Manchester Football Academy', fee: '£12,950' },
-  { academy: 'Alicante Football Academy', fee: '£10,950' }
+const HIGH_ELITE_FEES = [
+  { duration: '2 Weeks', London: '£1,638', Manchester: '£1,240', Cardiff: '£1,240', Alicante: '', Debrecen: '$773' },
+  { duration: '4 Weeks', London: '£3,250', Manchester: '£2,500', Cardiff: '£2,500', Alicante: '', Debrecen: '$1,535' },
+  { duration: '8 Weeks', London: '£6,435', Manchester: '£4,950', Cardiff: '£4,950', Alicante: '', Debrecen: '$3,039' },
+  { duration: '16 Weeks', London: '£12,870', Manchester: '£9,900', Cardiff: '£9,900', Alicante: '', Debrecen: '$6,078' },
+  { duration: '18 Weeks', London: '£14,508', Manchester: '£11,160', Cardiff: '£11,160', Alicante: '', Debrecen: '$6,851' },
+  { duration: '36 Weeks', London: '£29,016', Manchester: '£22,320', Cardiff: '£22,320', Alicante: '', Debrecen: '$13,702' },
+];
+
+const FOOTBALL_PLUS_FEES = [
+  { season: 'Full Season (36 weeks)', London: '£14,950', Manchester: '£12,950', Cardiff: '£12,950', Alicante: '£10,950', Debrecen: '$7,950' },
+  { season: 'Half-Season (18 weeks)', London: '£8,970', Manchester: '£7,770', Cardiff: '£7,770', Alicante: '', Debrecen: '$4,770' },
+];
+
+const EDUCATION_OPTIONS = [
+  'A Levels',
+  'International Foundation Year',
+  'International Year One',
+  'Degree programme',
 ];
 
 const BENEFITS = [
@@ -71,29 +85,83 @@ const FeesPage = () => (
             January and September are our major intake periods. However, we are flexible with start dates.
           </p>
 
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900">Fees</h3>
-            <div className="bg-white p-8">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b-2 border-gray-200">
-                    <th className="text-left py-4 text-base font-bold text-gray-900">ACADEMY</th>
-                    <th className="text-right py-4 text-base font-bold text-gray-900">FULL SEASON (36 WEEKS)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {ACADEMY_FEES.map((item, i) => (
-                    <tr key={i} className="border-b border-gray-100">
-                      <td className="py-4 text-gray-800 text-sm">{item.academy}</td>
-                      <td className="py-4 text-right font-semibold text-gray-900 text-sm">{item.fee}</td>
+          <div className="mb-12 space-y-10">
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">High Elite Performance Football Development Programme<span className="text-red-500">*</span></h3>
+              <div className="bg-white p-4 overflow-x-auto">
+                <table className="w-full text-xs md:text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-gray-200">
+                      <th className="text-left py-2 font-bold text-gray-900">Duration</th>
+                      <th className="text-center py-2 font-bold text-gray-900">London (GBP)</th>
+                      <th className="text-center py-2 font-bold text-gray-900">Manchester (GBP)</th>
+                      <th className="text-center py-2 font-bold text-gray-900">Cardiff (GBP)</th>
+                      <th className="text-center py-2 font-bold text-gray-900">Alicante (EUR)</th>
+                      <th className="text-center py-2 font-bold text-gray-900">Debrecen (USD)</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {HIGH_ELITE_FEES.map((item, i) => (
+                      <tr key={i} className="border-b border-gray-100">
+                        <td className="py-2 text-gray-800">{item.duration}</td>
+                        <td className="py-2 text-center">{item.London}</td>
+                        <td className="py-2 text-center">{item.Manchester}</td>
+                        <td className="py-2 text-center">{item.Cardiff}</td>
+                        <td className="py-2 text-center">{item.Alicante || '-'}</td>
+                        <td className="py-2 text-center">{item.Debrecen}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Football Plus Education<span className="text-red-500">*</span></h3>
+              <div className="bg-white p-4 overflow-x-auto">
+                <table className="w-full text-xs md:text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-gray-200">
+                      <th className="text-left py-2 font-bold text-gray-900">Season</th>
+                      <th className="text-center py-2 font-bold text-gray-900">London</th>
+                      <th className="text-center py-2 font-bold text-gray-900">Manchester</th>
+                      <th className="text-center py-2 font-bold text-gray-900">Cardiff</th>
+                      <th className="text-center py-2 font-bold text-gray-900">Alicante</th>
+                      <th className="text-center py-2 font-bold text-gray-900">Debrecen</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {FOOTBALL_PLUS_FEES.map((item, i) => (
+                      <tr key={i} className="border-b border-gray-100">
+                        <td className="py-2 text-gray-800">{item.season}</td>
+                        <td className="py-2 text-center">{item.London}</td>
+                        <td className="py-2 text-center">{item.Manchester}</td>
+                        <td className="py-2 text-center">{item.Cardiff}</td>
+                        <td className="py-2 text-center">{item.Alicante || '-'}</td>
+                        <td className="py-2 text-center">{item.Debrecen}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-2 text-gray-900">Education Option<span className="text-red-500">*</span></h3>
+              <ul className="list-disc ml-6 text-gray-700 text-sm mb-2">
+                {EDUCATION_OPTIONS.map((option, i) => (
+                  <li key={i}>{option}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="text-xs text-gray-500 space-y-1 mt-4">
+              <div><span className="text-red-500">*</span> Fees are for football training ONLY.</div>
+              <div><span className="text-red-500">*</span> Fees for educational programmes vary from institution to institution as well as among courses. British AUC SPORT works closely with local institutions and, therefore, can get each player the best price possible from the local universities and institutions.</div>
             </div>
           </div>
 
-          <Button asChild className="w-full py-6 bg-primary hover:bg-red-700 text-white">
+          <Button asChild className="w-full py-6 bg-primary hover:bg-red-700 text-white mt-8">
             <Link href="/contact">
               Contact Us To Register
             </Link>
