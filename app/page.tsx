@@ -177,7 +177,7 @@ export default function Home() {
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 priority={index === 0}
                 quality={90}
               />
