@@ -368,7 +368,7 @@ export default function Home() {
       </section>
 
       {/* Fees Overview Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="inline-block mb-2">
@@ -409,7 +409,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonial Section with Slider */}
       <section className="py-24 bg-gray-50">
