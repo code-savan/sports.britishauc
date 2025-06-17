@@ -125,16 +125,16 @@ export default function Home() {
       alt: "Basketball court",
       sport: "Basketball"
     },
-    {
-      src: "https://images.unsplash.com/photo-1589492342521-1cc18248fffc?q=80&w=3024",
-      alt: "Sprint track",
-      sport: "Sprinting"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1545809074-59472b3f5ecc?q=80&w=2940",
-      alt: "Tennis court",
-      sport: "Tennis"
-    }
+    // {
+    //   src: "https://images.unsplash.com/photo-1589492342521-1cc18248fffc?q=80&w=3024",
+    //   alt: "Sprint track",
+    //   sport: "Sprinting"
+    // },
+    // {
+    //   src: "https://images.unsplash.com/photo-1545809074-59472b3f5ecc?q=80&w=2940",
+    //   alt: "Tennis court",
+    //   sport: "Tennis"
+    // }
   ];
 
   // Auto-rotate testimonials
