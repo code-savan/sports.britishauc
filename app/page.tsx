@@ -121,7 +121,7 @@ export default function Home() {
       sport: "Football"
     },
     {
-      src: "https://images.unsplash.com/photo-1626003573503-2e088d82c647?q=80&w=2940",
+      src: "https://images.unsplash.com/photo-1687176013639-eff51be5cb88?q=80&w=2070",
       alt: "Basketball court",
       sport: "Basketball"
     },
