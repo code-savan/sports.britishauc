@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 const HIGH_ELITE_FEES = [
-  { duration: '2 Weeks', London: '£1,638', Manchester: '£1,240', Cardiff: '£1,240', Alicante: '', Debrecen: '$773' },
-  { duration: '4 Weeks', London: '£3,250', Manchester: '£2,500', Cardiff: '£2,500', Alicante: '', Debrecen: '$1,535' },
-  { duration: '8 Weeks', London: '£6,435', Manchester: '£4,950', Cardiff: '£4,950', Alicante: '', Debrecen: '$3,039' },
-  { duration: '16 Weeks', London: '£12,870', Manchester: '£9,900', Cardiff: '£9,900', Alicante: '', Debrecen: '$6,078' },
-  { duration: '18 Weeks', London: '£14,508', Manchester: '£11,160', Cardiff: '£11,160', Alicante: '', Debrecen: '$6,851' },
-  { duration: '36 Weeks', London: '£29,016', Manchester: '£22,320', Cardiff: '£22,320', Alicante: '', Debrecen: '$13,702' },
+  { duration: '2 Weeks', London: '£1,638', Manchester: '£1,240', Cardiff: '£1,240', Alicante: '£1,240', Debrecen: '$773' },
+  { duration: '4 Weeks', London: '£3,250', Manchester: '£2,500', Cardiff: '£2,500', Alicante: '£2,500', Debrecen: '$1,535' },
+  { duration: '8 Weeks', London: '£6,435', Manchester: '£4,950', Cardiff: '£4,950', Alicante: '£4,950', Debrecen: '$3,039' },
+  { duration: '16 Weeks', London: '£12,870', Manchester: '£9,900', Cardiff: '£9,900', Alicante: '£9,900', Debrecen: '$6,078' },
+  { duration: '18 Weeks', London: '£14,508', Manchester: '£11,160', Cardiff: '£11,160', Alicante: '£11,160', Debrecen: '$6,851' },
+  { duration: '36 Weeks', London: '£29,016', Manchester: '£22,320', Cardiff: '£22,320', Alicante: '£22,320', Debrecen: '$13,702' },
 ];
 
 const FOOTBALL_PLUS_FEES = [
