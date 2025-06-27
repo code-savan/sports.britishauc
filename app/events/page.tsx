@@ -58,7 +58,19 @@ const events = [
     price: '£2,100',
     tag: 'Premium Experience',
     tagColor: 'blue' as const,
-  }
+  },
+  {
+    id: 'steven-gerrard-camp',
+    title: 'Steven Gerrard Academy Pre Season Camp',
+    date: '27 July - 7 August 2025',
+    description: 'Train at Steven Gerrard Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of football, coaching, and cultural experiences in Liverpool.',
+    image: 'https://stevengerrard.academy/wp-content/uploads/sgapreseason-17dddd.jpg',
+    location: 'Liverpool, UK',
+    price: '£2,500',
+    tag: 'Premium Experience',
+    tagColor: 'red' as const,
+    link: '/events/steven-gerrard-camp',
+  },
 ];
 
 export default function EventsPage() {
