@@ -152,7 +152,7 @@ export default function FootballOnlyPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* HERO */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-16 px-4 md:px-16 pt-24 max-w-7xl mx-auto">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-16 px-2 md:px-2 pt-32 max-w-7xl mx-auto">
         <div className="order-2 md:order-1 flex flex-col gap-4">
           <h1 className="text-4xl md:text-4xl font-bold text-gray-900">High Elite Performance Football Development Programme</h1>
           <p className="text-[15px] text-gray-700 max-w-xl">Immerse yourself in a professional football environment with like-minded football enthusiasts and enhance your technical and match-play skills under the guidance of the Pro UEFA/FA-certified coaching team. At the same time as participating in rewarding training sessions, it is an opportunity to showcase your skills through the game. Coaching sessions aim to develop the players&apos; football skills, such as agility, positioning, ball control, passing and moving, formations and tactics, and the ability to attack and defend.

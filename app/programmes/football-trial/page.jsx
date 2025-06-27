@@ -10,6 +10,7 @@ const trials = [
     date: 'July 19, 2025',
     location: 'Alicante, Spain',
     price: '€78',
+    image: 'https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=1000',
     description:
       'Showcase your skills to professional scouts at this exclusive trial in Spain and take a step toward your professional football career.',
     more:
@@ -22,6 +23,7 @@ const trials = [
     date: 'July 17, 2025',
     location: 'Manchester, UK',
     price: '£65',
+    image: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1000',
     description:
       'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
     more:
@@ -54,24 +56,31 @@ export default function FootballTrialPage() {
         </div>
       </section>
 
-      {/* Trials Summary - Minimal, Single Column, No Images */}
-      <section className="max-w-2xl mx-auto mt-20 mb-24 px-4 space-y-20">
-        {trials.map((trial) => (
-          <div key={trial.id} className="flex flex-col gap-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">{trial.title}</h2>
-            <div className="flex flex-wrap gap-6 text-sm text-gray-500 mb-2">
-              <span>{trial.date}</span>
-              <span>{trial.location}</span>
-              <span>{trial.price}</span>
+      {/* Trials Summary - Two Column, Image Left, Editorial */}
+      <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0 space-y-20">
+        {trials.map((trial, idx) => (
+          <div key={trial.id} className={`grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-stretch`}>
+            {/* Image - left half */}
+            <div className="relative w-full h-64 md:h-[340px] lg:h-[400px]">
+              <Image src={trial.image} alt={trial.title} fill className="object-cover rounded-xl" />
             </div>
-            <p className="text-gray-700 mb-1 text-base">{trial.description}</p>
-            <p className="text-gray-700 mb-2 text-base">{trial.more}</p>
-            <Link
-              href={trial.link}
-              className="text-base font-medium text-primary underline underline-offset-4 hover:text-red-700 transition-colors w-max"
-            >
-              Read more
-            </Link>
+            {/* Content - right half */}
+            <div className="flex flex-col justify-center h-full py-8 md:py-0 pl-0 md:pl-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{trial.title}</h2>
+              <div className="flex flex-wrap gap-6 text-sm text-slate-600 mb-3">
+                <span>{trial.date}</span>
+                <span>{trial.location}</span>
+                <span>{trial.price}</span>
+              </div>
+              <p className="text-gray-700 mb-2 text-base">{trial.description}</p>
+              <p className="text-gray-700 mb-4 text-base">{trial.more}</p>
+              <Link
+                href={trial.link}
+                className="text-base font-medium text-primary underline underline-offset-4 hover:text-red-700 transition-colors w-max"
+              >
+                Read more
+              </Link>
+            </div>
           </div>
         ))}
       </section>
