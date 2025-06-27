@@ -90,6 +90,22 @@ export default function TrialRegistration({
 
       if (error) throw error;
 
+      // Send emails via API
+      try {
+        await fetch('/api/send-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            userEmail: data.email,
+            userName: `${data.first_name} ${data.surname}`,
+            eventTitle,
+            ...data
+          })
+        });
+      } catch (emailError) {
+        toast.error('Registration saved, but failed to send email notification.');
+      }
+
       toast.success('Trial registration submitted successfully!');
 
       // Store payment link in localStorage before redirecting

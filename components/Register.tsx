@@ -209,6 +209,22 @@ export default function Register({
         throw error;
       }
 
+      // Send emails via API
+      try {
+        await fetch('/api/send-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            userEmail: data.email,
+            userName: `${data.firstName} ${data.lastName}`,
+            eventTitle,
+            ...dbData
+          })
+        });
+      } catch (emailError) {
+        toast.error('Registration saved, but failed to send email notification.');
+      }
+
       toast.success('Registration submitted successfully!');
       setTimeout(() => {
         router.push(successRedirectPath);

@@ -23,6 +23,17 @@ const navigation: NavigationItem[] = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about' },
   {
+    name: 'Football Programmes',
+    href: '#',
+    dropdown: [
+      { name: 'Football Only', href: '/programmes/football-only' },
+      { name: 'Football Plus Education', href: '/programmes/football-plus-education' },
+      { name: 'Pre Season Camp', href: '/programmes/pre-season-camp' },
+      { name: 'Football Trials', href: '/programmes/football-trial' },
+    //   { name: 'Football Plus Language', href: '/programmes/football-plus-language' },
+    ]
+  },
+  {
     name: 'Football Academy',
     href: '#',
     dropdown: [
