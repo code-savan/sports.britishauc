@@ -72,7 +72,7 @@ export function Footer() {
                 </div>
                 <div>
                   <span className="block text-sm text-gray-600 font-medium">Email</span>
-                  <a href="mailto:collins@britishauc.com" className="block text-sm text-gray-600 hover:text-primary">collins@britishauc.com</a>
+                  <a href="mailto:sports@britishauc.com" className="block text-sm text-gray-600 hover:text-primary">sports@britishauc.com</a>
                 </div>
                 <div>
                   <span className="block text-sm text-gray-600 font-medium">Website</span>

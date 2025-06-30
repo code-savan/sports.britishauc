@@ -65,33 +65,37 @@ export default function PreSeasonCampPage() {
         </div>
       </section>
 
-      {/* West Ham United Summer Trip 2025 Section */}
+
+
+
+
+      {/* High Elite Football Development Programme Hungary Section */}
       <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-stretch">
           {/* Image - left half */}
           <div className="relative w-full h-64 md:h-[340px] lg:h-[400px]">
-            <Image src={westHamEvent.image} alt={westHamEvent.title} fill className="object-cover rounded-xl" />
+            <Image src={highEliteHungaryEvent.image} alt={highEliteHungaryEvent.title} fill className="object-cover rounded-xl" />
           </div>
           {/* Content - right half */}
           <div className="flex flex-col justify-center h-full py-8 md:py-0 pl-0 md:pl-6">
-            <div className="text-xs font-semibold text-blue-700 uppercase tracking-wide mb-2">{westHamEvent.tag}</div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">{westHamEvent.title}</h2>
+            <div className="text-xs font-semibold text-purple-700 uppercase tracking-wide mb-2">{highEliteHungaryEvent.tag}</div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">{highEliteHungaryEvent.title}</h2>
             <div className="flex flex-wrap gap-6 text-sm text-slate-600 mb-3">
-              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>{westHamEvent.date}</span>
-              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>{westHamEvent.location}</span>
-              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>{westHamEvent.price}</span>
+              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>{highEliteHungaryEvent.date}</span>
+              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>{highEliteHungaryEvent.location}</span>
+              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>{highEliteHungaryEvent.price}</span>
             </div>
-            <p className="text-gray-700 mb-2 text-base">{westHamEvent.description}</p>
-            <p className="text-gray-700 mb-4 text-base line-clamp-6">{westHamEvent.more}</p>
+            <p className="text-gray-700 mb-2 text-base">{highEliteHungaryEvent.description}</p>
+            <p className="text-gray-700 mb-4 text-base line-clamp-6">{highEliteHungaryEvent.more}</p>
             <Button
               asChild
               variant="outline"
-              className="relative border-2 border-blue-600 text-blue-700 hover:bg-blue-600 hover:text-white font-semibold px-8 py-3 w-max rounded-full shadow-md transition-all duration-200 group"
+              className="relative border-2 border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white font-semibold px-8 py-3 w-max rounded-full shadow-md transition-all duration-200 group"
             >
-              <Link href="/events/west-ham-trip" className="flex items-center gap-2">
-                <span className="transition-colors duration-200 group-hover:text-white">Read more</span>
+              <a href="/events/high-elite-football-hungary" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <span className="transition-colors duration-200 group-hover:text-white">Read More</span>
                 <svg
-                  className="h-5 w-5 text-blue-600 group-hover:text-white transition-colors duration-200"
+                  className="h-5 w-5 text-purple-700 group-hover:text-white transition-colors duration-200"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth={2}
@@ -99,14 +103,14 @@ export default function PreSeasonCampPage() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Steven Gerrard Academy Pre Season Camp Section */}
-      <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0">
+   {/* Steven Gerrard Academy Pre Season Camp Section */}
+   <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-stretch">
           {/* Image - left half */}
           <div className="relative w-full h-64 md:h-[340px] lg:h-[400px]">
@@ -145,33 +149,33 @@ export default function PreSeasonCampPage() {
         </div>
       </section>
 
-      {/* High Elite Football Development Programme Hungary Section */}
-      <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0">
+          {/* West Ham United Summer Trip 2025 Section */}
+          <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-stretch">
           {/* Image - left half */}
           <div className="relative w-full h-64 md:h-[340px] lg:h-[400px]">
-            <Image src={highEliteHungaryEvent.image} alt={highEliteHungaryEvent.title} fill className="object-cover rounded-xl" />
+            <Image src={westHamEvent.image} alt={westHamEvent.title} fill className="object-cover rounded-xl" />
           </div>
           {/* Content - right half */}
           <div className="flex flex-col justify-center h-full py-8 md:py-0 pl-0 md:pl-6">
-            <div className="text-xs font-semibold text-purple-700 uppercase tracking-wide mb-2">{highEliteHungaryEvent.tag}</div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">{highEliteHungaryEvent.title}</h2>
+            <div className="text-xs font-semibold text-blue-700 uppercase tracking-wide mb-2">{westHamEvent.tag}</div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">{westHamEvent.title}</h2>
             <div className="flex flex-wrap gap-6 text-sm text-slate-600 mb-3">
-              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>{highEliteHungaryEvent.date}</span>
-              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>{highEliteHungaryEvent.location}</span>
-              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>{highEliteHungaryEvent.price}</span>
+              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>{westHamEvent.date}</span>
+              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>{westHamEvent.location}</span>
+              <span className="flex items-center gap-1"><svg className="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>{westHamEvent.price}</span>
             </div>
-            <p className="text-gray-700 mb-2 text-base">{highEliteHungaryEvent.description}</p>
-            <p className="text-gray-700 mb-4 text-base line-clamp-6">{highEliteHungaryEvent.more}</p>
+            <p className="text-gray-700 mb-2 text-base">{westHamEvent.description}</p>
+            <p className="text-gray-700 mb-4 text-base line-clamp-6">{westHamEvent.more}</p>
             <Button
               asChild
               variant="outline"
-              className="relative border-2 border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white font-semibold px-8 py-3 w-max rounded-full shadow-md transition-all duration-200 group"
+              className="relative border-2 border-blue-600 text-blue-700 hover:bg-blue-600 hover:text-white font-semibold px-8 py-3 w-max rounded-full shadow-md transition-all duration-200 group"
             >
-              <a href="/events/high-elite-football-hungary" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <span className="transition-colors duration-200 group-hover:text-white">Read More</span>
+              <Link href="/events/west-ham-trip" className="flex items-center gap-2">
+                <span className="transition-colors duration-200 group-hover:text-white">Read more</span>
                 <svg
-                  className="h-5 w-5 text-purple-700 group-hover:text-white transition-colors duration-200"
+                  className="h-5 w-5 text-blue-600 group-hover:text-white transition-colors duration-200"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth={2}
@@ -179,7 +183,7 @@ export default function PreSeasonCampPage() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
