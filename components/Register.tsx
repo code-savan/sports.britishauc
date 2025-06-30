@@ -84,7 +84,7 @@ interface RegisterProps {
   eventId: string;
   eventTitle: string;
   heroImage: string;
-  accentColor: 'blue' | 'red' | 'orange' | 'yellow';
+  accentColor: 'blue' | 'red' | 'orange' | 'yellow' | 'purple';
   successRedirectPath: string;
 }
 
@@ -134,6 +134,14 @@ export default function Register({
       stepActive: "bg-yellow-600",
       button: "bg-yellow-600 hover:bg-yellow-700",
       radioAndCheckbox: "text-yellow-600 focus:ring-yellow-500"
+    },
+    purple: {
+      gradient: "from-black/80 via-black/60 to-purple-900/30",
+      badge: "bg-purple-600",
+      progress: "bg-purple-600",
+      stepActive: "bg-purple-600",
+      button: "bg-purple-600 hover:bg-purple-700",
+      radioAndCheckbox: "text-purple-600 focus:ring-purple-500"
     }
   }[accentColor] || {
     gradient: "from-black/80 via-black/60 to-blue-900/30",

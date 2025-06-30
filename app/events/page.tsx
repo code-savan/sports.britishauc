@@ -71,6 +71,18 @@ const events = [
     tagColor: 'red' as const,
     link: '/events/steven-gerrard-camp',
   },
+  {
+    id: 'high-elite-football-hungary',
+    title: 'High Elite Football Development Programme',
+    date: '21st July - 1st August, 2025',
+    description: 'Train at our Debrecen Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Hungary.',
+    image: 'https://www.debrecen.hu/assets/media/gallery/hu/50847/1200x800/dvsc_focipalya_0014.jpg',
+    location: 'Debrecen, Hungary',
+    price: '$773',
+    tag: 'Limited Spots',
+    tagColor: 'purple' as const,
+    link: '/events/high-elite-football-hungary',
+  },
 ];
 
 export default function EventsPage() {

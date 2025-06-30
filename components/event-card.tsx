@@ -12,7 +12,7 @@ interface EventCardProps {
   price: string;
   image: string;
   tag: string;
-  tagColor?: 'red' | 'blue' | 'orange' | 'yellow'; // Added yellow as a color option
+  tagColor?: 'red' | 'blue' | 'orange' | 'yellow' | 'purple'; // Added purple as a color option
 }
 
 export function EventCard({
