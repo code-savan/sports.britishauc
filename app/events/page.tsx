@@ -105,8 +105,8 @@ const events = [
     location: 'Manchester, United Kingdom',
     price: '£1240',
     tag: 'Limited Spots',
-    tagColor: 'purple' as const,
-    link: '/events/high-elite-football-hungary-2025',
+    tagColor: 'orange' as const,
+    link: '/events/manchester-high-elite-football-2025',
   },
 ];
 

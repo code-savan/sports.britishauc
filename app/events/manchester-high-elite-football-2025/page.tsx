@@ -15,11 +15,11 @@ export default function ManchesterHighEliteFootball2025Page() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-purple-900/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-orange-900/30" />
         </div>
         <div className="relative z-10 md:w-[90%] mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="inline-block mb-4">
-            <span className="bg-purple-700 text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
+            <span className="bg-orange-600 text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">HIGH ELITE FOOTBALL PROGRAMME<br />MANCHESTER, UK</h1>
           <p className="text-xl md:text-2xl text-white">21ST JULY - 1ST AUGUST, 2025</p>
@@ -34,7 +34,7 @@ export default function ManchesterHighEliteFootball2025Page() {
             <div className="md:col-span-2 space-y-8">
               <div>
                 <div className="inline-block mb-2">
-                  <span className="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Pro Club Football Experience</span>
+                  <span className="bg-orange-100 text-orange-800 text-sm font-medium px-3 py-1 rounded-full">Pro Club Football Experience</span>
                 </div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">PRO CLUB FOOTBALL EXPERIENCE!</h2>
                 <p className="text-lg text-gray-600 mb-4">
@@ -42,7 +42,7 @@ export default function ManchesterHighEliteFootball2025Page() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-sm">
+              <div className="bg-white p-8 rounded-xl shadow-sm border-t-4 border-orange-600">
                 <h2 className="text-2xl font-bold mb-4 text-gray-900">PROGRAMME INCLUDE</h2>
                 <ul className="space-y-3 text-lg text-gray-600">
                   <li>2 Weeks Pro Football Training Experience</li>
@@ -104,25 +104,25 @@ export default function ManchesterHighEliteFootball2025Page() {
                 <p className="text-lg text-gray-600 mb-4">
                   Kindly register and pay with the link below:
                 </p>
-                <Button asChild className="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-8 py-3 rounded-full shadow-md">
+                <Button asChild className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-full shadow-md">
                   <Link href="/events/manchester-high-elite-football-2025/register">
                     Register Now
                   </Link>
                 </Button>
                 <p className="text-lg text-gray-600 mt-4">
-                  More information, call/whatsapp <a href="tel:+447840782759" className="text-purple-700 font-semibold hover:underline">+447840782759</a>
+                  More information, call/whatsapp <a href="tel:+447840782759" className="text-orange-600 font-semibold hover:underline">+447840782759</a>
                 </p>
               </div>
             </div>
 
             {/* Event Details Panel */}
             <div className="md:col-span-1">
-              <div className="bg-white p-8 rounded-xl shadow-md sticky top-24 border-t-4 border-purple-700">
+              <div className="bg-white p-8 rounded-xl shadow-md sticky top-24 border-t-4 border-orange-600">
                 <h3 className="text-2xl font-bold mb-6 text-gray-900">Event Details</h3>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Cost:</span>
-                    <span className="text-2xl font-bold text-purple-700">£1,240</span>
+                    <span className="text-2xl font-bold text-orange-600">£1,240</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Location:</span>
@@ -134,10 +134,10 @@ export default function ManchesterHighEliteFootball2025Page() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Contact:</span>
-                    <a href="tel:+447840782759" className="text-purple-700 hover:underline">+447840782759</a>
+                    <a href="tel:+447840782759" className="text-orange-600 hover:underline">+447840782759</a>
                   </div>
                 </div>
-                <Button asChild className="w-full bg-purple-700 hover:bg-purple-800 text-white" size="lg">
+                <Button asChild className="w-full bg-orange-600 hover:bg-orange-700 text-white" size="lg">
                   <Link href="/events/manchester-high-elite-football-2025/register">
                     Register Now
                   </Link>
