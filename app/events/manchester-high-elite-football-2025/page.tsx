@@ -12,7 +12,7 @@ export default function ManchesterHighEliteFootball2025Page() {
             src="/manchesterbg.jpeg"
             alt="Manchester High Elite Football Programme"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-orange-900/30" />
