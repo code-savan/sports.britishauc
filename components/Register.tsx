@@ -911,7 +911,7 @@ export default function Register({
                   </div>
 
                   <div className="relative">
-                    <Label htmlFor="hearAboutUs" className="text-slate-700">How did you hear about British AUC Sports?</Label>
+                    <Label htmlFor="hearAboutUs" className="text-slate-700">How did you hear about British AUC Sport?</Label>
                     <div className="relative mt-1">
                       <Select onValueChange={(value) => setValue('position', value)}>
                         <SelectTrigger className="pl-10">

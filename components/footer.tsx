@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Brand/Intro */}
           <div className="md:col-span-3">
-            <h3 className="text-lg font-semibold mb-4">British AUC Sports</h3>
+            <h3 className="text-lg font-semibold mb-4">British AUC Sport</h3>
             <p className="text-sm text-gray-600">
               Bridging the gap between education and sports, providing exceptional opportunities for aspiring athletes.
             </p>
@@ -117,7 +117,7 @@ export function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200">
           <p className="text-sm text-center text-gray-600">
-            © {new Date().getFullYear()} British AUC Sports. All rights reserved.
+            © {new Date().getFullYear()} British AUC Sport. All rights reserved.
           </p>
         </div>
       </div>

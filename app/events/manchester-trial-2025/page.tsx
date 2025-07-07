@@ -121,7 +121,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Cost</p>
-                      <p className="text-2xl font-bold text-primary">£65</p>
+                      <p className="text-2xl font-bold text-primary">£98</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -130,7 +130,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Date</p>
-                      <p>July 17, 2025</p>
+                      <p>14th August, 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">

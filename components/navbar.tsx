@@ -154,7 +154,7 @@ export function Navbar() {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
-              <Image src="/logo.png" alt="British AUC Sports" width={100} height={100} />
+              <Image src="/logo.png" alt="British AUC Sport" width={100} height={100} />
               </Link>
             </div>
 

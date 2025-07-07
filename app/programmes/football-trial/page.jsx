@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { Calendar, MapPin, Wallet } from 'lucide-react';
 
 const trials = [
   {
@@ -19,7 +20,7 @@ const trials = [
   },
   {
     id: 'manchester-trial',
-    title: 'Manchester Football Trial 2025',
+    title: 'Manchester Football Trial',
     date: 'July 17, 2025',
     location: 'Manchester, UK',
     price: '£65',
@@ -27,8 +28,21 @@ const trials = [
     description:
       'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
     more:
-      'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sports. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
+      'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
     link: '/events/manchester-trial',
+  },
+  {
+    id: 'manchester-trial-2025',
+    title: 'Manchester Football Trial 2025',
+    date: '14th August, 2025',
+    location: 'Manchester, UK',
+    price: '£98',
+    image: '/manchester.jpeg',
+    description:
+      'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
+    more:
+      'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
+    link: '/events/manchester-trial-2025',
   },
 ];
 
@@ -68,9 +82,21 @@ export default function FootballTrialPage() {
             <div className="flex flex-col justify-center h-full py-8 md:py-0 pl-0 md:pl-6">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{trial.title}</h2>
               <div className="flex flex-wrap gap-6 text-sm text-slate-600 mb-3">
-                <span>{trial.date}</span>
-                <span>{trial.location}</span>
-                <span>{trial.price}</span>
+                <span className="flex items-center gap-1">
+                  {/* Calendar Icon */}
+                  <Calendar className="h-4 w-4 text-primary mr-1" />
+                  {trial.date}
+                </span>
+                <span className="flex items-center gap-1">
+                  {/* Map Pin Icon */}
+                  <MapPin className="h-4 w-4 text-primary mr-1" />
+                  {trial.location}
+                </span>
+                <span className="flex items-center gap-1">
+                  {/* Wallet Icon */}
+                  <Wallet className="h-4 w-4 text-primary mr-1" />
+                  {trial.price}
+                </span>
               </div>
               <p className="text-gray-700 mb-2 text-base">{trial.description}</p>
               <p className="text-gray-700 mb-4 text-base">{trial.more}</p>

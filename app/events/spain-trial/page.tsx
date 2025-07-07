@@ -153,7 +153,7 @@ export default function SpainTrialPage() {
               <div className="bg-white p-8 rounded-xl shadow-sm">
                 <h2 className="text-2xl font-bold mb-4 text-gray-900">HOST</h2>
                 <p className="text-lg text-gray-600 mb-4">
-                  The trial is led by Alex Armstrong of Active4Sport International in partnership with British AUC Sports and CF Intercity. Alex Armstrong brings experience as an Assistant Coach at Southampton FC, Wolves FC, Cardiff FC, and Sheffield Wed FC. With over 600 matches of experience as an Assistant Manager and Coach, Alex offers a wealth of expertise in player development and football management.
+                  The trial is led by Alex Armstrong of Active4Sport International in partnership with British AUC Sport and CF Intercity. Alex Armstrong brings experience as an Assistant Coach at Southampton FC, Wolves FC, Cardiff FC, and Sheffield Wed FC. With over 600 matches of experience as an Assistant Manager and Coach, Alex offers a wealth of expertise in player development and football management.
                 </p>
                 <p className="text-lg text-gray-600">
                   CF Intercity provides local expertise within the Spanish football system, with connections to clubs across all tiers of Spanish football. Their extensive youth academy system hosts over 400 children across various age groups, offering genuine pathways for talented players.

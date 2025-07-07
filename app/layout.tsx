@@ -27,8 +27,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'British AUC Sports - Football Trials & Academy Trips',
-  description: 'British AUC Sports provides exceptional sports opportunities for aspiring athletes through football trials, academy trips, and educational programs.',
+  title: 'British AUC Sport - Football Trials & Academy Trips',
+  description: 'British AUC Sport provides exceptional sports opportunities for aspiring athletes through football trials, academy trips, and educational programs.',
 };
 
 export default function RootLayout({

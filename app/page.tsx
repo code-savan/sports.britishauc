@@ -93,7 +93,7 @@ export default function Home() {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const testimonials = [
     {
-      quote: "British AUC Sports assisted me in my football journey through their Manchester trials and development programs. Their support and guidance helped me improve my game significantly. I'm now playing football at the University of East London and represented Nigeria at the U20 Women's World Cup qualifiers.",
+      quote: "British AUC Sport assisted me in my football journey through their Manchester trials and development programs. Their support and guidance helped me improve my game significantly. I'm now playing football at the University of East London and represented Nigeria at the U20 Women's World Cup qualifiers.",
       name: "Knowledge Omovoh",
       role: "Academy Player, League One Club",
       image: "/t1.webp"
@@ -105,7 +105,7 @@ export default function Home() {
     //   image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=256"
     // },
     // {
-    //   quote: "British AUC Sports provided me with the platform to showcase my abilities to scouts from across Europe. Their professional approach and connections in the football world are second to none.",
+    //   quote: "British AUC Sport provided me with the platform to showcase my abilities to scouts from across Europe. Their professional approach and connections in the football world are second to none.",
     //   name: "Michael Thompson",
     //   role: "Semi-Professional Player",
     //   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=256"

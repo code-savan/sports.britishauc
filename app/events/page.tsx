@@ -17,7 +17,7 @@ const events = [
   },
   {
     id: 'manchester-trial',
-    title: 'Manchester Football Trial 2025',
+    title: 'Manchester Football Trial',
     date: 'July 17, 2025 (Deadline: 1 July 2025)',
     description: 'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
     image: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1000',
@@ -25,6 +25,19 @@ const events = [
     price: '£65',
     tag: 'Limited Spots',
     tagColor: 'red' as const,
+    link: '/events/manchester-trial',
+  },
+  {
+    id: 'manchester-trial-2025',
+    title: 'Manchester Football Trial 2025',
+    date: '14th August, 2025',
+    description: 'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
+    image: '/manchester.jpeg',
+    location: 'Manchester, UK',
+    price: '£98',
+    tag: 'Limited Spots',
+    tagColor: 'red' as const,
+    link: '/events/manchester-trial-2025',
   },
   {
     id: 'new-york-trip',
@@ -82,6 +95,18 @@ const events = [
     tag: 'Limited Spots',
     tagColor: 'purple' as const,
     link: '/events/high-elite-football-hungary',
+  },
+  {
+    id: 'manchester-high-elite-football-2025',
+    title: 'Manchester High Elite Football Development Programme',
+    date: '21st July - 1st August, 2025',
+    description: 'Train at our Manchester Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Manchester, United Kingdom.',
+    image: 'https://www.debrecen.hu/assets/media/gallery/hu/50847/1200x800/dvsc_focipalya_0014.jpg',
+    location: 'Manchester, United Kingdom',
+    price: '£1240',
+    tag: 'Limited Spots',
+    tagColor: 'purple' as const,
+    link: '/events/high-elite-football-hungary-2025',
   },
 ];
 
