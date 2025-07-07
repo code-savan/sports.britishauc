@@ -201,7 +201,7 @@ export default function SpainTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Date</p>
-                      <p>July 19, 2025</p>
+                      <p>Spain Trial postponed</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -219,7 +219,7 @@ export default function SpainTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Registration Deadline</p>
-                      <p>1 July 2025</p>
+                      <p>New dates to be confirmed later.</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -254,11 +254,11 @@ export default function SpainTrialPage() {
                     </ul>
                   </div>
                 </div>
-                <Link href="/events/football-trial-2025/register?event=spain">
+                {/* <Link href="/events/football-trial-2025/register?event=spain"> */}
                   <Button className="w-full bg-primary hover:bg-red-500 text-white">
-                    Register and Pay
+                    Trial Registration
                   </Button>
-                </Link>
+                {/* </Link> */}
               </div>
             </div>
           </div>

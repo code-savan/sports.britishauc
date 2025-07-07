@@ -46,7 +46,7 @@ interface TrialRegistrationProps {
   accentColor?: string;
   successRedirectPath: string;
   paymentLink: string;
-  eventType: 'manchester_trial' | 'spain_trial';
+  eventType: 'manchester_trial' | 'spain_trial' | 'manchester_2025_trial';
 }
 
 export default function TrialRegistration({

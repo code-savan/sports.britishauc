@@ -168,7 +168,7 @@ export default function ManchesterTrialPage() {
                   className="w-full bg-primary hover:bg-red-500 text-white"
                   size="lg"
                 >
-                  <Link href="/events/football-trial-2025/register?event=manchester">
+                  <Link href="/events/football-trial-2025/register?event=manchester2025">
                     Register and Pay
                   </Link>
                 </Button>

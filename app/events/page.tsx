@@ -7,7 +7,7 @@ const events = [
   {
     id: 'spain-trial',
     title: 'Spain Football Trial 2025',
-    date: 'July 19, 2025 (Deadline: 1 July 2025)',
+    date: 'Spain Trial postponed. New dates to be confirmed later.',
     description: 'Showcase your skills to professional scouts at this exclusive trial in Spain and take a step toward your professional football career.',
     image: 'https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=1000',
     location: 'Alicante, Spain',
@@ -101,7 +101,7 @@ const events = [
     title: 'Manchester High Elite Football Development Programme',
     date: '21st July - 1st August, 2025',
     description: 'Train at our Manchester Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Manchester, United Kingdom.',
-    image: 'https://www.debrecen.hu/assets/media/gallery/hu/50847/1200x800/dvsc_focipalya_0014.jpg',
+    image: '/manchesterbg.jpeg',
     location: 'Manchester, United Kingdom',
     price: '£1240',
     tag: 'Limited Spots',

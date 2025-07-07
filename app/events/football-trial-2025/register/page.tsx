@@ -18,6 +18,13 @@ function RegistrationContent() {
       paymentLink: "https://buy.stripe.com/bIY4jA8a1fD66LSaEE",
       eventType: "manchester_trial" as const
     },
+    manchester2025: {
+      title: "Manchester Football Trial 2025",
+      heroImage: "/manchester.jpeg",
+      accentColor: "red",
+      paymentLink: "https://buy.stripe.com/fZu5kCdPw6QGdMd4O89MY06",
+      eventType: "manchester_2025_trial" as const
+    },
     spain: {
       title: "Spain Football Trial 2025",
       heroImage: "https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=2000",
@@ -27,7 +34,7 @@ function RegistrationContent() {
     }
   };
 
-  const config = eventParam === 'spain' ? eventConfig.spain : eventConfig.manchester;
+  const config = eventParam === 'spain' ? eventConfig.spain : eventParam === 'manchester2025' ? eventConfig.manchester2025 :   eventConfig.manchester;
 
   return (
     <TrialRegistration

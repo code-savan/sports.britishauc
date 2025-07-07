@@ -62,7 +62,7 @@ export default function PreSeasonCampPage() {
     <main className="min-h-screen pt-16">
       <section className="relative h-[40vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1659059398354-4809fb5b11fd?q=80&w=2070"
+          src="/manchesterbg.jpeg"
           alt="Pre Season Camp Football Training"
           fill
           className="object-cover object-center z-0"

@@ -5,10 +5,36 @@ import Link from 'next/link';
 import { Calendar, MapPin, Wallet } from 'lucide-react';
 
 const trials = [
+    {
+        id: 'manchester-trial',
+        title: 'Manchester Football Trial',
+        date: 'July 17, 2025',
+        location: 'Manchester, UK',
+        price: '£65',
+        image: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1000',
+        description:
+          'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
+        more:
+          'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
+        link: '/events/manchester-trial',
+      },
+      {
+        id: 'manchester-trial-2025',
+        title: 'Manchester Football Trial 2025',
+        date: '14th August, 2025',
+        location: 'Manchester, UK',
+        price: '£98',
+        image: '/manchester.jpeg',
+        description:
+          'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
+        more:
+          'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
+        link: '/events/manchester-trial-2025',
+      },
   {
     id: 'spain-trial',
     title: 'Spain Football Trial 2025',
-    date: 'July 19, 2025',
+    date: 'Spain Trial postponed. New dates to be confirmed later.',
     location: 'Alicante, Spain',
     price: '€78',
     image: 'https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=1000',
@@ -18,32 +44,7 @@ const trials = [
       'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in Spain and Europe. Hosted with CF Intercity International Academy. Led by Alex Armstrong (Active4Sport International) and local Spanish coaches. Location: Campo Municipal Antonio Solana, Alicante.',
     link: '/events/spain-trial',
   },
-  {
-    id: 'manchester-trial',
-    title: 'Manchester Football Trial',
-    date: 'July 17, 2025',
-    location: 'Manchester, UK',
-    price: '£65',
-    image: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1000',
-    description:
-      'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
-    more:
-      'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
-    link: '/events/manchester-trial',
-  },
-  {
-    id: 'manchester-trial-2025',
-    title: 'Manchester Football Trial 2025',
-    date: '14th August, 2025',
-    location: 'Manchester, UK',
-    price: '£98',
-    image: '/manchester.jpeg',
-    description:
-      'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
-    more:
-      'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
-    link: '/events/manchester-trial-2025',
-  },
+
 ];
 
 export default function FootballTrialPage() {

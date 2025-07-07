@@ -9,7 +9,7 @@ export default function ManchesterHighEliteFootball2025Page() {
       <section className="relative h-[50vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://www.debrecen.hu/assets/media/gallery/hu/50847/1200x800/dvsc_focipalya_0014.jpg"
+            src="/manchesterbg.jpeg"
             alt="Manchester High Elite Football Programme"
             fill
             className="object-cover"
