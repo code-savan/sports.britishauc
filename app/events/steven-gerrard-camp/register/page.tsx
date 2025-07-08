@@ -9,7 +9,7 @@ export default function StevenGerrardCampRegistrationPage() {
       eventTitle="Steven Gerrard Academy Pre Season Camp"
       heroImage="https://stevengerrard.academy/wp-content/uploads/sgapreseason-17dddd.jpg"
       accentColor="red"
-      successRedirectPath="/events/steven-gerrard-camp/registration-success"
+      successRedirectPath="https://buy.stripe.com/6oU14m26O7UK6jL2G09MY07"
     />
   );
 }
