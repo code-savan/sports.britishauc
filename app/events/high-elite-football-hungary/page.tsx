@@ -118,7 +118,7 @@ export default function HighEliteFootballHungaryPage() {
                 </div>
                 <Button asChild className="w-full bg-purple-700 hover:bg-purple-800 text-white" size="lg">
                   <Link href="/events/high-elite-football-hungary/register">
-                    Register Now
+                    Register and Pay
                   </Link>
                 </Button>
               </div>

@@ -335,7 +335,7 @@ export default function WestHamTripPage() {
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                   size="lg"
                 >
-                        Register Now
+                        Register and Pay
                 </Button>
                     </Link>
               </div>

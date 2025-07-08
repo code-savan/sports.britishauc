@@ -139,7 +139,7 @@ export default function ManchesterHighEliteFootball2025Page() {
                 </div>
                 <Button asChild className="w-full bg-orange-600 hover:bg-orange-700 text-white" size="lg">
                   <Link href="/events/manchester-high-elite-football-2025/register">
-                    Register Now
+                    Register and Pay
                   </Link>
                 </Button>
               </div>
