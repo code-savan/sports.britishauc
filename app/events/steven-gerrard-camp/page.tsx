@@ -109,7 +109,7 @@ export default function StevenGerrardCampPage() {
                 </div>
                 <Button asChild className="w-full bg-red-600 hover:bg-red-700 text-white" size="lg">
                   <Link href="/events/steven-gerrard-camp/register">
-                    Register Now
+                    Register and Pay
                   </Link>
                 </Button>
               </div>
