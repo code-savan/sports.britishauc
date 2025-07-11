@@ -32,6 +32,15 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
+
+            <h3 className="text-lg font-semibold mt-4">Forms</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/forms/medical-profile" className="text-sm text-gray-600 hover:text-primary">
+                  Medical Profile Form
+                </Link>
+              </li>
+            </ul>
           </div>
           {/* Legal */}
           <div className="md:col-span-2">
