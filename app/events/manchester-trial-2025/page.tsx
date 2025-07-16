@@ -148,7 +148,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Registration Deadline</p>
-                      <p>1 July 2025</p>
+                      <p>1st August 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">
