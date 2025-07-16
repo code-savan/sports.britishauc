@@ -4,17 +4,7 @@ import { Button } from '@/components/ui/button';
 import { EventCard } from '@/components/event-card';
 
 const events = [
-  {
-    id: 'spain-trial',
-    title: 'Spain Football Trial 2025',
-    date: 'Spain Trial postponed. New dates to be confirmed later.',
-    description: 'Showcase your skills to professional scouts at this exclusive trial in Spain and take a step toward your professional football career.',
-    image: 'https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=1000',
-    location: 'Alicante, Spain',
-    price: '€78',
-    tag: 'Limited Spots',
-    tagColor: 'yellow' as const,
-  },
+
   {
     id: 'manchester-trial',
     title: 'Manchester Football Trial',
@@ -38,6 +28,17 @@ const events = [
     tag: 'Limited Spots',
     tagColor: 'red' as const,
     link: '/events/manchester-trial-2025',
+  },
+  {
+    id: 'spain-trial',
+    title: 'Spain Football Trial 2025',
+    date: 'Spain Trial postponed. New dates to be confirmed later.',
+    description: 'Showcase your skills to professional scouts at this exclusive trial in Spain and take a step toward your professional football career.',
+    image: 'https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=1000',
+    location: 'Alicante, Spain',
+    price: '€78',
+    tag: 'Limited Spots',
+    tagColor: 'yellow' as const,
   },
   {
     id: 'new-york-trip',
