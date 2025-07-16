@@ -30,7 +30,7 @@ const events = [
   {
     id: 'manchester-trial-2025',
     title: 'Manchester Football Trial 2025',
-    date: '14th August, 2025',
+    date: '28th August, 2025',
     description: 'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
     image: '/manchester.jpeg',
     location: 'Manchester, UK',

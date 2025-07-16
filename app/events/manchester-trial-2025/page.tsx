@@ -130,7 +130,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Date</p>
-                      <p>14th August, 2025</p>
+                      <p>28th August, 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">
