@@ -121,7 +121,7 @@ export default function PreSeasonCampPage() {
 
 
       {/* High Elite Football Development Programme Hungary Section */}
-      <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0">
+    <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-stretch">
           {/* Image - left half */}
           <div className="relative w-full h-64 md:h-[340px] lg:h-[400px]">
@@ -201,7 +201,7 @@ export default function PreSeasonCampPage() {
       </section>
 
           {/* West Ham United Summer Trip 2025 Section */}
-          <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0">
+    <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-stretch">
           {/* Image - left half */}
           <div className="relative w-full h-64 md:h-[340px] lg:h-[400px]">
