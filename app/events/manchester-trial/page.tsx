@@ -163,7 +163,7 @@ export default function ManchesterTrialPage() {
                     </div>
                   </div>
                 </div>
-                <Button
+                {/* <Button
                   asChild
                   className="w-full bg-primary hover:bg-red-500 text-white"
                   size="lg"
@@ -171,7 +171,7 @@ export default function ManchesterTrialPage() {
                   <Link href="/events/football-trial-2025/register?event=manchester">
                     Register and Pay
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>

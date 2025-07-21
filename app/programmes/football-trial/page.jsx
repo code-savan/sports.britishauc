@@ -5,7 +5,21 @@ import Link from 'next/link';
 import { Calendar, MapPin, Wallet } from 'lucide-react';
 
 const trials = [
-    {
+
+      {
+        id: 'manchester-trial-2025',
+        title: 'Manchester Football Trial 2025',
+        date: 'Saturday, 6th September 2025',
+        location: 'Manchester, UK',
+        price: '£98',
+        image: '/manchester.jpeg',
+        description:
+          'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
+        more:
+          'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
+        link: '/events/manchester-trial-2025',
+      },
+      {
         id: 'manchester-trial',
         title: 'Manchester Football Trial',
         date: 'July 17, 2025',
@@ -17,19 +31,6 @@ const trials = [
         more:
           'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
         link: '/events/manchester-trial',
-      },
-      {
-        id: 'manchester-trial-2025',
-        title: 'Manchester Football Trial 2025',
-        date: '28th August, 2025',
-        location: 'Manchester, UK',
-        price: '£98',
-        image: '/manchester.jpeg',
-        description:
-          'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
-        more:
-          'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
-        link: '/events/manchester-trial-2025',
       },
   {
     id: 'spain-trial',
