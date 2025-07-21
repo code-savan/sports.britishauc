@@ -105,7 +105,7 @@ export default function HighEliteFootballHungaryPage() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Dates:</span>
-                    <span>21st July - 1st August, 2025</span>
+                    <span>8th - 19th of September, 2025</span>
                   </div>
                   {/* <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Age Group:</span>

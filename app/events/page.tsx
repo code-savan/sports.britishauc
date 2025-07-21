@@ -88,7 +88,7 @@ const events = [
   {
     id: 'high-elite-football-hungary',
     title: 'High Elite Football Development Programme',
-    date: '21st July - 1st August, 2025',
+    date: '8th - 19th of September, 2025',
     description: 'Train at our Debrecen Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Hungary.',
     image: 'https://www.debrecen.hu/assets/media/gallery/hu/50847/1200x800/dvsc_focipalya_0014.jpg',
     location: 'Debrecen, Hungary',
@@ -100,7 +100,7 @@ const events = [
   {
     id: 'manchester-high-elite-football-2025',
     title: 'Manchester High Elite Football Development Programme',
-    date: 'Saturday, 6th September 2025',
+    date: '8th - 19th of September, 2025',
     description: 'Train at our Manchester Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Manchester, United Kingdom.',
     image: '/manchesterbg.jpeg',
     location: 'Manchester, United Kingdom',

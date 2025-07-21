@@ -130,7 +130,7 @@ export default function ManchesterHighEliteFootball2025Page() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Date:</span>
-                    <span>Saturday, 6th September 2025</span>
+                    <span>8th - 19th of September, 2025</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Contact:</span>
