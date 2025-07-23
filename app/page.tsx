@@ -116,15 +116,15 @@ export default function Home() {
   const [activeHeroImage, setActiveHeroImage] = useState(0);
   const heroImages = [
     {
-      src: "/footballheroimage.jpg",
+      src: "/hero.jpg",
       alt: "Football stadium",
       sport: "Football"
     },
-    {
-      src: "https://images.unsplash.com/photo-1687176013639-eff51be5cb88?q=80&w=2070",
-      alt: "Basketball court",
-      sport: "Basketball"
-    },
+    // {
+    //   src: "https://images.unsplash.com/photo-1687176013639-eff51be5cb88?q=80&w=2070",
+    //   alt: "Basketball court",
+    //   sport: "Basketball"
+    // },
     // {
     //   src: "https://images.unsplash.com/photo-1589492342521-1cc18248fffc?q=80&w=3024",
     //   alt: "Sprint track",
