@@ -35,17 +35,17 @@ export default function ClubPlacementTestingConditioningPage() {
               <div className="bg-white p-8 rounded-xl shadow-sm border-t-4 border-blue-600">
                 <h2 className="text-2xl font-bold mb-4 text-gray-900">PROGRAMME INCLUDE</h2>
                 <ul className="space-y-3 text-lg text-gray-600">
-                  <li>1 Week Club Placement Testing & Conditioning</li>
-                  <li>Club placements and representation and support from FIFA licensed Agency</li>
-                  <li>Expert & Elite sessions</li>
-                  <li>Working with Ex pro players and specialist coaches</li>
-                  <li>Biomechanics, Technical and physical assessment covering all demands of modern game</li>
-                  <li>121 and mini masterclass sessions</li>
-                  <li>Unique system equipment (some only used by top pro clubs)</li>
-                  <li>Full in-depth report, comparison against KPIs and markers </li>
-                  <li>Future development and roadmapping service provided</li>
-                  <li>Manchester & North West Based </li>
-                  <li>Different levels of program based on needs and affordability</li>
+                  <li>• 1 Week Club Placement Testing & Conditioning</li>
+                  <li>• Club placements and representation and support from FIFA licensed Agency</li>
+                  <li>• Expert & Elite sessions</li>
+                  <li>• Working with Ex pro players and specialist coaches</li>
+                  <li>• Biomechanics, Technical and physical assessment covering all demands of modern game</li>
+                  <li>• 121 and mini masterclass sessions</li>
+                  <li>• Unique system equipment (some only used by top pro clubs)</li>
+                  <li>• Full in-depth report, comparison against KPIs and markers </li>
+                  <li>• Future development and roadmapping service provided</li>
+                  <li>• Manchester & North West Based </li>
+                  <li>• Different levels of program based on needs and affordability</li>
                 </ul>
                 <h3 className="text-xl font-bold mt-8 mb-2 text-gray-900">COST: £985</h3>
               </div>
@@ -102,7 +102,7 @@ export default function ClubPlacementTestingConditioningPage() {
                 <p className="text-lg text-gray-600 mb-4">Age: 11-22</p>
                 <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full shadow-md">
                   <Link href="/events/club-placement-testing-conditioning/register">
-                    Register Now
+                    Register and Pay
                   </Link>
                 </Button>
               </div>
