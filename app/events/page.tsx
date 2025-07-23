@@ -108,6 +108,18 @@ const events = [
     tagColor: 'orange' as const,
     link: '/events/manchester-high-elite-football-2025',
   },
+  {
+    id: 'club-placement-testing-conditioning',
+    title: 'Club Placement Testing & Conditioning',
+    date: '4th - 8th August, 2025',
+    description: 'Unlock your potential with our comprehensive 1-week player testing program that combines sports science with real-world evaluation.',
+    image: '/event10.jpg',
+    location: 'Manchester & North West, UK',
+    price: '£985',
+    tag: 'Limited Spots',
+    tagColor: 'blue' as const,
+    link: '/events/club-placement-testing-conditioning',
+  },
 ];
 
 export default function EventsPage() {
