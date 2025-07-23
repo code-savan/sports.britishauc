@@ -6,13 +6,13 @@ export default function HighEliteFootballHungaryPage() {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center">
+      <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://www.debrecen.hu/assets/media/gallery/hu/50847/1200x800/dvsc_focipalya_0014.jpg" // Save the attached image as this file in the public folder
+            src="/DS3.jpg" // Save the attached image as this file in the public folder
             alt="High Elite Football Development Programme Hungary"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-purple-900/30" />

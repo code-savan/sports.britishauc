@@ -19,13 +19,13 @@ export default function NewYorkTripPage() {
   return (
     <div className="pt-16">
       {/* Hero Section with New York themed color (Blue/Green accent) */}
-      <section className="relative h-[50vh] flex items-center">
+      <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2000"
+            src="/event4.jpg"
             alt="New York Summer Trip"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30" />
@@ -51,7 +51,7 @@ export default function NewYorkTripPage() {
                 </div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">COURSE: LEADERS OF TOMORROW</h2>
                 <p className="text-lg text-gray-600 mb-4">
-                  Today's students are the potential leaders of tomorrow, whether in business, science, sport, politics, or any other aspect of work or society.
+                  Today&apos;s students are the potential leaders of tomorrow, whether in business, science, sport, politics, or any other aspect of work or society.
                 </p>
                 <p className="text-lg text-gray-600">
                   Our comprehensive leadership program provides students with the skills, knowledge, and confidence to become effective leaders in their chosen fields. Through a combination of interactive workshops, project-based learning, and real-world case studies, participants will develop critical thinking, problem-solving, communication, and teamwork skills essential for future success.
@@ -107,7 +107,7 @@ export default function NewYorkTripPage() {
               </div>
 
               <div className="bg-white p-8 rounded-xl shadow-sm">
-                <h2 className="text-2xl font-bold mb-4 text-gray-900">WHAT'S INCLUDED</h2>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900">WHAT&apos;S INCLUDED</h2>
                 <div className="grid md:grid-cols-2 gap-4">
                   <ul className="space-y-3 text-lg text-gray-600">
                     <li className="flex items-start">

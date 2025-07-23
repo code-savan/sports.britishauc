@@ -19,13 +19,13 @@ export default function WestHamTripPage() {
   return (
     <div className="pt-16">
       {/* Hero Section with Blue Accent */}
-      <section className="relative h-[50vh] flex items-center">
+      <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2000"
+            src="/DS1.jpg"
             alt="West Ham United Academy"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30" />

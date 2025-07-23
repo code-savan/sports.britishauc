@@ -6,13 +6,13 @@ export default function StevenGerrardCampPage() {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center">
+      <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://stevengerrard.academy/wp-content/uploads/sgapreseason-17dddd.jpg" // Save the attached image as this file in the public folder
+            src="/DS2.jpg" // Save the attached image as this file in the public folder
             alt="Steven Gerrard Academy Pre Season Camp"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-red-900/30" />

@@ -7,13 +7,13 @@ export default function ManchesterTrialPage() {
   return (
     <div className="pt-16">
       {/* Hero Section with Blue Accent */}
-      <section className="relative h-[50vh] flex items-center">
+      <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/manchester.jpeg"
+            src="/TR1.jpg"
             alt="Manchester Football Trial"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30" />

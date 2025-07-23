@@ -6,10 +6,10 @@ export default function ManchesterHighEliteFootball2025Page() {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center">
+      <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/manchesterbg.jpeg"
+            src="/manchestherfootball.jpg"
             alt="Manchester High Elite Football Programme"
             fill
             className="object-cover object-top"
