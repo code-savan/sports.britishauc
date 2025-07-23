@@ -6,13 +6,13 @@ export default function AboutPage() {
   return (
     <div className="pt-16">
       {/* Hero Section with Blue Accent */}
-      <section className="relative h-[60vh] flex items-center">
+      <section className="relative h-[80vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1434648957308-5e6a859697e8?q=80&w=2000"
+            src="/aboutushero.jpg"
             alt="Football training"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30" />
@@ -52,7 +52,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1000"
+                src="/aboutus.jpg"
                 alt="Football training session"
                 fill
                 className="object-cover"
@@ -73,18 +73,18 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="relative overflow-hidden rounded-xl shadow-md group h-[350px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?q=80&w=1000"
+                  src="/manchesterhero.jpg"
                   alt="Manchester Football Academy"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-6 text-white z-10">
-                  <h3 className="text-xl font-bold mb-2">Manchester Football Academy</h3>
+                  <h3 className="text-xl font-bold mb-2 text-white">Manchester Football Academy</h3>
                   <p className="text-sm text-white/80 mb-4">
                     Strategic location with exposure to clubs like Manchester United, Manchester City, and more.
                   </p>
-                  <Button asChild variant="outline" className="border-white text-white hover:bg-white/20">
+                  <Button asChild variant="outline" className="border-white text-white hover:bg-white/20 bg-transparent hover:text-white">
                     <Link href="/academy/manchester">
                       Learn More
                     </Link>
@@ -101,11 +101,11 @@ export default function AboutPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-6 text-white z-10">
-                  <h3 className="text-xl font-bold mb-2">London Football Academy</h3>
+                  <h3 className="text-xl font-bold mb-2 text-white">London Football Academy</h3>
                   <p className="text-sm text-white/80 mb-4">
                     Premier football development program in London for students combining education with elite football training.
                   </p>
-                  <Button asChild variant="outline" className="border-white text-white hover:bg-white/20">
+                  <Button asChild variant="outline" className="border-white text-white hover:bg-white/20 bg-transparent hover:text-white">
                     <Link href="/academy/london">
                       Learn More
                     </Link>
@@ -115,18 +115,18 @@ export default function AboutPage() {
 
               <div className="relative overflow-hidden rounded-xl shadow-md group h-[350px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1605719125065-3dd9e3f79057?q=80&w=1000"
+                  src="/dts2.jpg"
                   alt="Alicante Football Academy"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-6 text-white z-10">
-                  <h3 className="text-xl font-bold mb-2">Alicante Football Academy</h3>
+                  <h3 className="text-xl font-bold mb-2 text-white">Alicante Football Academy</h3>
                   <p className="text-sm text-white/80 mb-4">
                     Experience Spanish football culture and training methodology while continuing your education in Alicante.
                   </p>
-                  <Button asChild variant="outline" className="border-white text-white hover:bg-white/20">
+                  <Button asChild variant="outline" className="border-white text-white hover:bg-white/20 bg-transparent hover:text-white">
                     <Link href="/academy/alicante">
                       Learn More
                     </Link>

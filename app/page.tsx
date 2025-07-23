@@ -116,7 +116,7 @@ export default function Home() {
   const [activeHeroImage, setActiveHeroImage] = useState(0);
   const heroImages = [
     {
-      src: "/footballheroimage.jpeg",
+      src: "/footballheroimage.jpg",
       alt: "Football stadium",
       sport: "Football"
     },
@@ -161,7 +161,7 @@ export default function Home() {
           {heroImages.map((image, index) => (
             <div
               key={index}
-              className="relative h-[120%] w-full transition-opacity duration-1000"
+              className="relative h-[120%] w-full transition-opacity duration-1000 object-top"
               style={{
                 transform: 'translateY(-10%)',
                 opacity: activeHeroImage === index ? 1 : 0,
@@ -257,10 +257,10 @@ export default function Home() {
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1000"
+                src="/aboutus.jpg"
                 alt="British AUC SPORT"
                 width={600}
-                height={400}
+                height={600}
                 className="object-cover w-full h-full"
               />
             </div>

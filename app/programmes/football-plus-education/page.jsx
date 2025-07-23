@@ -7,7 +7,7 @@ const academies = [
     {
         id: 'manchester',
         name: 'Manchester Football Academy',
-        image: '/manchesterhero.jpg',
+        image: '/DSC1.jpg',
         intro: "Developing elite footballers in the heart of one of the world's most renowned football cities. Our Manchester Academy is for students in the Manchester area who wish to develop their football skills alongside their studies at the University.",
         city: 'Manchester, UK',
         fee: '£12,950',
@@ -25,7 +25,7 @@ const academies = [
       {
         id: 'london',
         name: 'London Football Academy',
-        image: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=2940',
+        image: '/DSC2.jpg',
         intro: "Developing elite footballers in one of the world's most vibrant sporting capitals. London Football Academy is for students in the London area who wish to develop their football skills alongside their studies at the University.",
         city: 'London, UK',
         fee: '£14,950',
@@ -43,7 +43,7 @@ const academies = [
   {
     id: 'alicante',
     name: 'Alicante Football Academy',
-    image: 'https://images.unsplash.com/photo-1533224081996-0a96a8481e89?q=80&w=2400',
+    image: '/DSC3.jpg',
     intro: "Developing elite footballers in Spain's beautiful Mediterranean coast. Alicante Football Academy is for students studying in the Alicante region who wish to enhance their football skills alongside their studies at the University.",
     city: 'Alicante, Spain',
     fee: '£10,950',
@@ -61,7 +61,7 @@ const academies = [
   {
     id: 'debrecen',
     name: 'Debrecen Football Academy',
-    image: 'https://images.unsplash.com/photo-1576660016182-af8a90e6ffda?q=80&w=2918',
+    image: '/DSC4.jpg',
     intro: "Developing elite footballers in Hungary's historic sporting city. Debrecen Academy is for students in Debrecen who wish to develop their football skills alongside their studies at the University.",
     city: 'Debrecen, Hungary',
     fee: '$7,950',
@@ -82,8 +82,8 @@ export default function FootballPlusEducationPage() {
   return (
     <main className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden">
-        <Image src="https://images.unsplash.com/photo-1741921899251-1e92c1156a56?q=80&w=2070" alt="Football Plus Education" fill className="object-cover object-center z-0" priority />
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <Image src="/footballplushero.jpg" alt="Football Plus Education" fill className="object-cover object-top z-0" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent z-1" />
         <div className="relative z-10 text-center w-full flex flex-col items-center justify-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Football Plus Education</h1>

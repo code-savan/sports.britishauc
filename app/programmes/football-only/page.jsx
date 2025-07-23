@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { FaCheckCircle, FaUsers, FaBed, FaHeartbeat, FaChalkboardTeacher, FaUtensils, FaDumbbell, FaRunning, FaMoon } from 'react-icons/fa';
 
-const heroImage = '/footballheroimage.jpeg';
+const heroImage = '/footballheroimage.jpg';
 
 const WEEKLY_DAYS = [
   {
