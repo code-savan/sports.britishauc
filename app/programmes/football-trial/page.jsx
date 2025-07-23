@@ -12,7 +12,7 @@ const trials = [
         date: 'Saturday, 6th September 2025',
         location: 'Manchester, UK',
         price: '£98',
-        image: '/manchester.jpeg',
+        image: '/TR1.jpg',
         description:
           'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
         more:
@@ -25,7 +25,7 @@ const trials = [
         date: 'July 17, 2025',
         location: 'Manchester, UK',
         price: '£65',
-        image: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1000',
+        image: '/TR2.jpg',
         description:
           'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
         more:
@@ -38,7 +38,7 @@ const trials = [
     date: 'Spain Trial postponed. New dates to be confirmed later.',
     location: 'Alicante, Spain',
     price: '€78',
-    image: 'https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=1000',
+    image: '/TR3.jpg',
     description:
       'Showcase your skills to professional scouts at this exclusive trial in Spain and take a step toward your professional football career.',
     more:
@@ -52,12 +52,12 @@ export default function FootballTrialPage() {
   return (
     <main className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1615476211734-9cc4c378d438?q=80&w=998"
+          src="/trialhero.jpg"
           alt="Football Trial Hero"
           fill
-          className="object-cover object-center z-0"
+          className="object-cover object-top z-0"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent z-1" />

@@ -9,7 +9,7 @@ const westHamEvent = {
   date: '29 July - 4 August 2025',
   location: 'London, UK',
   price: '£2,100',
-  image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1000',
+  image: '/DS1.jpg',
   tag: 'Premium Experience',
   tagColor: 'blue',
   description: 'Train like a professional at West Ham United Academy in this unforgettable London experience combining elite coaching and education.',
@@ -23,7 +23,7 @@ const stevenGerrardEvent = {
   date: '27 July - 7 August 2025',
   location: 'Liverpool, UK',
   price: '£2,500',
-  image: 'https://stevengerrard.academy/wp-content/uploads/sgapreseason-17dddd.jpg',
+  image: '/DS2.jpg',
   tag: 'Premium Experience',
   tagColor: 'red',
   description: 'Train at Steven Gerrard Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of football, coaching, and cultural experiences in Liverpool.',
@@ -37,7 +37,7 @@ const highEliteHungaryEvent = {
   date: '8th - 19th of September, 2025',
   location: 'Debrecen, Hungary',
   price: '$773',
-  image: 'https://www.debrecen.hu/assets/media/gallery/hu/50847/1200x800/dvsc_focipalya_0014.jpg',
+  image: '/DS3.jpg',
   tag: 'Limited Spots',
   tagColor: 'purple',
   description: 'Train at our Debrecen Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Hungary.',
@@ -50,7 +50,7 @@ const manchesterHighEliteEvent = {
   date: '8th - 19th of September, 2025',
   location: 'Manchester, United Kingdom',
   price: '£1240',
-  image: 'https://www.debrecen.hu/assets/media/gallery/hu/50847/1200x800/dvsc_focipalya_0014.jpg',
+  image: '/DS4.jpg',
   tag: 'Limited Spots',
   tagColor: 'purple',
   description: 'Train at our Manchester Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Manchester, United Kingdom.',
@@ -60,12 +60,12 @@ const manchesterHighEliteEvent = {
 export default function PreSeasonCampPage() {
   return (
     <main className="min-h-screen pt-16">
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/manchesterbg.jpeg"
+          src="/preseasoncamphero.jpg"
           alt="Pre Season Camp Football Training"
           fill
-          className="object-cover object-center z-0"
+          className="object-cover object-top z-0"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent z-1" />
