@@ -139,7 +139,7 @@ export default function ManchesterTrialPage() {
                     </svg>
                     <div>
                       <p className="text-gray-600 font-medium">Age Group</p>
-                      <p>7 - 24 years (other ages ages are welcome to apply as well)</p>
+                      <p>10-22</p>
                     </div>
                   </div>
                   <div className="flex items-center">
