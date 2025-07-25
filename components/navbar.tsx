@@ -28,7 +28,7 @@ const navigation: NavigationItem[] = [
     dropdown: [
       { name: 'Football Only', href: '/programmes/football-only' },
       { name: 'Football Plus Education', href: '/programmes/football-plus-education' },
-      { name: 'Short Football Programme', href: '/programmes/pre-season-camp' },
+      { name: 'Short Football Programmes', href: '/programmes/pre-season-camp' },
       { name: 'Football Trials', href: '/programmes/football-trial' },
     //   { name: 'Football Plus Language', href: '/programmes/football-plus-language' },
     ]
