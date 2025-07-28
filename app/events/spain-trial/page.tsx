@@ -10,10 +10,10 @@ export default function SpainTrialPage() {
       <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/TR3.jpg"
+            src="https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=2000"
             alt="Spain Football Trial"
             fill
-            className="object-cover object-top"
+            className="object-cover"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-yellow-900/30" />

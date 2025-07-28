@@ -22,10 +22,10 @@ export default function LondonBasketballTripPage() {
       <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/event5.jpg"
+            src="https://images.unsplash.com/photo-1608541737042-87a12275d313?q=80&w=2922"
             alt="Nike Basketball Camps"
             fill
-            className="object-cover object-top"
+            className="object-cover"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-orange-900/30" />

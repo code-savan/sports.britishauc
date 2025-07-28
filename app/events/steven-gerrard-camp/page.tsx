@@ -9,10 +9,10 @@ export default function StevenGerrardCampPage() {
       <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/DS2.jpg" // Save the attached image as this file in the public folder
+            src="https://stevengerrard.academy/wp-content/uploads/sgapreseason-17dddd.jpg" // Save the attached image as this file in the public folder
             alt="Steven Gerrard Academy Pre Season Camp"
             fill
-            className="object-cover object-top"
+            className="object-cover"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-red-900/30" />

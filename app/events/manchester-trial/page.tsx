@@ -10,10 +10,10 @@ export default function ManchesterTrialPage() {
       <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/TR2.jpg"
+            src="/manchester.jpeg"
             alt="Manchester Football Trial"
             fill
-            className="object-cover object-top"
+            className="object-cover"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30" />

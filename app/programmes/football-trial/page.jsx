@@ -25,7 +25,7 @@ const trials = [
         date: 'July 17, 2025',
         location: 'Manchester, UK',
         price: '£65',
-        image: '/TR2.jpg',
+        image: '/manchester.jpeg',
         description:
           'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
         more:
@@ -38,7 +38,7 @@ const trials = [
     date: 'Spain Trial postponed. New dates to be confirmed later.',
     location: 'Alicante, Spain',
     price: '€78',
-    image: '/TR3.jpg',
+    image: 'https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=2000',
     description:
       'Showcase your skills to professional scouts at this exclusive trial in Spain and take a step toward your professional football career.',
     more:

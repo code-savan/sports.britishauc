@@ -22,10 +22,10 @@ export default function WestHamTripPage() {
       <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/DS1.jpg"
+            src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2000"
             alt="West Ham United Academy"
             fill
-            className="object-cover object-top"
+            className="object-cover"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30" />
