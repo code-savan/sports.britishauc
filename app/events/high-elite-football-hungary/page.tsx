@@ -22,7 +22,7 @@ export default function HighEliteFootballHungaryPage() {
             <span className="bg-purple-700 text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">HIGH ELITE FOOTBALL DEVELOPMENT PROGRAMME<br />DEBRECEN, HUNGARY</h1>
-          <p className="text-xl md:text-2xl text-white">21ST JULY - 1ST AUGUST, 2025</p>
+          <p className="text-xl md:text-2xl text-white">8TH - 19TH SEPTEMBER, 2025</p>
         </div>
       </section>
 
