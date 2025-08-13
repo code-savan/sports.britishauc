@@ -107,6 +107,10 @@ export default function NigeriaFootballTrial2025Page() {
                     <span className="text-gray-600 font-medium mr-2">Contact:</span>
                     <a href="mailto:sports@britishauc.com" className="text-blue-600 hover:underline">sports@britishauc.com</a>
                 </div>
+                <div className="flex items-center">
+                    <span className="text-gray-600 font-medium mr-2">Spots Left:</span>
+                    <span className="text-red-600 font-semibold">3 spots</span>
+                  </div>
                 <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white" size="lg">
                   <Link href="/events/nigeria-football-trial-2025/register">
                     Register and Pay

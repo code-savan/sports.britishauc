@@ -147,8 +147,8 @@ export default function ManchesterTrialPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div>
-                      <p className="text-gray-600 font-medium">Registration Deadline</p>
-                      <p>1st August 2025</p>
+                      <p className="text-gray-600 font-medium">Registration Deadline <span className=""> </span> (3 slots left)</p>
+                      <p>20th August 2025</p>
                     </div>
                   </div>
                   <div className="flex items-center">

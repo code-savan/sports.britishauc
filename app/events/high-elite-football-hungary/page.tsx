@@ -111,6 +111,14 @@ export default function HighEliteFootballHungaryPage() {
                     <span className="text-gray-600 font-medium mr-2">Age Group:</span>
                     <span>14-24 years</span>
                   </div> */}
+                   <div className="flex items-center">
+                    <span className="text-gray-600 font-medium mr-2">Registration Deadline:</span>
+                    <span>20th August, 2025</span>
+                  </div>
+                    <div className="flex items-center">
+                    <span className="text-gray-600 font-medium mr-2">Spots Left:</span>
+                    <span className="text-red-600 font-semibold">3 spots</span>
+                  </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Contact:</span>
                     <a href="tel:+447840782759" className="text-purple-700 hover:underline">+447840782759</a>

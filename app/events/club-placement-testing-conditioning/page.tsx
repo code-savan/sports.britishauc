@@ -22,7 +22,7 @@ export default function ClubPlacementTestingConditioningPage() {
             <span className="bg-blue-600 text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">CLUB PLACEMENT TESTING & CONDITIONING</h1>
-          <p className="text-xl md:text-2xl text-white">11th - 15th August, 2025</p>
+          <p className="text-xl md:text-2xl text-white">25th - 29th August, 2025</p>
         </div>
       </section>
 
@@ -98,7 +98,7 @@ export default function ClubPlacementTestingConditioningPage() {
               <div className="bg-white p-8 rounded-xl shadow-sm border-t-4 border-blue-600">
                 <h2 className="text-2xl font-bold mb-4 text-gray-900">LIMITED SPOTS AVAILABLE</h2>
                 <p className="text-lg text-gray-600 mb-4">Places left: 3 spots</p>
-                <p className="text-lg text-gray-600 mb-4">Deadline: 28 July, 2025</p>
+                <p className="text-lg text-gray-600 mb-4">Deadline: 23rd August, 2025</p>
                 <p className="text-lg text-gray-600 mb-4">Age: 11-22</p>
                 <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full shadow-md">
                   <Link href="/events/club-placement-testing-conditioning/register">
@@ -119,7 +119,7 @@ export default function ClubPlacementTestingConditioningPage() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Date:</span>
-                    <span>11th - 15th August, 2025</span>
+                    <span>25th - 29th August, 2025</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Age Group:</span>
@@ -127,7 +127,7 @@ export default function ClubPlacementTestingConditioningPage() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Registration Deadline:</span>
-                    <span>28 July, 2025</span>
+                    <span>23rd August, 2025</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Location:</span>
@@ -138,7 +138,7 @@ export default function ClubPlacementTestingConditioningPage() {
                     <a href="tel:+447840782759" className="text-blue-600 hover:underline">+447840782759</a>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-gray-600 font-medium mr-2">Places Left:</span>
+                    <span className="text-gray-600 font-medium mr-2">Spots Left:</span>
                     <span className="text-red-600 font-semibold">3 spots</span>
                   </div>
                 </div>

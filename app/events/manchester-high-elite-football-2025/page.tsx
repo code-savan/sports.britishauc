@@ -133,6 +133,14 @@ export default function ManchesterHighEliteFootball2025Page() {
                     <span>8th - 19th of September, 2025</span>
                   </div>
                   <div className="flex items-center">
+                    <span className="text-gray-600 font-medium mr-2">Registration Deadline:</span>
+                    <span>20th August, 2025</span>
+                  </div>
+                    <div className="flex items-center">
+                    <span className="text-gray-600 font-medium mr-2">Spots Left:</span>
+                    <span className="text-red-600 font-semibold">3 spots</span>
+                  </div>
+                  <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Contact:</span>
                     <a href="tel:+447840782759" className="text-orange-600 hover:underline">+447840782759</a>
                   </div>
