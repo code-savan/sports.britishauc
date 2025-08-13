@@ -40,7 +40,7 @@ const EVENTS = [
     id: 'manchester-trial',
     name: 'Manchester Football Trial 2025',
     description: 'Showcase your skills to professional scouts at this exclusive trial in Manchester.',
-    date: 'TBD (Registration Deadline: 1st July 2025)',
+    date: 'TBD (Registration Deadline: 20th August 2025)',
     badge: {
       text: 'Limited Spots',
       className: 'bg-primary'
