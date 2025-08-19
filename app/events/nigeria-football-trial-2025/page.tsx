@@ -69,8 +69,8 @@ export default function NigeriaFootballTrial2025Page() {
                   <li><strong>AGE:</strong> 10 - 23 Years</li>
                 </ul>
                 <p className="text-lg text-gray-600 mb-4">
-                REGISTRATION: Kindly register and pay with the link below:
-                <Link href="https://buy.stripe.com/fZu4gy12Ka2S23v3K49MY09">PAY</Link>
+                {/* REGISTRATION: Kindly register and pay with the link below:
+                <Link href="https://buy.stripe.com/fZu4gy12Ka2S23v3K49MY09">PAY</Link> */}
                 </p>
                 <p className="text-lg text-gray-600 mb-4">DEADLINE: 1st September, 2025</p>
                 <p className="text-lg text-gray-600 mb-4">CONTACT: sports@britishauc.com</p>
