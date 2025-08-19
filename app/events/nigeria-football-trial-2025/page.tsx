@@ -97,7 +97,7 @@ export default function NigeriaFootballTrial2025Page() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Registration Deadline:</span>
-                    <span>15th August, 2025</span>
+                    <span>1st September, 2025</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Locations:</span>
