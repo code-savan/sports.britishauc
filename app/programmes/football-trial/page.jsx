@@ -9,7 +9,7 @@ const trials = [
       {
         id: 'manchester-trial-2025',
         title: 'Manchester Football Trial 2025',
-        date: 'Saturday, 6th September 2025',
+        date: '6th of October 2025',
         location: 'Manchester, UK',
         price: '£98',
         image: '/TR1.jpg',
