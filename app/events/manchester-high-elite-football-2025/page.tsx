@@ -22,7 +22,7 @@ export default function ManchesterHighEliteFootball2025Page() {
             <span className="bg-orange-600 text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">HIGH ELITE FOOTBALL PROGRAMME<br />MANCHESTER, UK</h1>
-          <p className="text-xl md:text-2xl text-white uppercase">8th - 19th of September, 2025</p>
+          <p className="text-xl md:text-2xl text-white uppercase">29th October - 5th of November 2025</p>
         </div>
       </section>
 
@@ -130,7 +130,7 @@ export default function ManchesterHighEliteFootball2025Page() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Date:</span>
-                    <span>8th - 19th of September, 2025</span>
+                    <span>29th October - 5th of November 2025</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Registration Deadline:</span>

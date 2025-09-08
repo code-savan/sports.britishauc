@@ -46,7 +46,7 @@ const stevenGerrardEvent = {
 const highEliteHungaryEvent = {
   id: 'high-elite-football-hungary',
   title: 'High Elite Football Development Programme',
-  date: '8th - 19th of September, 2025',
+  date: '29th October - 5th of November 2025',
   location: 'Debrecen, Hungary',
   price: '$773',
   image: '/DS3.jpg',
@@ -59,7 +59,7 @@ const highEliteHungaryEvent = {
 const manchesterHighEliteEvent = {
   id: 'manchester-high-elite-football-2025',
   title: 'Manchester High Elite Football Development Programme',
-  date: '8th - 19th of September, 2025',
+  date: '29th October - 5th of November 2025',
   location: 'Manchester, United Kingdom',
   price: '£1240',
   image: '/DS4.jpg',

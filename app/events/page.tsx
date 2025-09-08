@@ -99,7 +99,7 @@ const events = [
   {
     id: 'high-elite-football-hungary',
     title: 'High Elite Football Development Programme',
-    date: '8th - 19th of September, 2025',
+    date: '29th October - 5th of November 2025',
     description: 'Train at our Debrecen Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Hungary.',
     image: '/event8.jpg',
     location: 'Debrecen, Hungary',
@@ -111,7 +111,7 @@ const events = [
   {
     id: 'manchester-high-elite-football-2025',
     title: 'Manchester High Elite Football Development Programme',
-    date: '8th - 19th of September, 2025',
+    date: '29th October - 5th of November 2025',
     description: 'Train at our Manchester Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Manchester, United Kingdom.',
     image: '/event9.jpg',
     location: 'Manchester, United Kingdom',
