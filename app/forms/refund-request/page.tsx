@@ -439,7 +439,7 @@ export default function RefundRequestForm() {
         <div className="mt-8 bg-red-50 border border-red-200 rounded-lg p-6">
           <h3 className="text-lg font-semibold text-red-900 mb-2">Important Notes:</h3>
           <ul className="text-sm text-red-800 space-y-1">
-            <li>• Refund requests will be processed within 5-10 business days</li>
+            <li>• Refund duration is four (4) to eight (8) weeks</li>
             <li>• Refunds will only be processed to the original payment method/account</li>
             <li>• All fields marked with * are required</li>
             <li>• For questions regarding your refund request, contact us at sports@britishauc.com</li>
