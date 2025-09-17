@@ -84,7 +84,7 @@ export default function RefundRequestForm() {
         console.error('Supabase error:', error);
         toast.error(`Failed to submit refund request: ${error.message}`);
       } else {
-        toast.success('Refund request submitted successfully! You will receive a confirmation email shortly.');
+        toast.success('Refund request submitted successfully!');
 
         // Reset form
         setFormData({
