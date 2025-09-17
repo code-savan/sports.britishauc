@@ -40,6 +40,11 @@ export function Footer() {
                   Medical Profile Form
                 </Link>
               </li>
+              <li>
+                <Link href="/forms/refund-request" className="text-sm text-gray-600 hover:text-primary">
+                  Refund Request Form
+                </Link>
+              </li>
             </ul>
           </div>
           {/* Legal */}
