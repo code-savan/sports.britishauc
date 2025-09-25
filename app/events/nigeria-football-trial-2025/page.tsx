@@ -63,16 +63,16 @@ export default function NigeriaFootballTrial2025Page() {
                 <div className="bg-white p-8 rounded-xl shadow-sm border-t-4 border-blue-600">
                 <h2 className="text-2xl font-bold mb-4 text-gray-900">EVENT DETAILS</h2>
                 <ul className="space-y-3 text-lg text-gray-600">
-                  <li><strong>ABUJA:</strong> Date: 27th October, 2025, Start: 9:00am | Finish: 2:00pm, Stadium: FIFA Goal Project, Abuja</li>
-                  <li><strong>LAGOS:</strong> Date: 3rd November, 2025, Start: 9:00am | Finish: 2:00pm, Stadium: Coker Aguda, Lagos</li>
-                  <li><strong>COST:</strong> £165</li>
+                  <li><strong>ABUJA:</strong> Date: 27th - 31st October, 2025, Start: 9:00am | Finish: 2:00pm, Stadium: FIFA Goal Project, Abuja</li>
+                  <li><strong>LAGOS:</strong> Date: 2nd - 8th November, 2025, Start: 9:00am | Finish: 2:00pm, Stadium: Coker Aguda, Lagos</li>
+                  <li><strong>COST:</strong> $580</li>
                   <li><strong>AGE:</strong> 10 - 23 Years</li>
                 </ul>
                 <p className="text-lg text-gray-600 mb-4">
                 {/* REGISTRATION: Kindly register and pay with the link below:
                 <Link href="https://buy.stripe.com/fZu4gy12Ka2S23v3K49MY09">PAY</Link> */}
                 </p>
-                <p className="text-lg text-gray-600 mb-4">DEADLINE: 1st September, 2025</p>
+                <p className="text-lg text-gray-600 mb-4">DEADLINE: 20th October, 2025</p>
                 <p className="text-lg text-gray-600 mb-4">CONTACT: sports@britishauc.com</p>
               </div>
 
@@ -85,11 +85,11 @@ export default function NigeriaFootballTrial2025Page() {
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Cost:</span>
-                    <span className="text-2xl font-bold text-blue-600">£165</span>
+                    <span className="text-2xl font-bold text-blue-600">$580</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Dates:</span>
-                    <span>27th October, 2025 (Abuja) & 3rd November, 2025 (Lagos)</span>
+                    <span>27th - 31st October, 2025 (Abuja) & 2nd - 8th November, 2025 (Lagos)</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Age Group:</span>
@@ -97,7 +97,7 @@ export default function NigeriaFootballTrial2025Page() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Registration Deadline:</span>
-                    <span>1st September, 2025</span>
+                    <span>20th October, 2025</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Locations:</span>
