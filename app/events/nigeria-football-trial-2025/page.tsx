@@ -65,7 +65,7 @@ export default function NigeriaFootballTrial2025Page() {
                 <ul className="space-y-3 text-lg text-gray-600">
                   <li><strong>ABUJA:</strong> Date: 27th - 31st October, 2025, Start: 9:00am | Finish: 2:00pm, Stadium: FIFA Goal Project, Abuja</li>
                   <li><strong>LAGOS:</strong> Date: 2nd - 8th November, 2025, Start: 9:00am | Finish: 2:00pm, Stadium: Coker Aguda, Lagos</li>
-                  <li><strong>COST:</strong> $580</li>
+                  <li><strong>COST:</strong> £580</li>
                   <li><strong>AGE:</strong> 10 - 23 Years</li>
                 </ul>
                 <p className="text-lg text-gray-600 mb-4">
@@ -85,7 +85,7 @@ export default function NigeriaFootballTrial2025Page() {
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Cost:</span>
-                    <span className="text-2xl font-bold text-blue-600">$580</span>
+                    <span className="text-2xl font-bold text-blue-600">£580</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Dates:</span>

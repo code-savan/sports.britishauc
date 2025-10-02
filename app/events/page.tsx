@@ -11,7 +11,7 @@ const events = [
     description: 'Showcase your talent to professional scouts at this exclusive trial in Nigeria and take a step toward your professional football career with opportunities in the UK and Europe.',
     image: '/eventshero.jpg',
     location: 'Abuja & Lagos, Nigeria',
-    price: '$580',
+    price: '£580',
     tag: 'Limited Spots',
     tagColor: 'blue' as const,
     link: '/events/nigeria-football-trial-2025',
