@@ -123,7 +123,7 @@ const events = [
   {
     id: 'club-placement-testing-conditioning',
     title: 'Club Placement Testing & Conditioning',
-    date: '25th - 29th August, 2025',
+    date: '10th -14th November, 2025',
     description: 'Unlock your potential with our comprehensive 1-week player testing program that combines sports science with real-world evaluation.',
     image: '/event10.jpg',
     location: 'Manchester & North West, UK',

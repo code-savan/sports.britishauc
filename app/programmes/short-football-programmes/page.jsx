@@ -18,7 +18,7 @@ const westHamEvent = {
 const testingAndConditioningEvent = {
   id: 'club-placement-testing-conditioning',
   title: 'Club Placement Testing & Conditioning',
-  date: '25th - 29th August, 2025',
+  date: '10th -14th November, 2025',
   location: 'Manchester & North West, UK',
   price: '£985',
   image: '/event10.jpg',
