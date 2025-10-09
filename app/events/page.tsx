@@ -132,6 +132,18 @@ const events = [
     tagColor: 'blue' as const,
     link: '/events/club-placement-testing-conditioning',
   },
+  {
+    id: 'manchester-3-days-high-elite-football-2025',
+    title: '3-Day High Elite Football Development Programme',
+    date: '13th - 17th October, 2025',
+    description: 'Enjoy the football experience of a lifetime with Pro Club Experience! Train at our Manchester Football Academy and experience the professional training methods and philosophy that have made elite players worldwide.',
+    image: '/event3.jpg',
+    location: 'Manchester, United Kingdom',
+    price: '£294',
+    tag: 'Limited Spots',
+    tagColor: 'orange' as const,
+    link: '/events/manchester-3-days-high-elite-football-2025',
+  },
 ];
 
 export default function EventsPage() {
