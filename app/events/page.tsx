@@ -4,18 +4,18 @@ import { Button } from '@/components/ui/button';
 import { EventCard } from '@/components/event-card';
 
 const events = [
-  {
-    id: 'nigeria-football-trial-2025',
-    title: 'Nigeria Football Trial 2025',
-    date: '27th - 31st October (Abuja) & 2nd - 8th November (Lagos) 2025',
-    description: 'Showcase your talent to professional scouts at this exclusive trial in Nigeria and take a step toward your professional football career with opportunities in the UK and Europe.',
-    image: '/eventshero.jpg',
-    location: 'Abuja & Lagos, Nigeria',
-    price: '£580',
-    tag: 'Limited Spots',
-    tagColor: 'blue' as const,
-    link: '/events/nigeria-football-trial-2025',
-  },
+//   {
+//     id: 'nigeria-football-trial-2025',
+//     title: 'Nigeria Football Trial 2025',
+//     date: '27th - 31st October (Abuja) & 2nd - 8th November (Lagos) 2025',
+//     description: 'Showcase your talent to professional scouts at this exclusive trial in Nigeria and take a step toward your professional football career with opportunities in the UK and Europe.',
+//     image: '/eventshero.jpg',
+//     location: 'Abuja & Lagos, Nigeria',
+//     price: '£580',
+//     tag: 'Limited Spots',
+//     tagColor: 'blue' as const,
+//     link: '/events/nigeria-football-trial-2025',
+//   },
   {
     id: 'manchester-trial-2025',
     title: 'Manchester Football Trial 2025',
