@@ -16,25 +16,36 @@ function RegistrationContent() {
       heroImage: "/manchester.jpeg",
       accentColor: "blue",
       paymentLink: "https://buy.stripe.com/bIY4jA8a1fD66LSaEE",
-      eventType: "manchester_trial" as const
+      eventType: "manchester_trial" as const,
+      fee: "£98"
     },
     manchester2025: {
       title: "Manchester Football Trial 2025",
       heroImage: "/manchester.jpeg",
       accentColor: "red",
-      paymentLink: "https://buy.stripe.com/fZu5kCdPw6QGdMd4O89MY06",
-      eventType: "manchester_2025_trial" as const
+      paymentLink: "",
+      eventType: "manchester_2025_trial" as const,
+      fee: "£98"
+    },
+    helsby2025: {
+      title: "British AUC Sport Helsby Football Trial 2025",
+      heroImage: "/TR2.jpg",
+      accentColor: "red",
+      paymentLink: "",
+      eventType: "helsby_2025_trial" as const,
+      fee: "£98"
     },
     spain: {
       title: "Spain Football Trial 2025",
       heroImage: "https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=2000",
       accentColor: "orange",
       paymentLink: "https://flutterwave.com/pay/ahdplredysps",
-      eventType: "spain_trial" as const
+      eventType: "spain_trial" as const,
+      fee: "€78"
     }
   };
 
-  const config = eventParam === 'spain' ? eventConfig.spain : eventParam === 'manchester2025' ? eventConfig.manchester2025 :   eventConfig.manchester;
+  const config = eventParam === 'spain' ? eventConfig.spain : eventParam === 'manchester2025' ? eventConfig.manchester2025 : eventParam === 'helsby2025' ? eventConfig.helsby2025 : eventConfig.manchester;
 
   return (
     <TrialRegistration
@@ -44,6 +55,7 @@ function RegistrationContent() {
       successRedirectPath="/events/football-trial-2025/trial-reg-success"
       paymentLink={config.paymentLink}
       eventType={config.eventType}
+      eventFee={config.fee}
     />
   );
 }

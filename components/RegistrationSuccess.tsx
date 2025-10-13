@@ -19,6 +19,7 @@ interface RegistrationSuccessProps {
     iban: string;
     bic: string;
     additionalInfo?: string;
+    fee?: string;
   };
 }
 
@@ -163,6 +164,14 @@ export default function RegistrationSuccess({
                 METHOD OF PAYMENT
               </h3>
               <div className="space-y-4">
+                {paymentInfo.fee && (
+                  <div className={`p-4 rounded-lg bg-gradient-to-r from-${accentClasses.bg.replace('to-', '')} to-gray-50 border-2 ${accentClasses.border}`}>
+                    <div className="flex items-center justify-between">
+                      <span className="text-lg font-semibold text-gray-700">Event Fee:</span>
+                      <span className={`text-3xl font-bold ${accentClasses.text}`}>{paymentInfo.fee}</span>
+                    </div>
+                  </div>
+                )}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <p className="text-sm text-gray-500 font-medium mb-1">Bank Account Name</p>

@@ -16,7 +16,8 @@ export default function ManchesterThreeDaysHighEliteRegistrationSuccessPage() {
         sortCode: "04-00-03",
         iban: "GB33MONZ04000395163038",
         bic: "MONZOGB2L",
-        additionalInfo: "All payments must be in sterling. All bank charges in the country of origin and in the UK are to be paid in remittance by the applicant."
+        additionalInfo: "All payments must be in sterling. All bank charges in the country of origin and in the UK are to be paid in remittance by the applicant.",
+        fee: "£294"
       }}
     />
   );

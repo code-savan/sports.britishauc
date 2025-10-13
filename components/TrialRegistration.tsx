@@ -46,7 +46,8 @@ interface TrialRegistrationProps {
   accentColor?: string;
   successRedirectPath: string;
   paymentLink: string;
-  eventType: 'manchester_trial' | 'spain_trial' | 'manchester_2025_trial';
+  eventType: 'manchester_trial' | 'spain_trial' | 'manchester_2025_trial' | 'helsby_2025_trial';
+  eventFee?: string;
 }
 
 export default function TrialRegistration({
@@ -55,7 +56,8 @@ export default function TrialRegistration({
   accentColor = 'blue',
   successRedirectPath,
   paymentLink,
-  eventType
+  eventType,
+  eventFee
 }: TrialRegistrationProps) {
   const router = useRouter();
   const [step, setStep] = useState(1);
@@ -108,8 +110,16 @@ export default function TrialRegistration({
 
       toast.success('Trial registration submitted successfully!');
 
-      // Store payment link in localStorage before redirecting
-      localStorage.setItem('paymentLink', paymentLink);
+      // Store event details in localStorage before redirecting
+      if (paymentLink) {
+        localStorage.setItem('paymentLink', paymentLink);
+      }
+      localStorage.setItem('eventTitle', eventTitle);
+      localStorage.setItem('heroImage', heroImage);
+      localStorage.setItem('accentColor', accentColor);
+      if (eventFee) {
+        localStorage.setItem('eventFee', eventFee);
+      }
 
       // Redirect to success page
       router.push('/events/football-trial-2025/trial-reg-success');
