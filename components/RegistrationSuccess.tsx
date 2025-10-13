@@ -10,12 +10,23 @@ interface RegistrationSuccessProps {
   eventTitle: string;
   heroImage: string;
   accentColor: 'blue' | 'red' | 'orange' | 'yellow';
+  paymentInfo?: {
+    accountName: string;
+    bankName: string;
+    bankAddress: string;
+    accountNumber: string;
+    sortCode: string;
+    iban: string;
+    bic: string;
+    additionalInfo?: string;
+  };
 }
 
 export default function RegistrationSuccess({
   eventTitle,
   heroImage,
-  accentColor = 'blue'
+  accentColor = 'blue',
+  paymentInfo
 }: RegistrationSuccessProps) {
   // Define accent color classes based on the prop
   const accentClasses = {
@@ -63,7 +74,7 @@ export default function RegistrationSuccess({
   return (
     <div className={`min-h-screen bg-gradient-to-b from-white ${accentClasses.bg}`}>
       {/* Hero Section */}
-      <section className="relative h-[30vh] flex items-center">
+      <section className="relative h-[45vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImage}
@@ -98,7 +109,7 @@ export default function RegistrationSuccess({
           </div>
 
           {/* Next Steps */}
-          <div className="grid gap-6 md:grid-cols-2 mb-12">
+          {/* <div className="grid gap-6 md:grid-cols-2 mb-12">
             <Card className={`p-6 shadow-lg rounded-xl border-2 ${accentClasses.border}`}>
               <h3 className={`text-lg font-semibold mb-4 flex items-center ${accentClasses.text}`}>
                 <Calendar className="w-5 h-5 mr-2" />
@@ -140,7 +151,58 @@ export default function RegistrationSuccess({
                 </li>
               </ul>
             </Card>
-          </div>
+          </div> */}
+
+          {/* Payment Information */}
+          {paymentInfo && (
+            <div className={`bg-white p-6 rounded-xl shadow-lg border-2 ${accentClasses.border} mb-12`}>
+              <h3 className={`text-xl font-bold mb-6 flex items-center ${accentClasses.text}`}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                </svg>
+                METHOD OF PAYMENT
+              </h3>
+              <div className="space-y-4">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <p className="text-sm text-gray-500 font-medium mb-1">Bank Account Name</p>
+                    <p className="text-gray-900 font-semibold">{paymentInfo.accountName}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 font-medium mb-1">Bank</p>
+                    <p className="text-gray-900 font-semibold">{paymentInfo.bankName}</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p className="text-sm text-gray-500 font-medium mb-1">Bank Address</p>
+                    <p className="text-gray-900">{paymentInfo.bankAddress}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 font-medium mb-1">Account Number</p>
+                    <p className="text-gray-900 font-mono font-semibold">{paymentInfo.accountNumber}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 font-medium mb-1">Sort Code</p>
+                    <p className="text-gray-900 font-mono font-semibold">{paymentInfo.sortCode}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 font-medium mb-1">IBAN</p>
+                    <p className="text-gray-900 font-mono font-semibold">{paymentInfo.iban}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 font-medium mb-1">BIC</p>
+                    <p className="text-gray-900 font-mono font-semibold">{paymentInfo.bic}</p>
+                  </div>
+                </div>
+                {paymentInfo.additionalInfo && (
+                  <div className={`mt-6 p-4 rounded-lg bg-yellow-50 border border-yellow-200`}>
+                    <p className="text-sm text-gray-700">
+                      <strong>Important:</strong> {paymentInfo.additionalInfo}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
 
           {/* Required Documents */}
           <div className={`bg-white p-6 rounded-xl shadow-lg border-2 ${accentClasses.border} mb-12`}>

@@ -144,6 +144,18 @@ const events = [
     tagColor: 'orange' as const,
     link: '/events/manchester-3-days-high-elite-football-2025',
   },
+  {
+    id: 'helsby-football-trial-2025',
+    title: 'British AUC Sport Helsby Football Trial 2025',
+    date: '30th November, 2025',
+    description: 'Showcase your talent to professional scouts, clubs and academy agents at this exclusive trial in Helsby and take a step toward your professional football career.',
+    image: '/event2.jpg',
+    location: 'Helsby, United Kingdom',
+    price: '£98',
+    tag: 'Limited Spots',
+    tagColor: 'red' as const,
+    link: '/events/helsby-football-trial-2025',
+  },
 ];
 
 export default function EventsPage() {
