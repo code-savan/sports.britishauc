@@ -9,7 +9,7 @@ import { Card } from '@/components/ui/card';
 interface RegistrationSuccessProps {
   eventTitle: string;
   heroImage: string;
-  accentColor: 'blue' | 'red' | 'orange' | 'yellow';
+  accentColor: 'blue' | 'red' | 'orange' | 'yellow' | 'purple';
   paymentInfo?: {
     accountName: string;
     bankName: string;
@@ -62,6 +62,14 @@ export default function RegistrationSuccess({
       text: "text-yellow-800",
       icon: "text-yellow-500",
       button: "bg-yellow-600 hover:bg-yellow-700",
+    },
+    purple: {
+      gradient: "from-black/80 via-black/60 to-purple-900/30",
+      bg: "to-purple-50",
+      border: "border-purple-100",
+      text: "text-purple-800",
+      icon: "text-purple-500",
+      button: "bg-purple-600 hover:bg-purple-700",
     }
   }[accentColor] || {
     gradient: "from-black/80 via-black/60 to-blue-900/30",
