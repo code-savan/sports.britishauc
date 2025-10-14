@@ -21,7 +21,7 @@ export default function HelsbyFootballTrialPage() {
           <div className="inline-block mb-4">
             <span className="bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">BRITISH AUC SPORT HELSBY FOOTBALL TRIAL 2025</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">HELSBY FOOTBALL TRIAL 2025</h1>
           <p className="text-xl md:text-2xl text-white">UK PROFESSIONAL CLUB TRIAL EXPERIENCE</p>
         </div>
       </section>
@@ -38,10 +38,10 @@ export default function HelsbyFootballTrialPage() {
                 </div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">PROFESSIONAL SCOUTING TRIAL</h2>
                 <p className="text-lg text-gray-600 mb-4">
-                  During this event, you will have the chance to demonstrate your talents and showcase your skills in the presence of clubs and academy scouts/agents. The event is powered by British AUC Sports, an organization dedicated to connecting young talents to football and sports opportunities worldwide.
+                Limited spots are available for the Helsby Football Trial 2025—a unique opportunity for aspiring players to showcase their skills and talents to professional football scouts. This event provides a pathway for players to gain recognition and potentially secure opportunities with football clubs and academies across the UK, Europe, and beyond.
                 </p>
                 <p className="text-lg text-gray-600">
-                  There will be agents from Helsby FC, Atherton Collieries FC, Semi-Pro clubs and Academies in attendance to scout players. This is your opportunity to gain recognition and potentially secure opportunities with football clubs and academies across the UK.
+                Participants will have the chance to be scouted by professional clubs, including teams in the English Premier League, Championship, and other competitive tiers of British and European football. The trial offers invaluable exposure within one of the world&apos;s most prestigious football systems, enabling players to take the next step in their football careers.
                 </p>
               </div>
 
@@ -101,8 +101,8 @@ export default function HelsbyFootballTrialPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900">LOCATION</h2>
                 <p className="text-lg text-gray-600 mb-4">
-                  Helsby FC Training Pitch<br />
-                  Helsby, United Kingdom
+                  Helsby FC Pitch<br />
+                  Callender Way, Helsby, Frodsham WA6 0FX, United Kingdom
                 </p>
                 <div className="relative h-[300px] rounded-lg overflow-hidden shadow-md">
                   <iframe

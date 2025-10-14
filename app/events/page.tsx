@@ -146,7 +146,7 @@ const events = [
   },
   {
     id: 'helsby-football-trial-2025',
-    title: 'British AUC Sport Helsby Football Trial 2025',
+    title: 'Helsby Football Trial 2025',
     date: '30th November, 2025',
     description: 'Showcase your talent to professional scouts, clubs and academy agents at this exclusive trial in Helsby and take a step toward your professional football career.',
     image: '/event2.jpg',
