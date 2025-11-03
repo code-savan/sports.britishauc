@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { getDatesDisplay } from '@/lib/utils';
+
+const { rangeText, deadlineText } = getDatesDisplay();
 
 export default function ManchesterHighEliteFootball2025Page() {
   return (
@@ -22,7 +25,7 @@ export default function ManchesterHighEliteFootball2025Page() {
             <span className="bg-orange-600 text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">HIGH ELITE FOOTBALL PROGRAMME<br />MANCHESTER, UK</h1>
-          <p className="text-xl md:text-2xl text-white uppercase">29th October - 5th of November 2025</p>
+          <p className="text-xl md:text-2xl text-white uppercase">{rangeText}</p>
         </div>
       </section>
 
@@ -130,11 +133,11 @@ export default function ManchesterHighEliteFootball2025Page() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Date:</span>
-                    <span>29th October - 5th of November 2025</span>
+                    <span>{rangeText}</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Registration Deadline:</span>
-                    <span>25th October, 2025</span>
+                    <span>{deadlineText}</span>
                   </div>
                     <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Spots Left:</span>

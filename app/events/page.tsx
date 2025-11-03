@@ -2,6 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { EventCard } from '@/components/event-card';
+import { getDatesDisplay } from '@/lib/utils';
+
+const { rangeText } = getDatesDisplay();
 
 const events = [
 //   {
@@ -99,7 +102,7 @@ const events = [
   {
     id: 'high-elite-football-hungary',
     title: 'High Elite Football Development Programme',
-    date: '29th October - 5th of November 2025',
+    date: rangeText,
     description: 'Train at our Debrecen Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Hungary.',
     image: '/event8.jpg',
     location: 'Debrecen, Hungary',
@@ -111,7 +114,7 @@ const events = [
   {
     id: 'manchester-high-elite-football-2025',
     title: 'Manchester High Elite Football Development Programme',
-    date: '29th October - 5th of November 2025',
+    date: rangeText,
     description: 'Train at our Manchester Football Academy and experience the professional training methods and philosophy that have made elite players worldwide. 2 weeks of pro football, coaching, and trial opportunities in Manchester, United Kingdom.',
     image: '/event9.jpg',
     location: 'Manchester, United Kingdom',
@@ -135,7 +138,7 @@ const events = [
   {
     id: 'manchester-3-days-high-elite-football-2025',
     title: '3-Day High Elite Football Development Programme',
-    date: '13th - 17th October, 2025',
+    date: rangeText,
     description: 'Enjoy the football experience of a lifetime with Pro Club Experience! Train at our Manchester Football Academy and experience the professional training methods and philosophy that have made elite players worldwide.',
     image: '/event3.jpg',
     location: 'Manchester, United Kingdom',
