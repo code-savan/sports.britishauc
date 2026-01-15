@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { getDatesDisplay } from '@/lib/utils';
+
+const { rangeText, deadlineText } = getDatesDisplay();
 
 export default function ClubPlacementTestingConditioningPage() {
   return (
@@ -22,7 +25,7 @@ export default function ClubPlacementTestingConditioningPage() {
             <span className="bg-blue-600 text-white text-sm font-medium px-3 py-1 rounded-full">Limited Spots</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">CLUB PLACEMENT TESTING & CONDITIONING</h1>
-          <p className="text-xl md:text-2xl text-white">10th -14th November, 2025</p>
+          <p className="text-xl md:text-2xl text-white">{rangeText}</p>
         </div>
       </section>
 
@@ -98,7 +101,7 @@ export default function ClubPlacementTestingConditioningPage() {
               <div className="bg-white p-8 rounded-xl shadow-sm border-t-4 border-blue-600">
                 <h2 className="text-2xl font-bold mb-4 text-gray-900">LIMITED SPOTS AVAILABLE</h2>
                 <p className="text-lg text-gray-600 mb-4">Places left: 3 spots</p>
-                <p className="text-lg text-gray-600 mb-4">Deadline: 7th November, 2025</p>
+                <p className="text-lg text-gray-600 mb-4">Deadline: {deadlineText}</p>
                 <p className="text-lg text-gray-600 mb-4">Age: 11-22</p>
                 <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full shadow-md">
                   <Link href="/events/club-placement-testing-conditioning/register">
@@ -119,7 +122,7 @@ export default function ClubPlacementTestingConditioningPage() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Date:</span>
-                    <span>10th -14th November, 2025</span>
+                    <span>{rangeText}</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Age Group:</span>
@@ -127,7 +130,7 @@ export default function ClubPlacementTestingConditioningPage() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Registration Deadline:</span>
-                    <span>7th November, 2025</span>
+                    <span>{deadlineText}</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-600 font-medium mr-2">Location:</span>
