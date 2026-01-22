@@ -9,7 +9,7 @@ export default function ManchesterFootballTrial2026Page() {
       <section className="relative h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/event1.jpg"
+            src="/TR1.jpg"
             alt="Manchester Football Trial 2026"
             fill
             className="object-cover object-top"
@@ -95,6 +95,15 @@ export default function ManchesterFootballTrial2026Page() {
                     <div>
                       <p className="text-gray-600 font-medium">Cost</p>
                       <p className="text-2xl font-bold text-primary">£65</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <div>
+                      <p className="text-gray-600 font-medium">Date</p>
+                      <p>21st February, 2026 (9am - 2pm)</p>
                     </div>
                   </div>
                   <div className="flex items-center">

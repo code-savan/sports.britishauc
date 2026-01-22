@@ -162,9 +162,9 @@ const events = [
   {
     id: 'manchester-football-trial-2026',
     title: 'Manchester Football Trial 2026',
-    date: 'Deadline: February 16, 2026',
+    date: '21st February, 2026 (9am - 2pm)',
     description: 'Showcase your talent and be scouted! A unique opportunity for aspiring players to showcase their skills and talents to professional football scouts.',
-    image: '/event1.jpg',
+    image: '/TR1.jpg',
     location: 'Manchester, UK',
     price: '£65',
     tag: 'Limited Spots',

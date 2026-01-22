@@ -29,7 +29,7 @@ function RegistrationContent() {
     },
     manchester2026: {
       title: "Manchester Football Trial 2026",
-      heroImage: "/event1.jpg",
+      heroImage: "/TR1.jpg",
       accentColor: "red",
       paymentLink: "",
       eventType: "manchester_2026_trial" as const,

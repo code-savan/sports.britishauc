@@ -8,10 +8,10 @@ const trials = [
     {
         id: 'manchester-football-trial-2026',
         title: 'Manchester Football Trial 2026',
-        date: 'Deadline: February 16, 2026',
+        date: '21st February, 2026 (9am - 2pm)',
         location: 'Manchester, UK',
         price: '£65',
-        image: '/event1.jpg',
+        image: '/TR1.jpg',
         description:
           'Showcase your talent and be scouted! A unique opportunity for aspiring players to showcase their skills and talents to professional football scouts.',
         more:
