@@ -27,6 +27,14 @@ function RegistrationContent() {
       eventType: "manchester_2025_trial" as const,
       fee: "£98"
     },
+    manchester2026: {
+      title: "Manchester Football Trial 2026",
+      heroImage: "/event1.jpg",
+      accentColor: "red",
+      paymentLink: "",
+      eventType: "manchester_2026_trial" as const,
+      fee: "£65"
+    },
     helsby2025: {
       title: "British AUC Sport Helsby Football Trial 2025",
       heroImage: "/TR2.jpg",
@@ -45,7 +53,11 @@ function RegistrationContent() {
     }
   };
 
-  const config = eventParam === 'spain' ? eventConfig.spain : eventParam === 'manchester2025' ? eventConfig.manchester2025 : eventParam === 'helsby2025' ? eventConfig.helsby2025 : eventConfig.manchester;
+  const config = eventParam === 'spain' ? eventConfig.spain
+    : eventParam === 'manchester2025' ? eventConfig.manchester2025
+    : eventParam === 'manchester2026' ? eventConfig.manchester2026
+    : eventParam === 'helsby2025' ? eventConfig.helsby2025
+    : eventConfig.manchester;
 
   return (
     <TrialRegistration

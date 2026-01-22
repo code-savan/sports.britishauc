@@ -159,6 +159,18 @@ const events = [
     tagColor: 'red' as const,
     link: '/events/helsby-football-trial-2025',
   },
+  {
+    id: 'manchester-football-trial-2026',
+    title: 'Manchester Football Trial 2026',
+    date: 'Deadline: February 16, 2026',
+    description: 'Showcase your talent and be scouted! A unique opportunity for aspiring players to showcase their skills and talents to professional football scouts.',
+    image: '/event1.jpg',
+    location: 'Manchester, UK',
+    price: '£65',
+    tag: 'Limited Spots',
+    tagColor: 'red' as const,
+    link: '/events/manchester-football-trial-2026',
+  },
 ];
 
 export default function EventsPage() {

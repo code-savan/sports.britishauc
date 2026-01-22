@@ -5,7 +5,19 @@ import Link from 'next/link';
 import { Calendar, MapPin, Wallet } from 'lucide-react';
 
 const trials = [
-
+    {
+        id: 'manchester-football-trial-2026',
+        title: 'Manchester Football Trial 2026',
+        date: 'Deadline: February 16, 2026',
+        location: 'Manchester, UK',
+        price: '£65',
+        image: '/event1.jpg',
+        description:
+          'Showcase your talent and be scouted! A unique opportunity for aspiring players to showcase their skills and talents to professional football scouts.',
+        more:
+          "Limited spots available. Be scouted by pro clubs from the English Football League (EFL) and other British and European teams. Gain exposure in a prestigious football system and take the next step in your career. Hosted by Chris Honor (Helsby FC Director, ex-Leicester City FC scout). Location: Platt Lane, Yew Tree Road, Manchester, M14 7UU.",
+        link: '/events/manchester-football-trial-2026',
+      },
       {
         id: 'manchester-trial-2025',
         title: 'Manchester Football Trial 2025',
