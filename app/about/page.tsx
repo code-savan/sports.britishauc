@@ -17,10 +17,12 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30" />
         </div>
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center text-white">About Us</h1>
           <p className="text-xl max-w-2xl mx-auto text-center text-white">Developing young football talents while providing quality education.</p>
         </div>
+
       </section>
 
       {/* Main Content with Blue Accents */}
@@ -39,7 +41,7 @@ export default function AboutPage() {
                 British AUC SPORT connects extensively with most English and European football clubs and academies, giving each player an ample opportunity of being scouted into Premiership clubs around the world.
               </p>
               <p className="text-lg text-gray-600">
-                British AUC SPORT is proud to be a member of PFSA (Professional Football Scouts Association United Kingdom) an umbrella body for all professional scouts worldwide. Therefore, prospective players are exposed to scouts around the world. Recently, Man United has contracted the body to help recruit for its first team.
+                British AUC SPORT is proud to be a Member of PFSA (Professional Football Scouts Association United Kingdom) an umbrella body for all professional scouts worldwide. Therefore, prospective players are exposed to scouts around the world. Recently, Man United has contracted the body to help recruit for its first team.
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
                 <Button asChild size="lg" className="bg-primary hover:bg-red-700 text-white">
