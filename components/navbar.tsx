@@ -3,20 +3,15 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ChevronDown, Phone, Mail } from 'lucide-react';
+import { ChevronDown, Menu, X, Phone, Mail, ArrowRight, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
-type DropdownItem = {
-  name: string;
-  href: string;
-};
-
 type NavigationItem = {
   name: string;
   href: string;
-  dropdown?: DropdownItem[];
+  dropdown?: { name: string; href: string }[];
 };
 
 const navigation: NavigationItem[] = [
@@ -30,8 +25,7 @@ const navigation: NavigationItem[] = [
       { name: 'Football Plus Education', href: '/programmes/football-plus-education' },
       { name: 'Short Football Programmes', href: '/programmes/short-football-programmes' },
       { name: 'Football Trials', href: '/programmes/football-trial' },
-    //   { name: 'Football Plus Language', href: '/programmes/football-plus-language' },
-    ]
+    ],
   },
   {
     name: 'Football Academy',
@@ -41,7 +35,7 @@ const navigation: NavigationItem[] = [
       { name: 'London Football Academy', href: '/academy/london' },
       { name: 'Alicante Football Academy', href: '/academy/alicante' },
       { name: 'Debrecen Football Academy', href: '/academy/debrecen' },
-    ]
+    ],
   },
   { name: 'Fees', href: '/fees' },
   { name: 'Events', href: '/events' },
@@ -49,149 +43,127 @@ const navigation: NavigationItem[] = [
 ];
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
   const [isScrolled, setIsScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState<number | null>(null);
   const dropdownRefs = useRef<HTMLDivElement[]>([]);
-  const pathname = usePathname();
+  const mobileRef = useRef<HTMLDivElement>(null);
 
-  // Check if we're on the home page
-  const isHomePage = pathname === '/';
+  const setRef = (el: HTMLDivElement | null, i: number) => {
+    if (el) dropdownRefs.current[i] = el;
+  };
 
-  // Initialize refs for dropdowns
   useEffect(() => {
     dropdownRefs.current = dropdownRefs.current.slice(0, navigation.length);
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-
-    // Only add scroll listener on home page
-    if (isHomePage) {
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    } else {
-      // Force "scrolled" appearance on other pages
+    if (!isHome) {
       setIsScrolled(true);
+      return;
     }
-  }, [isHomePage]);
+    setIsScrolled(window.scrollY > 0);
+    const handleScroll = () => setIsScrolled(window.scrollY > 0);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isHome]);
 
-  const toggleDropdown = (index: number, e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (openDropdown === index) {
-      setOpenDropdown(null);
-    } else {
-      setOpenDropdown(index);
-    }
-  };
-
-  // Close dropdown when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (openDropdown !== null && dropdownRefs.current[openDropdown]) {
-        const currentRef = dropdownRefs.current[openDropdown];
-        if (currentRef && !currentRef.contains(event.target as Node)) {
-          setOpenDropdown(null);
-        }
+    const handleClick = (e: MouseEvent) => {
+      if (openDropdown !== null) {
+        const ref = dropdownRefs.current[openDropdown];
+        if (ref && !ref.contains(e.target as Node)) setOpenDropdown(null);
       }
     };
-
-    document.addEventListener('click', handleClickOutside);
-    return () => document.removeEventListener('click', handleClickOutside);
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
   }, [openDropdown]);
 
-  // Set up refs callback
-  const setRef = (el: HTMLDivElement | null, index: number) => {
-    if (el) {
-      dropdownRefs.current[index] = el;
-    }
-  };
+  useEffect(() => {
+    if (isMobileOpen) document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = 'auto';
+    return () => { document.body.style.overflow = 'auto'; };
+  }, [isMobileOpen]);
 
-  // Determine if navbar should have transparent bg (only on home page when not scrolled)
-  const isTransparent = isHomePage && !isScrolled;
+  useEffect(() => {
+    setTimeout(() => setIsMobileOpen(false), 100);
+  }, [pathname]);
+
+  const active = (href: string) => pathname === href || (href !== '/' && pathname.startsWith(href));
+  const transparent = isHome && !isScrolled;
 
   return (
-    <>
-
-      {/* Main Navbar */}
-      <nav
-        className={cn(
-          'fixed w-full z-50 transition-all duration-300',
-          isTransparent ? 'bg-transparent' : 'bg-white shadow-md'
-        )}
-      >
-         {/* Contact Info Bar */}
-      <div className="w-full">
-        <div className={
-          cn(
-            "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-end gap-4 md:gap-10 pt-3 text-sm",
-            isTransparent ? "text-white" : "text-gray-900"
-          )
-        }>
-          <div className={
-            cn(
-              "flex items-center gap-2 text-[13px] md:text-sm",
-              isTransparent ? "text-white" : "text-gray-900"
-            )
-          }>
-            <Phone className={isTransparent ? "text-white" : "text-primary"} size={20} />
-            <span>+44 7840 782759</span>
-          </div>
-          <div className={
-            cn(
-              "flex items-center gap-2 text-[13px] md:text-sm",
-              isTransparent ? "text-white" : "text-gray-900"
-            )
-          }>
-            <Mail className={isTransparent ? "text-white" : "text-primary"} size={20} />
-            <span>sports@britishauc.com</span>
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <div className={cn(transparent ? 'bg-black' : 'hidden lg:block bg-black')}>
+        <div className="max-w-7xl mx-auto px-6 py-1.5 flex items-center justify-between">
+          <p className="text-[11px] font-normal text-white/80">
+            Football Trials &amp; Academy Programmes
+          </p>
+          <div className="flex items-center gap-4 text-[11px] font-normal text-white/80">
+            <a href="tel:+447840782759" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">
+              <Phone size={11} />
+              +44 7840 782759
+            </a>
+            <a href="mailto:sports@britishauc.com" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">
+              <Mail size={11} />
+              sports@britishauc.com
+            </a>
           </div>
         </div>
       </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <Link href="/" className="flex items-center">
-              <Image src="/logo.png" alt="British AUC Sport" width={100} height={100} />
-              </Link>
-            </div>
 
-            {/* Desktop menu */}
-            <div className="hidden md:flex items-center space-x-8">
-              {navigation.map((item, index) => (
-                <div
-                  key={item.name}
-                  className="relative"
-                  ref={(el) => setRef(el, index)}
-                >
+      <div className={cn('transition-all duration-300', transparent ? 'bg-transparent' : 'bg-white border-b border-gray-200 shadow-sm')}>
+        <div className="max-w-7xl mx-auto px-6">
+          <nav className="flex items-center justify-between h-14 lg:h-[60px]">
+            <Link href="/" className="flex items-center gap-2.5 shrink-0">
+              <Image
+                src="/sporticon.jpeg"
+                alt="British AUC Sport"
+                width={32}
+                height={32}
+              />
+              <div className="leading-tight">
+                <span className={cn('text-xs tracking-[0.12em] uppercase font-medium', transparent ? 'text-white' : 'text-gray-900')}>
+                  British <span className="text-red-600">AUC</span>
+                </span>
+                <span className={cn('block text-[10px] font-medium tracking-wider uppercase', transparent ? 'text-white/60' : 'text-gray-500')}>
+                  Sport
+                </span>
+              </div>
+            </Link>
+
+            <div className="hidden lg:flex items-center justify-end flex-1 gap-0.5">
+              {navigation.map((item, i) => (
+                <div key={item.name} className="relative" ref={(el) => setRef(el, i)}>
                   {item.dropdown ? (
-                    <div className="group">
+                    <div>
                       <button
-                        onClick={(e) => toggleDropdown(index, e)}
+                        onClick={() => setOpenDropdown(openDropdown === i ? null : i)}
                         className={cn(
-                          'flex items-center text-sm font-medium transition-colors',
-                          isTransparent ? 'text-white' : 'text-gray-900',
-                          'hover:text-primary'
+                          'flex items-center gap-1 px-2.5 py-1.5 text-[14px] font-normal transition-colors',
+                          active(item.href) || openDropdown === i
+                            ? 'text-red-600'
+                            : transparent
+                              ? 'text-white/80 hover:text-white'
+                              : 'text-gray-600 hover:text-gray-900'
                         )}
                       >
-                        <span>{item.name}</span>
-                        <ChevronDown className={cn(
-                          "h-4 w-4 ml-1 transition-transform",
-                          openDropdown === index ? "transform rotate-180" : ""
-                        )} />
+                        {item.name}
+                        <ChevronDown size={14} className={cn('transition-transform duration-200', openDropdown === i ? 'rotate-180' : '')} />
                       </button>
-
-                      {openDropdown === index && (
-                        <div className="absolute top-full right-0 mt-2 w-64 bg-white shadow-lg rounded-md py-2 z-50">
-                          {item.dropdown.map((dropdownItem) => (
+                      {openDropdown === i && (
+                        <div className="absolute top-full mt-1 left-1/2 -translate-x-1/2 bg-white border border-gray-200 shadow-lg py-2 min-w-[200px] z-30">
+                          {item.dropdown.map((drop) => (
                             <Link
-                              key={dropdownItem.name}
-                              href={dropdownItem.href}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary"
+                              key={drop.name}
+                              href={drop.href}
+                              className="block px-5 py-2 text-sm font-normal text-gray-500 hover:text-gray-900 hover:bg-gray-50 transition-colors"
+                              onClick={() => setOpenDropdown(null)}
                             >
-                              {dropdownItem.name}
+                              {drop.name}
                             </Link>
                           ))}
                         </div>
@@ -201,10 +173,12 @@ export function Navbar() {
                     <Link
                       href={item.href}
                       className={cn(
-                        'text-sm font-medium transition-colors',
-                        isTransparent ? 'text-white' : 'text-gray-900',
-                        'hover:text-primary',
-                        pathname === item.href ? 'font-semibold' : ''
+                        'inline-block px-2.5 py-1.5 text-[14px] font-normal transition-colors',
+                        active(item.href)
+                          ? 'text-red-600'
+                          : transparent
+                            ? 'text-white/80 hover:text-white'
+                            : 'text-gray-600 hover:text-gray-900'
                       )}
                     >
                       {item.name}
@@ -212,92 +186,123 @@ export function Navbar() {
                   )}
                 </div>
               ))}
-              <Button asChild className="ml-4 bg-red-600 hover:bg-red-700 text-white px-6 py-2 font-semibold rounded shadow">
-                <Link href="/applynow">Apply now</Link>
-              </Button>
             </div>
 
-            {/* Mobile menu button */}
-            <div className="flex items-center md:hidden">
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setIsOpen(!isOpen)}
-                aria-label="Toggle menu"
-                className={isTransparent ? 'text-white' : 'text-gray-900'}
-              >
-                {isOpen ? (
-                  <X className="h-6 w-6" />
-                ) : (
-                  <Menu className="h-6 w-6" />
+            <div className="hidden lg:flex items-center gap-2.5 ml-4">
+              <Link
+                href="/applynow"
+                className={cn(
+                  'inline-flex items-center gap-1.5 px-4 py-1.5 text-[13px] font-medium transition-all duration-200',
+                  transparent
+                    ? 'bg-red-600/90 text-white hover:bg-red-700'
+                    : 'bg-red-600 text-white hover:bg-red-700'
                 )}
-              </Button>
+              >
+                Apply Now
+                <ArrowRight size={15} />
+              </Link>
             </div>
+
+            <button
+              className="lg:hidden p-2 -mr-2"
+              onClick={() => setIsMobileOpen(true)}
+              aria-label="Open menu"
+            >
+              <Menu size={22} className={transparent ? 'text-white' : 'text-gray-900'} />
+            </button>
+          </nav>
+        </div>
+      </div>
+
+      <div
+        ref={mobileRef}
+        className={`fixed inset-0 w-full h-full bg-white z-[60] transform transition-transform duration-300 ease-out ${
+          isMobileOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex flex-col h-full overflow-y-auto">
+          <div className="flex items-center justify-between px-6 pt-5 pb-4 border-b border-gray-200">
+            <Link href="/" className="flex items-center gap-3" onClick={() => setIsMobileOpen(false)}>
+              <Image src="/sporticon.jpeg" alt="British AUC Sport" width={32} height={32} />
+              <div className="leading-tight">
+                <span className="text-xs font-medium tracking-[0.12em] text-gray-900 uppercase">
+                  British <span className="text-red-600">AUC</span>
+                </span>
+                <span className="block text-[10px] font-normal text-gray-400 tracking-wider uppercase">Sport</span>
+              </div>
+            </Link>
+            <button onClick={() => setIsMobileOpen(false)} className="p-2 -mr-2" aria-label="Close menu">
+              <X size={22} className="text-gray-900" />
+            </button>
           </div>
 
-          {/* Mobile menu */}
-          {isOpen && (
-            <div className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-white rounded-b-lg shadow-md">
-                {navigation.map((item, index) => (
-                  <div key={item.name}>
-                    {item.dropdown ? (
-                      <>
-                        <div
-                          className={cn(
-                            'flex justify-between items-center px-3 py-2 rounded-md text-base font-medium transition-colors',
-                            openDropdown === index
-                              ? 'bg-primary/10 text-primary'
-                              : 'text-gray-900 hover:bg-primary/5 hover:text-primary'
-                          )}
-                          onClick={(e) => toggleDropdown(index, e)}
-                        >
-                          <span>{item.name}</span>
-                          <ChevronDown className={cn("h-4 w-4 transition-transform", openDropdown === index ? "transform rotate-180" : "")}/>
-                        </div>
-
-                        {openDropdown === index && (
-                          <div className="pl-4 space-y-1 mt-1">
-                            {item.dropdown.map((dropdownItem) => (
-                              <Link
-                                key={dropdownItem.name}
-                                href={dropdownItem.href}
-                                className="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-primary/5 hover:text-primary"
-                                onClick={() => {
-                                  setOpenDropdown(null);
-                                  setIsOpen(false);
-                                }}
-                              >
-                                {dropdownItem.name}
-                              </Link>
-                            ))}
-                          </div>
-                        )}
-                      </>
-                    ) : (
-                      <Link
-                        href={item.href}
-                        className={cn(
-                          'block px-3 py-2 rounded-md text-base font-medium transition-colors',
-                          pathname === item.href
-                            ? 'bg-primary/10 text-primary'
-                            : 'text-gray-900 hover:bg-primary/5 hover:text-primary'
-                        )}
-                        onClick={() => setIsOpen(false)}
+          <div className="flex-1 px-6 py-6">
+            <ul className="flex flex-col gap-1">
+              {navigation.map((item, i) => (
+                <li key={item.name}>
+                  {item.dropdown ? (
+                    <>
+                      <button
+                        onClick={() => setMobileDropdownOpen(mobileDropdownOpen === i ? null : i)}
+                        className={`flex items-center gap-1.5 w-full py-2.5 text-[14px] font-normal transition-colors ${mobileDropdownOpen === i ? 'text-red-600' : 'text-gray-500'}`}
                       >
                         {item.name}
-                      </Link>
-                    )}
-                  </div>
-                ))}
-                <Button asChild className="w-full mt-3 bg-red-600 hover:bg-red-700 text-white px-6 py-3 font-semibold rounded shadow">
-                  <Link href="/applynow">Apply now</Link>
-                </Button>
+                        <ChevronDown size={16} className={`transition-transform duration-200 ${mobileDropdownOpen === i ? 'rotate-180' : ''}`} />
+                      </button>
+                      {mobileDropdownOpen === i && (
+                        <ul className="ml-4 space-y-1 pb-2 border-l-2 border-gray-100 pl-4">
+                          {item.dropdown.map((drop) => (
+                            <li key={drop.name}>
+                              <Link href={drop.href} onClick={() => setIsMobileOpen(false)} className="block py-2 text-[13px] font-normal text-gray-400 hover:text-gray-900 transition-colors">
+                                {drop.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      onClick={() => setIsMobileOpen(false)}
+                      className={`block py-2.5 text-[14px] font-normal transition-colors ${active(item.href) ? 'text-red-600' : 'text-gray-500 hover:text-gray-900'}`}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="px-6 pb-8 space-y-4">
+            <div className="bg-gray-50 px-5 py-4">
+              <p className="text-[11px] font-medium text-gray-400 uppercase tracking-[0.15em] mb-2">Contact</p>
+              <div className="space-y-2">
+                <a href="tel:+447840782759" className="flex items-center gap-2 text-sm text-gray-700 hover:text-red-600 transition-colors">
+                  <Phone size={14} className="text-red-500" />
+                  +44 7840 782759
+                </a>
+                <a href="mailto:sports@britishauc.com" className="flex items-center gap-2 text-sm text-gray-700 hover:text-red-600 transition-colors">
+                  <Mail size={14} className="text-red-500" />
+                  sports@britishauc.com
+                </a>
               </div>
             </div>
-          )}
+            <Link
+              href="/applynow"
+              className="flex items-center justify-center gap-2 w-full bg-red-600 hover:bg-red-700 text-white font-medium text-[14px] px-5 py-2.5 transition-colors"
+            >
+              Apply Now
+              <ArrowRight size={17} />
+            </Link>
+          </div>
         </div>
-      </nav>
-    </>
+      </div>
+
+      {isMobileOpen && (
+        <div className="fixed inset-0 bg-black/30 z-30" onClick={() => setIsMobileOpen(false)} />
+      )}
+    </header>
   );
 }

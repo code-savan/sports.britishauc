@@ -16,6 +16,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['var(--font-poppins)'],
+        body: ['var(--font-poppins)'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

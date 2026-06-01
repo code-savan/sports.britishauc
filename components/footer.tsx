@@ -1,137 +1,96 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export function Footer() {
   return (
-    <footer className="bg-gray-50 border-t">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          {/* Brand/Intro */}
+    <footer className="bg-black border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-6 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+          {/* Brand */}
           <div className="md:col-span-3">
-            <h3 className="text-lg font-semibold mb-4">British AUC Sport</h3>
-            <p className="text-sm text-gray-600">
-              Bridging the gap between education and sports, providing exceptional opportunities for aspiring athletes.
+            <Image
+              src="/logo.png"
+              alt="British AUC Sport"
+              width={160}
+              height={48}
+              className="mb-4"
+            />
+            <p className="text-xs text-white/40 leading-relaxed">
+              Bridging the gap between education and sports, providing exceptional opportunities for aspiring athletes worldwide.
             </p>
           </div>
+
           {/* Quick Links */}
           <div className="md:col-span-2">
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/about" className="text-sm text-gray-600 hover:text-primary">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/events" className="text-sm text-gray-600 hover:text-primary">
-                  Events
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-sm text-gray-600 hover:text-primary">
-                  Contact
-                </Link>
-              </li>
+            <h4 className="text-xs font-medium text-white/50 tracking-[0.1em] uppercase mb-4">Quick Links</h4>
+            <ul className="space-y-2.5">
+              <li><Link href="/about" className="text-xs text-white/40 hover:text-white/80 transition-colors">About Us</Link></li>
+              <li><Link href="/events" className="text-xs text-white/40 hover:text-white/80 transition-colors">Events</Link></li>
+              <li><Link href="/contact" className="text-xs text-white/40 hover:text-white/80 transition-colors">Contact</Link></li>
+              <li><Link href="/applynow" className="text-xs text-white/40 hover:text-white/80 transition-colors">Apply Now</Link></li>
             </ul>
 
-            <h3 className="text-lg font-semibold mt-4">Forms</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/forms/medical-profile" className="text-sm text-gray-600 hover:text-primary">
-                  Medical Profile Form
-                </Link>
-              </li>
-              <li>
-                <Link href="/forms/refund-request" className="text-sm text-gray-600 hover:text-primary">
-                  Refund Request Form
-                </Link>
-              </li>
+            <h4 className="text-xs font-medium text-white/50 tracking-[0.1em] uppercase mb-4 mt-6">Forms</h4>
+            <ul className="space-y-2.5">
+              <li><Link href="/forms/medical-profile" className="text-xs text-white/40 hover:text-white/80 transition-colors">Medical Profile</Link></li>
+              <li><Link href="/forms/refund-request" className="text-xs text-white/40 hover:text-white/80 transition-colors">Refund Request</Link></li>
             </ul>
           </div>
+
           {/* Legal */}
           <div className="md:col-span-2">
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2">
+            <h4 className="text-xs font-medium text-white/50 tracking-[0.1em] uppercase mb-4">Legal</h4>
+            <ul className="space-y-2.5">
+              <li><Link href="/privacy" className="text-xs text-white/40 hover:text-white/80 transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-xs text-white/40 hover:text-white/80 transition-colors">Terms of Service</Link></li>
               <li>
-                <Link href="/privacy" className="text-sm text-gray-600 hover:text-primary">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-sm text-gray-600 hover:text-primary">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="https://britishauc.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-gray-600 hover:text-primary"
-                >
+                <a href="https://britishauc.com" target="_blank" rel="noopener noreferrer" className="text-xs text-white/40 hover:text-white/80 transition-colors">
                   British AUC
                 </a>
               </li>
             </ul>
           </div>
-          {/* Contact & Address */}
+
+          {/* Contact */}
           <div className="md:col-span-5">
-            <h3 className="text-lg font-semibold mb-4">Contact &amp; Offices</h3>
+            <h4 className="text-xs font-medium text-white/50 tracking-[0.1em] uppercase mb-4">Contact &amp; Offices</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {/* Contact Details */}
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <div>
-                  <span className="block text-sm text-gray-600 font-medium">Phone</span>
-                  <a href="tel:+447840782759" className="block text-sm text-gray-600 hover:text-primary">+44 7840 782759</a>
-                  <a href="tel:+447375654996" className="block text-sm text-gray-600 hover:text-primary">+44 7375 654996</a>
+                  <p className="text-[11px] font-medium text-white/30 uppercase tracking-[0.1em] mb-1">Phone</p>
+                  <a href="tel:+447840782759" className="block text-xs text-white/40 hover:text-white/80 transition-colors">+44 7840 782759</a>
+                  <a href="tel:+447375654996" className="block text-xs text-white/40 hover:text-white/80 transition-colors">+44 7375 654996</a>
                 </div>
                 <div>
-                  <span className="block text-sm text-gray-600 font-medium">Email</span>
-                  <a href="mailto:sports@britishauc.com" className="block text-sm text-gray-600 hover:text-primary">sports@britishauc.com</a>
-                </div>
-                <div>
-                  <span className="block text-sm text-gray-600 font-medium">Website</span>
-                  <a href="http://www.sports.britishauc.com" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-600 hover:text-primary">
-                    www.sports.britishauc.com
-                  </a>
+                  <p className="text-[11px] font-medium text-white/30 uppercase tracking-[0.1em] mb-1">Email</p>
+                  <a href="mailto:sports@britishauc.com" className="block text-xs text-white/40 hover:text-white/80 transition-colors">sports@britishauc.com</a>
                 </div>
               </div>
-              {/* Office Addresses */}
-              <div className="space-y-3">
+              <div className="space-y-4">
+                
                 <div>
-                  <span className="block text-sm text-gray-600 font-medium">London Office</span>
-                  <span className="block text-sm text-gray-600">
-                    128 City Road, London, EC1V 2NX United Kingdom
-                  </span>
-                  <div className="mt-2">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19858.10829900693!2d-0.088244!3d51.526726000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca671d5df0b%3A0x368e18d29207f698!2s128%20City%20Rd%2C%20London%20EC1V%202NX%2C%20UK!5e0!3m2!1sen!2sng!4v1747032924279!5m2!1sen!2sng"
-                      style={{ border: 0 }}
-                      allowFullScreen={true}
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      className="w-full h-24 rounded"
-                      title="London Office Map"
-                    ></iframe>
-                  </div>
+                  <p className="text-[11px] font-medium text-white/30 uppercase tracking-[0.1em] mb-1">London Office</p>
+                  <p className="text-xs text-white/40 leading-relaxed">
+                    128 City Road, London, EC1V 2NX, United Kingdom
+                  </p>
                 </div>
                 <div>
-                  <span className="block text-sm text-gray-600 font-medium">Manchester Office</span>
-                  <span className="block text-sm text-gray-600">
+                  <p className="text-[11px] font-medium text-white/30 uppercase tracking-[0.1em] mb-1">Manchester Office</p>
+                  <p className="text-xs text-white/40 leading-relaxed">
                     19 Bandyfield&apos;s Place, Salford, Manchester M7 2ZT, United Kingdom
-                  </span>
-                </div>
-                <div>
-                  <span className="block text-xs text-gray-700">
-                    Company No. 15500197 | Registered in England and Wales as BAUC International Ltd
-                  </span>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-200">
-          <p className="text-sm text-center text-gray-600">
-            © {new Date().getFullYear()} British AUC Sport. All rights reserved.
+
+        <div className="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-white/25">
+            &copy; {new Date().getFullYear()} British AUC Sport. All rights reserved.
+          </p>
+          <p className="text-xs text-white/20">
+            Company No. 15500197 | BAUC International Ltd
           </p>
         </div>
       </div>
