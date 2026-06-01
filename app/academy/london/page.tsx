@@ -1,88 +1,83 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-
-// Data
-const ACADEMY_FEES = [
-    { academy: 'London Football Academy', fee: '£14,950' },
-    { academy: 'Manchester Football Academy', fee: '£12,950' },
-    { academy: 'Alicante Football Academy', fee: '£10,950' },
-    { academy: 'Debrecen Football Academy', fee: '$7,950' }
-  ];
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const SKILLS = [
-  "Dribbling/Ball manipulation",
-  "Speed and quickness exercise",
-  "Balance Coordination",
-  "Dominating in 1v1 situation",
-  "Effective turns with the ball",
-  "Passing/Shooting/Finishing",
-  "Position Awareness",
-  "First touch",
-  "Brain Training and Awareness",
-  "Weak foot enhancement",
-  "Confidence and Endurance Boost",
-  "Team working"
+  'Dribbling/Ball manipulation',
+  'Speed and quickness exercise',
+  'Balance Coordination',
+  'Dominating in 1v1 situation',
+  'Effective turns with the ball',
+  'Passing/Shooting/Finishing',
+  'Position Awareness',
+  'First touch',
+  'Brain Training and Awareness',
+  'Weak foot enhancement',
+  'Confidence and Endurance Boost',
+  'Team working',
 ];
 
 const BENEFITS = [
   {
-    title: "Football Training with UEFA-qualified Coach",
-    description: "Players will be trained by highly qualified UEFA Coaches to ensure that players develop the required skills to compete professionally."
+    title: 'Football Training with UEFA-qualified Coach',
+    description: 'Players will be trained by highly qualified UEFA Coaches to ensure that players develop the required skills to compete professionally.',
   },
   {
-    title: "Individual Player Report",
-    description: "An individual Player Report is generated for each player, outlining the strengths and weaknesses of the player. This is an important document required by professional clubs for assessing the suitability of the player."
+    title: 'Individual Player Report',
+    description: 'An individual Player Report is generated for each player, outlining the strengths and weaknesses of the player.',
   },
   {
-    title: "Player Development Plan",
-    description: "The individual development plan will be created for each player in the first instance. This shows the development road map for each player. This is to ensure that each receives an appropriate development in the area of need while enhancing their strong areas."
+    title: 'Player Development Plan',
+    description: 'The individual development plan will be created for each player showing the development road map.',
   },
   {
-    title: "Football Trial with Pro Clubs",
-    description: "Players will be exposed to Pro football trials around the UK. These are both trials organized by the Professional Football Scouts Association, United Kingdom, well attended by Scouts of the Premier League all over the world and Pro clubs' in-house trials."
+    title: 'Football Trial with Pro Clubs',
+    description: 'Players will be exposed to Pro football trials around the UK organised by the Professional Football Scouts Association.',
   },
   {
-    title: "Training Kits",
-    description: "Players receive training kits. However, each player is expected to provide their foot wears and, socks, and chin guard."
+    title: 'Player Performance Analysis',
+    description: 'Player performance and development are analyzed to ascertain the extent of progress and skill development.',
   },
   {
-    title: "Player Performance Analysis",
-    description: "Player performance and development are usually analyzed to ascertain the extent of progress and skill development. This regular evaluation always helps the coach to spot areas of weakness and strength of the player."
+    title: 'Fitness Training',
+    description: 'Physical strength and fitness are key elements of player development. Players are engaged in supervised gym sessions.',
   },
   {
-    title: "Fitness Training",
-    description: "Physical strength and fitness are key elements of player development. Players are occasionally engaged in a supervised gym to ensure the development of physical and mental dexterity."
+    title: 'Outdoor Exercise',
+    description: 'Outdoor activities like mountain climbing, hiking, swimming are an integral part of player development.',
   },
   {
-    title: "Outdoor Exercise",
-    description: "Outdoor activities are an integral part of development and training activities that players are exposed to. Activities like mountain climbing, hiking, swimming, etc. are necessary for the all-around development of players."
+    title: 'Sport Therapy/Nutrition',
+    description: 'Each player receives medical and health advice from our seasoned professional Sport Therapist.',
   },
   {
-    title: "Sport Therapy/Nutrition",
-    description: "Each player receives medical and health advice from our seasoned professional Sport Therapist. Nutrition is also very important in keeping fit. Players are encouraged to stick to healthy nutrition."
+    title: 'Match Analysis & Classroom Teaching',
+    description: 'Academy and friendly matches are analyzed and dissected so players can improve their knowledge of the game.',
   },
   {
-    title: "Match Analysis/Classroom teaching",
-    description: "Match Analysis is another way of reviewing the game and pointing out some faulty decisions in the game. Academy and friendly matches are analyzed and dissected so players can improve their knowledge of the game."
+    title: 'League Club Tours',
+    description: 'Regular visits to Premier League clubs around London with match tickets provided for players.',
   },
   {
-    title: "League Club Tours",
-    description: "There is a regular visit to Premier League clubs around London, and tickets for matches are also provided for players."
+    title: 'PFSA Football Trials',
+    description: 'Players attend Professional Football Scout Association trials held in the London area.',
   },
-  {
-    title: "PFSA Football Trials",
-    description: "All players are taken to the Professional Football Scout Association Football Trial held in the London area. Scouts from all over the UK league clubs and outside the United Kingdom, thus allowing each player to be scouted graze the trial."
-  }
+];
+
+const FACILITIES = [
+  'London Sports Complex',
+  '4G Astroturf pitches',
+  'Fitness suites & studios',
+  'High performance gym',
+  'Recovery facilities',
+  'Free parking',
 ];
 
 export default function LondonAcademy() {
   return (
-    <main className="min-h-screen bg-white pt-16">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-start overflow-hidden">
+    <div className="pt-16">
+      {/* Hero */}
+      <section className="relative h-[70vh] md:h-[80vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=2940"
@@ -90,94 +85,108 @@ export default function LondonAcademy() {
             fill
             className="object-cover"
             priority
-            quality={100}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-blue-900/30 z-[2]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
         </div>
-
-        <div className="relative z-10 px-6 md:px-[120px] container max-w-7xl mx-auto text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white/90">
-            London Football Academy
-          </h1>
-          <p className="text-lg max-w-2xl text-white/80">
-            Developing elite footballers in one of the world&apos;s most vibrant sporting capitals
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Button asChild size="lg" className="bg-primary hover:bg-red-700 text-white">
-              <Link href="#overview">Explore Academy</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="bg-white/10 text-white border-white hover:bg-white/20">
-              <Link href="/contact">Apply Now</Link>
-            </Button>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+          <div className="max-w-xl">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="w-0.5 h-5 bg-red-600" />
+              <span className="text-xs font-medium text-white/60 tracking-[0.15em] uppercase">
+                London
+              </span>
+            </div>
+            <h1 className="text-3xl md:text-5xl font-semibold text-white leading-tight mb-4">
+              London Football Academy
+            </h1>
+            <p className="text-sm md:text-[15px] text-white/60 leading-relaxed max-w-lg">
+              Developing elite footballers in one of the world&apos;s most vibrant sporting capitals.
+            </p>
+            <div className="flex flex-wrap gap-3 mt-8">
+              <Link
+                href="#overview"
+                className="inline-flex items-center gap-2 bg-red-600 text-white text-sm font-medium px-5 py-2.5 hover:bg-red-700 transition-colors"
+              >
+                Explore Academy
+                <ArrowRight size={15} />
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 border border-white/30 text-white text-sm font-medium px-5 py-2.5 hover:bg-white hover:text-gray-900 transition-colors"
+              >
+                Apply Now
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Overview Section */}
-      <section id="overview" className="py-32">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-20">
-            <div className="flex-1">
-              <span className="text-primary font-semibold mb-4 block">ACADEMY OVERVIEW</span>
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">London Football Academy</h2>
-
-              <div className="space-y-6 text-gray-600 text-base">
-                <p>
+      {/* Academy Overview */}
+      <section id="overview" className="py-20 md:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <div className="flex items-center gap-3 mb-5">
+                <span className="w-0.5 h-5 bg-red-600 shrink-0" />
+                <span className="text-xs font-medium text-gray-400 tracking-[0.15em] uppercase">
+                  Academy Overview
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-5">
+                London Football Academy
+              </h2>
+              <div className="space-y-4">
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
                   London Football Academy is for students studying in the London area and environs who wish to develop their football skills alongside their studies at the University. Most students who joined this academy are students studying at the University of Surrey, University of East London, Middlesex University, Staffordshire University, etc.
                 </p>
-                <p>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
                   Our London Academy empowers young footballers and students through weekly sessions led by UEFA licensed coaches. Players from various regions can enroll in the full-time program, linking them with professional and semi-professional clubs. The academy provides training, games, and career development support.
                 </p>
-                <p>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
                   We&apos;re dedicated to helping aspiring footballers achieve their goals and reach their full potential. Our experienced coaching team provide top-notch training programs designed to give your child the skills and confidence they need to succeed in football.
                 </p>
               </div>
             </div>
-
-            <div className="flex-1 relative min-h-[500px]">
+            <div className="relative h-[350px] md:h-[450px] overflow-hidden">
               <Image
                 src="/lfa.png"
                 alt="London Football Training"
                 fill
                 className="object-cover"
               />
-              <div className="absolute -bottom-12 -left-12 w-2/3 h-32 bg-primary" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* London City Section */}
-      <section className="py-32 bg-gray-50">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
-            <div className="relative">
+      {/* City Overview */}
+      <section className="py-20 md:py-28 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="relative h-[350px] md:h-[450px] overflow-hidden order-2 lg:order-1">
               <Image
                 src="https://images.unsplash.com/photo-1619447093155-3d646f597c91?q=80&w=3088"
                 alt="London City"
-                width={600}
-                height={700}
-                className="object-cover h-[500px] w-full object-bottom"
+                fill
+                className="object-cover object-bottom"
               />
-              <div className="absolute top-12 -right-12 h-2/3 w-24 bg-primary" />
             </div>
-
-            <div className="flex flex-col justify-center">
-              <span className="text-primary font-semibold mb-4 block">CITY OVERVIEW</span>
-              <h2 className="text-4xl font-bold mb-8 text-gray-900">Life in London</h2>
-
-              <div className="space-y-6 text-gray-600 text-base">
-                <p>
-                  London is a well-known city when it comes to the game of football. The city of London is home to notable clubs such as Chelsea FC, Arsenal FC, Fulham FC, Westham United FC, Queens Park Rangers FC, Bromley FC, etc. This offers a distinctive opportunity for players to be exposed to professional football opportunities with these clubs. Our players often attends trials at these clubs, enhancing their opportunity of being scouted.
+            <div className="order-1 lg:order-2">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="w-0.5 h-5 bg-red-600 shrink-0" />
+                <span className="text-xs font-medium text-gray-400 tracking-[0.15em] uppercase">
+                  City Overview
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-5">
+                Life in London
+              </h2>
+              <div className="space-y-4">
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  London is a well-known city when it comes to the game of football. The city of London is home to notable clubs such as Chelsea FC, Arsenal FC, Fulham FC, Westham United FC, Queens Park Rangers FC, Bromley FC, etc. This offers a distinctive opportunity for players to be exposed to professional football opportunities.
                 </p>
-                <p>
-                  London offers diverse sports, from football (home to clubs like Arsenal, Chelsea, Westham United, etc) to rugby, cricket (Lord&apos;s Cricket Ground), and tennis (Wimbledon). Running events like London Marathon and cycling in parks like Hyde park are popular. Water sports thrives along the Thames, and gyms/yoga studios cater to fitness enthusiasts.
-                </p>
-                <p>
-                  London&apos;s weather is temperate, with mild summer (average 20-24°C) ideal for outdoor activities like picnics or sports. Springs and autumn are pleasant. Winters are chilly (2-8°C) but rarely extreme, allowing year-round outdoor sport activities.
-                </p>
-                <p>
-                  London&apos;s train network, including the London Underground, London Overground, Elizabeth line, and Dockland Light Railway (DLR), facilitates travel within the city and nearby areas. These systems connects major railway stations, central business areas, and iconic locations.
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  London&apos;s train network, including the London Underground, London Overground, Elizabeth line, and Dockland Light Railway (DLR), facilitates travel within the city and nearby areas. These systems connect major railway stations, central business areas, and iconic locations.
                 </p>
               </div>
             </div>
@@ -185,252 +194,174 @@ export default function LondonAcademy() {
         </div>
       </section>
 
-      {/* Training Ground Section */}
-      <section className="py-32">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <span className="text-primary font-semibold mb-4 block">FACILITIES</span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Training Ground</h2>
-            <p className="text-base text-gray-600 max-w-4xl mx-auto">
-              Our London training facilities offer state-of-the-art pitches, advanced gym equipment, and comprehensive amenities to support the development of elite footballers in the heart of London.
+      {/* Training Ground */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <div className="flex items-center justify-center gap-3 mb-5">
+              <span className="w-0.5 h-5 bg-red-600 shrink-0" />
+              <span className="text-xs font-medium text-gray-400 tracking-[0.15em] uppercase">
+                Facilities
+              </span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-3">
+              Training Ground
+            </h2>
+            <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed max-w-2xl mx-auto">
+              Our London training facilities offer state-of-the-art pitches, advanced gym equipment, and comprehensive amenities to support the development of elite footballers.
             </p>
           </div>
 
-          <div className="grid grid-cols-12 gap-6">
-            <div className="col-span-12 mb-6">
-              <div className="relative w-full h-[500px]">
-                <Image
-                  src="/training-ground.jpg"
-                  alt="London Training Facility"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          <div className="space-y-5">
+            <div className="relative h-[350px] md:h-[450px] overflow-hidden">
+              <Image
+                src="/training-ground.jpg"
+                alt="London Training Facility"
+                fill
+                className="object-cover"
+              />
             </div>
-            <div className="col-span-12 md:col-span-4">
-              <div className="relative w-full h-[300px]">
-                <Image
-                  src="/london-training2.png"
-                  alt="Training Pitch"
-                  fill
-                  className="object-cover"
-                />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div className="relative h-[250px] overflow-hidden">
+                <Image src="/london-training2.png" alt="Training Pitch" fill className="object-cover" />
               </div>
-            </div>
-            <div className="col-span-12 md:col-span-4">
-              <div className="relative w-full h-[300px]">
-                <Image
-                  src="/training3.jpg"
-                  alt="Football Equipment"
-                  fill
-                  className="object-cover"
-                />
+              <div className="relative h-[250px] overflow-hidden">
+                <Image src="/training3.jpg" alt="Football Equipment" fill className="object-cover" />
               </div>
-            </div>
-            <div className="col-span-12 md:col-span-4">
-              <div className="relative w-full h-[300px]">
-                <Image
-                  src="/training4.jpg"
-                  alt="Indoor Facility"
-                  fill
-                  className="object-cover"
-                />
+              <div className="relative h-[250px] overflow-hidden">
+                <Image src="/training4.jpg" alt="Indoor Facility" fill className="object-cover" />
               </div>
             </div>
           </div>
 
-          <div className="mt-16 flex flex-wrap gap-8 justify-center">
-            {['London Sports Complex', '4G Astroturf pitches', 'Fitness suites & studios', 'High performance gym', 'Recovery facilities', 'Free parking'].map((item, i) => (
-              <div key={i} className="bg-gray-50 py-3 px-6">
-                <span className="text-gray-800 text-sm">{item}</span>
-              </div>
+          <div className="mt-8 flex flex-wrap gap-3 justify-center">
+            {FACILITIES.map((item, i) => (
+              <span key={i} className="text-xs text-gray-500 border border-gray-200 py-2 px-4">
+                {item}
+              </span>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Schedule Section */}
-      <section className="py-32 bg-gray-50">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+      {/* Schedule */}
+      <section className="py-20 md:py-28 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
             <div>
-              <span className="text-primary font-semibold mb-4 block">SCHEDULE</span>
-              <h2 className="text-4xl font-bold mb-8 text-gray-900">Training Schedule</h2>
-              <p className="text-base text-gray-600 mb-8">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="w-0.5 h-5 bg-red-600 shrink-0" />
+                <span className="text-xs font-medium text-gray-400 tracking-[0.15em] uppercase">
+                  Schedule
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-4">
+                Training Schedule
+              </h2>
+              <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mb-6">
                 To accommodate students&apos; academic commitments, training sessions are strategically scheduled on weekday evenings and weekends. Additional sessions for individual player development can be arranged based on each player&apos;s university timetable.
               </p>
-
-              <div className="bg-white p-8">
-                <table className="w-full">
+              <div className="border border-gray-100 bg-white p-6 md:p-8">
+                <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-6 text-base font-bold text-gray-900"></th>
-                      <th className="text-left py-4 px-6 text-base font-bold text-gray-900">MORNING</th>
-                      <th className="text-left py-4 px-6 text-base font-bold text-gray-900">AFTERNOON</th>
-                      <th className="text-left py-4 px-6 text-base font-bold text-gray-900">EVENING</th>
+                      <th className="text-left py-3 pr-4 text-xs font-semibold text-gray-900 tracking-[0.1em] uppercase" />
+                      <th className="text-left py-3 px-4 text-xs font-semibold text-gray-900 tracking-[0.1em] uppercase">Morning</th>
+                      <th className="text-left py-3 px-4 text-xs font-semibold text-gray-900 tracking-[0.1em] uppercase">Afternoon</th>
+                      <th className="text-left py-3 pl-4 text-xs font-semibold text-gray-900 tracking-[0.1em] uppercase">Evening</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-gray-200">
-                      <td className="py-4 px-6 text-gray-900 font-semibold">Weekdays</td>
-                      <td className="py-4 px-6 text-gray-600 text-sm">Classes</td>
-                      <td className="py-4 px-6 text-gray-600 text-sm">Classes</td>
-                      <td className="py-4 px-6 text-gray-600 text-sm">Football</td>
+                    <tr className="border-b border-gray-100">
+                      <td className="py-3 pr-4 text-sm font-medium text-gray-900">Weekdays</td>
+                      <td className="py-3 px-4 text-sm text-gray-500">Classes</td>
+                      <td className="py-3 px-4 text-sm text-gray-500">Classes</td>
+                      <td className="py-3 pl-4 text-sm text-gray-500">Football</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-gray-900 font-semibold">Weekends</td>
-                      <td className="py-4 px-6 text-gray-600 text-sm">Football Training</td>
-                      <td className="py-4 px-6 text-gray-600 text-sm">Football Training</td>
-                      <td className="py-4 px-6 text-gray-600 text-sm">Free</td>
+                      <td className="py-3 pr-4 text-sm font-medium text-gray-900">Weekends</td>
+                      <td className="py-3 px-4 text-sm text-gray-500">Football Training</td>
+                      <td className="py-3 px-4 text-sm text-gray-500">Football Training</td>
+                      <td className="py-3 pl-4 text-sm text-gray-500">Free</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-
-            <div className="grid grid-cols-1 gap-6">
-              <div className="relative w-full h-[250px]">
-                <Image
-                  src="/schedule1.png"
-                  alt="Training Session"
-                  fill
-                  className="object-cover"
-                />
+            <div className="space-y-5">
+              <div className="relative h-[250px] overflow-hidden">
+                <Image src="/schedule1.png" alt="Training Session" fill className="object-cover" />
               </div>
-              <div className="relative w-full h-[250px]">
-                <Image
-                  src="/schedule2.png"
-                  alt="Football Training"
-                  fill
-                  className="object-cover"
-                />
+              <div className="relative h-[250px] overflow-hidden">
+                <Image src="/schedule2.png" alt="Football Training" fill className="object-cover" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Player Development Section */}
-      <section className="py-32">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <span className="text-primary font-semibold mb-4 block">DEVELOPMENT</span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Player Development Plan</h2>
-            <p className="text-base text-gray-600 max-w-4xl mx-auto">
-              Every player will go through our rigorous football training routine anchored by our qualified UEFA coach. This will enhance the player&apos;s tactical, technical, Psychological, and social skills, enabling each player to acquire the necessary skills required to compete at both Professional and semi-professional levels.
+      {/* Player Development */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <div className="flex items-center justify-center gap-3 mb-5">
+              <span className="w-0.5 h-5 bg-red-600 shrink-0" />
+              <span className="text-xs font-medium text-gray-400 tracking-[0.15em] uppercase">
+                Development
+              </span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-3">
+              Player Development Plan
+            </h2>
+            <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed max-w-3xl mx-auto">
+              Every player will go through our rigorous football training routine anchored by our qualified UEFA coach. This will enhance the player&apos;s tactical, technical, psychological, and social skills.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
               {SKILLS.map((skill, i) => (
-                <div key={i} className="bg-gray-50 p-4 flex items-center gap-4">
-                  <div className="bg-primary text-white font-bold w-8 h-8 flex items-center justify-center flex-shrink-0">
-                    {i + 1}
-                  </div>
-                  <span className="text-gray-800 text-sm">{skill}</span>
+                <div key={i} className="border border-gray-100 p-4 flex items-center gap-3">
+                  <CheckCircle2 size="16" className="text-red-400 shrink-0" />
+                  <span className="text-sm text-gray-600">{skill}</span>
                 </div>
               ))}
             </div>
-
-            <div className="space-y-6">
-              <div className="relative w-full h-[250px]">
-                <Image
-                  src="/devplan1.png"
-                  alt="Football Development"
-                  fill
-                  className="object-cover"
-                />
+            <div className="space-y-5">
+              <div className="relative h-[250px] overflow-hidden">
+                <Image src="/devplan1.png" alt="Football Development" fill className="object-cover" />
               </div>
-              <div className="relative w-full h-[250px]">
-                <Image
-                  src="/devplan2.png"
-                  alt="Skills Training"
-                  fill
-                  className="object-cover"
-                />
+              <div className="relative h-[250px] overflow-hidden">
+                <Image src="/devplan2.png" alt="Skills Training" fill className="object-cover" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Fees and Registration Section */}
-      {/*
-      <section className="py-32 bg-gray-50">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-            <div className="md:sticky md:top-32 md:self-start">
-              <span className="text-primary font-semibold mb-4 block">ENROLLMENT</span>
-              <h2 className="text-4xl font-bold mb-8 text-gray-900">Intake & Registration</h2>
-              <p className="text-base text-gray-600 mb-8">
-                January and September are our major intake periods. However, we are flexible with start dates.
-              </p>
-
-              <div className="mb-12">
-                <h3 className="text-2xl font-bold mb-6 text-gray-900">Fees</h3>
-                <div className="bg-white p-8">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b-2 border-gray-200">
-                        <th className="text-left py-4 text-base font-bold text-gray-900">ACADEMY</th>
-                        <th className="text-right py-4 text-base font-bold text-gray-900">FULL SEASON (36 WEEKS)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {ACADEMY_FEES.map((item, i) => (
-                        <tr key={i} className="border-b border-gray-100">
-                          <td className="py-4 text-gray-800 text-sm">{item.academy}</td>
-                          <td className="py-4 text-right font-semibold text-gray-900 text-sm">{item.fee}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <Button asChild className="w-full py-6 bg-primary hover:bg-red-700 text-white">
-                <Link href="/contact">
-                  Contact Us To Register
-                </Link>
-              </Button>
-            </div>
-
-            <div>
-              <span className="text-primary font-semibold mb-4 block">INCLUDES</span>
-              <h2 className="text-4xl font-bold mb-8 text-gray-900">What Fee Covers</h2>
-
-              <div className="space-y-4">
-                {BENEFITS.map((item, i) => (
-                  <div key={i} className="bg-white p-6">
-                    <h3 className="font-bold text-gray-900 mb-2 flex items-start gap-3">
-                      <span className="bg-primary text-white w-6 h-6 flex items-center justify-center flex-shrink-0 text-xs">
-                        {i + 1}
-                      </span>
-                      <span className="text-sm">{item.title}</span>
-                    </h3>
-                    <p className="text-gray-600 ml-9 text-xs">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+      {/* CTA */}
+      <section className="py-20 bg-gradient-to-r from-red-700 to-red-600">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <div className="flex items-center justify-center gap-3 mb-5 border border-white/20 w-fit py-2 px-2 mx-auto">
+            <span className="text-[10px] font-medium text-white/60 tracking-[0.15em] uppercase">
+              Get Started
+            </span>
           </div>
-        </div>
-      </section>
-      */}
-
-      {/* CTA Section */}
-      <section className="py-24 bg-primary">
-        <div className="container max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Link with Pro Football Clubs</h2>
-          <p className="text-base text-white/90 max-w-3xl mx-auto mb-12">
-          British AUC Sport connects with various UK and European league clubs, academies, and Scouts on a regular basis to ensure that our players have many opportunities and exposure to becoming professional footballers.
+          <h2 className="text-2xl md:text-3xl font-semibold text-white leading-snug mb-4">
+            Link with Pro Football Clubs
+          </h2>
+          <p className="text-sm md:text-[15px] text-white/70 max-w-xl mx-auto mb-8 leading-relaxed">
+            British AUC Sport connects with various UK and European league clubs, academies, and scouts to ensure our players have every opportunity to become professional footballers.
           </p>
-          <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-primary px-8 py-6">
-            <Link href="/contact">Apply Now</Link>
-          </Button>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-white text-red-700 text-sm font-medium px-6 py-3 hover:bg-gray-100 transition-colors"
+          >
+            Apply Now
+            <ArrowRight size={16} />
+          </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

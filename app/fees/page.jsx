@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const HIGH_ELITE_FEES = [
   { duration: '2 Weeks', London: '£1,638', Manchester: '£1,240', Cardiff: '£1,240', Alicante: '£1,240', Debrecen: '$773' },
@@ -24,91 +24,78 @@ const EDUCATION_OPTIONS = [
 ];
 
 const BENEFITS = [
-  {
-    title: 'Football Training with UEFA-qualified Coach',
-    description: 'Players will be trained by highly qualified UEFA Coaches to ensure that players develop the required skills to compete professionally.'
-  },
-  {
-    title: 'Individual Player Report',
-    description: 'An individual Player Report is generated for each player, outlining the strengths and weaknesses of the player. This is an important document required by professional clubs for assessing the suitability of the player.'
-  },
-  {
-    title: 'Player Development Plan',
-    description: 'The individual development plan will be created for each player in the first instance. This shows the development road map for each player. This is to ensure that each receives an appropriate development in the area of need while enhancing their strong areas.'
-  },
-  {
-    title: 'Football Trial with Pro Clubs',
-    description: 'Players will be exposed to Pro football trials around Hungary. These are both trials organized by professional clubs and in-house trials.'
-  },
-  {
-    title: 'Training Kits',
-    description: 'Players receive training kits. However, each player is expected to provide their foot wears and, socks, and chin guard.'
-  },
-  {
-    title: 'Player Performance Analysis',
-    description: 'Player performance and development are usually analyzed to ascertain the extent of progress and skill development. This regular evaluation always helps the coach to spot areas of weakness and strength of the player.'
-  },
-  {
-    title: 'Fitness Training',
-    description: 'Physical strength and fitness are key elements of player development. Players are occasionally engaged in a supervised gym to ensure the development of physical and mental dexterity.'
-  },
-  {
-    title: 'Outdoor Exercise',
-    description: 'Outdoor activities are an integral part of development and training activities that players are exposed to. Activities like mountain climbing, hiking, swimming, etc. are necessary for the all-around development of players.'
-  },
-  {
-    title: 'Sport Therapy/Nutrition',
-    description: 'Each player receives medical and health advice from our seasoned professional Sport Therapist. Nutrition is also very important in keeping fit. Players are encouraged to stick to healthy nutrition.'
-  },
-  {
-    title: 'Match Analysis/Classroom teaching',
-    description: 'Match Analysis is another way of reviewing the game and pointing out some faulty decisions in the game. Academy and friendly matches are analyzed and dissected so players can improve their knowledge of the game.'
-  },
-  {
-    title: 'League Club Tours',
-    description: 'There is a regular visit to Hungarian league clubs around Debrecen, and tickets for matches are also provided for players.'
-  },
-  {
-    title: 'Professional Football Trials',
-    description: 'All players are taken to professional football trials held in the Debrecen area. Scouts from all over Hungary and Europe attend these trials, allowing each player to be scouted.'
-  }
+  { title: 'Football Training with UEFA-qualified Coach', description: 'Players will be trained by highly qualified UEFA Coaches to ensure that players develop the required skills to compete professionally.' },
+  { title: 'Individual Player Report', description: 'An individual Player Report is generated for each player, outlining the strengths and weaknesses of the player.' },
+  { title: 'Player Development Plan', description: 'The individual development plan will be created for each player showing the development road map for their growth.' },
+  { title: 'Football Trial with Pro Clubs', description: 'Players will be exposed to professional football trials organised by the Professional Football Scouts Association and pro clubs.' },
+  { title: 'Training Kits', description: 'Players receive training kits. Footwear, socks, and chin guard to be provided by the player.' },
+  { title: 'Player Performance Analysis', description: 'Player performance and development are analyzed to ascertain the extent of progress and skill development.' },
+  { title: 'Fitness Training', description: 'Physical strength and fitness are key elements of player development with supervised gym sessions.' },
+  { title: 'Outdoor Exercise', description: 'Outdoor activities like mountain climbing, hiking, and swimming are part of the all-around development.' },
+  { title: 'Sport Therapy/Nutrition', description: 'Each player receives medical and health advice from our seasoned professional Sport Therapist.' },
+  { title: 'Match Analysis & Classroom Teaching', description: 'Academy and friendly matches are analyzed and dissected so players can improve their game knowledge.' },
+  { title: 'League Club Tours', description: 'Regular visits to professional league clubs with match tickets provided for players.' },
+  { title: 'Professional Football Trials', description: 'Players attend professional football trials where scouts from across the UK and Europe attend.' },
 ];
 
 const FeesPage = () => (
-  <section className="py-32 bg-gray-50">
-    <div className="container max-w-7xl mx-auto px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-        <div className="md:sticky md:top-32 md:self-start">
-          <span className="text-primary font-semibold mb-4 block">ENROLLMENT</span>
-          <h2 className="text-4xl font-bold mb-8 text-gray-900">Intake & Registration</h2>
-          <p className="text-base text-gray-600 mb-8">
-            January and September are our major intake periods. However, we are flexible with start dates.
-          </p>
-
-          <div className="mb-12 space-y-10">
+  <div className="pt-16">
+    {/* Hero */}
+    <section className="py-20 md:py-28 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[50%_50%] gap-8 lg:gap-16 items-start">
+          <div className="space-y-8">
+            <div className="flex items-center gap-3">
+              <span className="w-0.5 h-5 bg-red-600 shrink-0" />
+              <span className="text-xs font-medium text-gray-400 tracking-[0.15em] uppercase">
+                Fees &amp; Enrolment
+              </span>
+            </div>
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">High Elite Performance Football Development Programme<span className="text-red-500">*</span></h3>
-              <div className="bg-white p-4 overflow-x-auto">
+              <h1 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight mb-4">
+                Tuition &amp; Programme Fees
+              </h1>
+              <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed max-w-lg">
+                January and September are our major intake periods. However, we are flexible with start dates. Below is a breakdown of our programme fees.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Main Content */}
+    <section className="py-20 md:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+          {/* Left: Fees */}
+          <div>
+            {/* High Elite Fees */}
+            <div className="mb-12">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">
+                High Elite Performance Football Development Programme<span className="text-red-500 ml-1">*</span>
+              </h2>
+              <div className="border border-gray-100 overflow-x-auto">
                 <table className="w-full text-xs md:text-sm">
                   <thead>
-                    <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-2 font-bold text-gray-900">Duration</th>
-                      <th className="text-center py-2 font-bold text-gray-900">London (GBP)</th>
-                      <th className="text-center py-2 font-bold text-gray-900">Manchester (GBP)</th>
-                      <th className="text-center py-2 font-bold text-gray-900">Cardiff (GBP)</th>
-                      <th className="text-center py-2 font-bold text-gray-900">Alicante (EUR)</th>
-                      <th className="text-center py-2 font-bold text-gray-900">Debrecen (USD)</th>
+                    <tr className="border-b border-gray-200 bg-gray-50">
+                      <th className="text-left py-3 px-4 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Duration</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">London</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Manchester</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Cardiff</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Alicante</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Debrecen</th>
                     </tr>
                   </thead>
                   <tbody>
                     {HIGH_ELITE_FEES.map((item, i) => (
                       <tr key={i} className="border-b border-gray-100">
-                        <td className="py-2 text-gray-800">{item.duration}</td>
-                        <td className="py-2 text-center">{item.London}</td>
-                        <td className="py-2 text-center">{item.Manchester}</td>
-                        <td className="py-2 text-center">{item.Cardiff}</td>
-                        <td className="py-2 text-center">{item.Alicante || '-'}</td>
-                        <td className="py-2 text-center">{item.Debrecen}</td>
+                        <td className="py-2.5 px-4 text-sm text-gray-600 whitespace-nowrap">{item.duration}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.London}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.Manchester}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.Cardiff}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.Alicante || '-'}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.Debrecen}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -116,29 +103,32 @@ const FeesPage = () => (
               </div>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Football Plus Education<span className="text-red-500">*</span></h3>
-              <div className="bg-white p-4 overflow-x-auto">
+            {/* Football Plus Education Fees */}
+            <div className="mb-12">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">
+                Football Plus Education<span className="text-red-500 ml-1">*</span>
+              </h2>
+              <div className="border border-gray-100 overflow-x-auto">
                 <table className="w-full text-xs md:text-sm">
                   <thead>
-                    <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-2 font-bold text-gray-900">Season</th>
-                      <th className="text-center py-2 font-bold text-gray-900">London</th>
-                      <th className="text-center py-2 font-bold text-gray-900">Manchester</th>
-                      <th className="text-center py-2 font-bold text-gray-900">Cardiff</th>
-                      <th className="text-center py-2 font-bold text-gray-900">Alicante</th>
-                      <th className="text-center py-2 font-bold text-gray-900">Debrecen</th>
+                    <tr className="border-b border-gray-200 bg-gray-50">
+                      <th className="text-left py-3 px-4 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Season</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">London</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Manchester</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Cardiff</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Alicante</th>
+                      <th className="text-center py-3 px-3 text-xs font-semibold text-gray-500 tracking-[0.1em] uppercase whitespace-nowrap">Debrecen</th>
                     </tr>
                   </thead>
                   <tbody>
                     {FOOTBALL_PLUS_FEES.map((item, i) => (
                       <tr key={i} className="border-b border-gray-100">
-                        <td className="py-2 text-gray-800">{item.season}</td>
-                        <td className="py-2 text-center">{item.London}</td>
-                        <td className="py-2 text-center">{item.Manchester}</td>
-                        <td className="py-2 text-center">{item.Cardiff}</td>
-                        <td className="py-2 text-center">{item.Alicante || '-'}</td>
-                        <td className="py-2 text-center">{item.Debrecen}</td>
+                        <td className="py-2.5 px-4 text-sm text-gray-600 whitespace-nowrap">{item.season}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.London}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.Manchester}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.Cardiff}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.Alicante || '-'}</td>
+                        <td className="py-2.5 px-3 text-sm text-gray-600 text-center">{item.Debrecen}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -146,49 +136,87 @@ const FeesPage = () => (
               </div>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold mb-2 text-gray-900">Education Option<span className="text-red-500">*</span></h3>
-              <ul className="list-disc ml-6 text-gray-700 text-sm mb-2">
+            {/* Education Options */}
+            <div className="mb-10">
+              <h2 className="text-lg font-semibold text-gray-900 mb-3">
+                Education Options<span className="text-red-500 ml-1">*</span>
+              </h2>
+              <ul className="space-y-1.5">
                 {EDUCATION_OPTIONS.map((option, i) => (
-                  <li key={i}>{option}</li>
+                  <li key={i} className="text-sm text-gray-500 flex items-center gap-2">
+                    <span className="w-1 h-1 bg-gray-300 shrink-0" />
+                    {option}
+                  </li>
                 ))}
               </ul>
             </div>
 
-            <div className="text-xs text-gray-500 space-y-1 mt-4">
-              <div><span className="text-red-500">*</span> Fees are for football training ONLY.</div>
-              <div><span className="text-red-500">*</span> Fees for educational programmes vary from institution to institution as well as among courses. British AUC SPORT works closely with local institutions and, therefore, can get each player the best price possible from the local universities and institutions.</div>
+            {/* Footnotes */}
+            <div className="text-xs text-gray-400 space-y-1.5 leading-relaxed mb-8">
+              <p><span className="text-red-500">*</span> Fees are for football training ONLY.</p>
+              <p><span className="text-red-500">*</span> Fees for educational programmes vary from institution to institution as well as among courses. British AUC SPORT works closely with local institutions and, therefore, can get each player the best price possible from local universities.</p>
             </div>
+
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-red-600 text-white text-sm font-medium px-5 py-2.5 hover:bg-red-700 transition-colors"
+            >
+              Contact Us to Register
+              <ArrowRight size={15} />
+            </Link>
           </div>
 
-          <Button asChild className="w-full py-6 bg-primary hover:bg-red-700 text-white mt-8">
-            <Link href="/contact">
-              Contact Us To Register
-            </Link>
-          </Button>
-        </div>
-
-        <div>
-          <span className="text-primary font-semibold mb-4 block">INCLUDES</span>
-          <h2 className="text-4xl font-bold mb-8 text-gray-900">What Fee Covers</h2>
-
-          <div className="space-y-4">
-            {BENEFITS.map((item, i) => (
-              <div key={i} className="bg-white p-6">
-                <h3 className="font-bold text-gray-900 mb-2 flex items-start gap-3">
-                  <span className="bg-primary text-white w-6 h-6 flex items-center justify-center flex-shrink-0 text-xs">
-                    {i + 1}
-                  </span>
-                  <span className="text-sm">{item.title}</span>
-                </h3>
-                <p className="text-gray-600 ml-9 text-xs">{item.description}</p>
-              </div>
-            ))}
+          {/* Right: Benefits */}
+          <div>
+            <div className="flex items-center gap-3 mb-5">
+              <span className="w-0.5 h-5 bg-red-600 shrink-0" />
+              <span className="text-xs font-medium text-gray-400 tracking-[0.15em] uppercase">
+                Includes
+              </span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-6">
+              What Fee Covers
+            </h2>
+            <div className="space-y-3">
+              {BENEFITS.map((item, i) => (
+                <div key={i} className="border border-gray-100 p-5">
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1.5 flex items-start gap-2">
+                    <CheckCircle2 size="15" className="text-red-400 mt-0.5 shrink-0" />
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-gray-400 leading-relaxed ml-7">{item.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    {/* CTA */}
+    <section className="py-20 bg-gradient-to-r from-red-700 to-red-600">
+      <div className="max-w-7xl mx-auto px-6 text-center">
+        <div className="flex items-center justify-center gap-3 mb-5 border border-white/20 w-fit py-2 px-2 mx-auto">
+          <span className="text-[10px] font-medium text-white/60 tracking-[0.15em] uppercase">
+            Get Started
+          </span>
+        </div>
+        <h2 className="text-2xl md:text-3xl font-semibold text-white leading-snug mb-4">
+          Ready to Start Your Journey?
+        </h2>
+        <p className="text-sm md:text-[15px] text-white/70 max-w-xl mx-auto mb-8 leading-relaxed">
+          Contact our team to discuss your programme options and take the first step toward professional football development.
+        </p>
+        <Link
+          href="/contact"
+          className="inline-flex items-center gap-2 bg-white text-red-700 text-sm font-medium px-6 py-3 hover:bg-gray-100 transition-colors"
+        >
+          Contact Us
+          <ArrowRight size={16} />
+        </Link>
+      </div>
+    </section>
+  </div>
 );
 
 export default FeesPage;

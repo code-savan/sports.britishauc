@@ -97,7 +97,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      <div className={cn(transparent ? 'bg-black' : 'hidden lg:block bg-black')}>
+      <div className={cn(transparent ? 'bg-black hidden lg:block' : 'hidden lg:block bg-black')}>
         <div className="max-w-7xl mx-auto px-6 py-1.5 flex items-center justify-between">
           <p className="text-[11px] font-normal text-white/80">
             Football Trials &amp; Academy Programmes

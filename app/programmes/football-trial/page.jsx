@@ -1,49 +1,48 @@
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Calendar, MapPin, Wallet } from 'lucide-react';
+import { ArrowRight, Calendar, MapPin, Wallet } from 'lucide-react';
 
 const trials = [
-    {
-        id: 'manchester-football-trial-2026',
-        title: 'Manchester Football Trial 2026',
-        date: '21st February, 2026 (9am - 2pm)',
-        location: 'Manchester, UK',
-        price: '£65',
-        image: '/TR1.jpg',
-        description:
-          'Showcase your talent and be scouted! A unique opportunity for aspiring players to showcase their skills and talents to professional football scouts.',
-        more:
-          "Limited spots available. Be scouted by pro clubs from the English Football League (EFL) and other British and European teams. Gain exposure in a prestigious football system and take the next step in your career. Hosted by Chris Honor (Helsby FC Director, ex-Leicester City FC scout). Location: Platt Lane, Yew Tree Road, Manchester, M14 7UU.",
-        link: '/events/manchester-football-trial-2026',
-      },
-      {
-        id: 'manchester-trial-2025',
-        title: 'Manchester Football Trial 2025',
-        date: '6th of October 2025',
-        location: 'Manchester, UK',
-        price: '£98',
-        image: '/TR1.jpg',
-        description:
-          'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
-        more:
-          'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
-        link: '/events/manchester-trial-2025',
-      },
-      {
-        id: 'manchester-trial',
-        title: 'Manchester Football Trial',
-        date: 'July 17, 2025',
-        location: 'Manchester, UK',
-        price: '£65',
-        image: '/manchester.jpeg',
-        description:
-          'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
-        more:
-          'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
-        link: '/events/manchester-trial',
-      },
+  {
+    id: 'manchester-football-trial-2026',
+    title: 'Manchester Football Trial 2026',
+    date: '21st February, 2026 (9am - 2pm)',
+    location: 'Manchester, UK',
+    price: '£65',
+    image: '/TR1.jpg',
+    description:
+      'Showcase your talent and be scouted! A unique opportunity for aspiring players to showcase their skills and talents to professional football scouts.',
+    more:
+      "Limited spots available. Be scouted by pro clubs from the English Football League (EFL) and other British and European teams. Gain exposure in a prestigious football system and take the next step in your career. Hosted by Chris Honor (Helsby FC Director, ex-Leicester City FC scout). Location: Platt Lane, Yew Tree Road, Manchester, M14 7UU.",
+    link: '/events/manchester-football-trial-2026',
+  },
+  {
+    id: 'manchester-trial-2025',
+    title: 'Manchester Football Trial 2025',
+    date: '6th of October 2025',
+    location: 'Manchester, UK',
+    price: '£98',
+    image: '/TR1.jpg',
+    description:
+      'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
+    more:
+      'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
+    link: '/events/manchester-trial-2025',
+  },
+  {
+    id: 'manchester-trial',
+    title: 'Manchester Football Trial',
+    date: 'July 17, 2025',
+    location: 'Manchester, UK',
+    price: '£65',
+    image: '/manchester.jpeg',
+    description:
+      'Showcase your skills to professional scouts at this exclusive trial in Manchester and take a step toward your professional football career.',
+    more:
+      'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in the UK and Europe. Led by Alex Armstrong (Active4Sport International) and British AUC Sport. Location: Platt Lane (former Manchester City Training Ground), Manchester.',
+    link: '/events/manchester-trial',
+  },
   {
     id: 'spain-trial',
     title: 'Spain Football Trial 2025',
@@ -57,73 +56,132 @@ const trials = [
       'Professional coaching and evaluation from UEFA licensed coaches. Competitive match play, technical training, individual assessment, and the opportunity to be scouted by clubs in Spain and Europe. Hosted with CF Intercity International Academy. Led by Alex Armstrong (Active4Sport International) and local Spanish coaches. Location: Campo Municipal Antonio Solana, Alicante.',
     link: '/events/spain-trial',
   },
-
 ];
 
 export default function FootballTrialPage() {
   return (
-    <main className="min-h-screen bg-white pt-16">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <Image
-          src="/trialhero.jpg"
-          alt="Football Trial Hero"
-          fill
-          className="object-cover object-top z-0"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent z-1" />
-        <div className="relative z-10 text-center w-full flex flex-col items-center justify-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Football Trials</h1>
-          <p className="text-lg md:text-2xl text-white/90 max-w-2xl mx-auto mb-6">
-            Showcase your talent and get scouted by professional clubs at our international football trials.
-          </p>
-          <Button asChild size="lg" className="bg-primary hover:bg-red-700 text-white px-10 py-4 text-lg font-semibold rounded-full">
-            <Link href="/contact">Contact Us</Link>
-          </Button>
+    <div className="pt-16">
+      {/* Hero */}
+      <section className="relative h-[70vh] md:h-[80vh] flex items-center">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/trialhero.jpg"
+            alt="Football Trial"
+            fill
+            className="object-cover object-top"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+          <div className="max-w-xl">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="w-0.5 h-5 bg-red-600" />
+              <span className="text-xs font-medium text-white/60 tracking-[0.15em] uppercase">
+                Football Trials
+              </span>
+            </div>
+            <h1 className="text-3xl md:text-5xl font-semibold text-white leading-tight mb-4">
+              Showcase Your Talent to Professional Scouts
+            </h1>
+            <p className="text-sm md:text-[15px] text-white/60 leading-relaxed max-w-lg">
+              A unique opportunity for aspiring players to showcase their skills at exclusive trials scouted by professional clubs.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Trials Summary - Two Column, Image Left, Editorial */}
-      <section className="max-w-5xl mx-auto mt-20 mb-24 px-4 md:px-0 space-y-20">
-        {trials.map((trial, idx) => (
-          <div key={trial.id} className={`grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-stretch`}>
-            {/* Image - left half */}
-            <div className="relative w-full h-64 md:h-[340px] lg:h-[400px]">
-              <Image src={trial.image} alt={trial.title} fill className="object-cover rounded-xl" />
-            </div>
-            {/* Content - right half */}
-            <div className="flex flex-col justify-center h-full py-8 md:py-0 pl-0 md:pl-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{trial.title}</h2>
-              <div className="flex flex-wrap gap-6 text-sm text-slate-600 mb-3">
-                <span className="flex items-center gap-1">
-                  {/* Calendar Icon */}
-                  <Calendar className="h-4 w-4 text-primary mr-1" />
-                  {trial.date}
-                </span>
-                <span className="flex items-center gap-1">
-                  {/* Map Pin Icon */}
-                  <MapPin className="h-4 w-4 text-primary mr-1" />
-                  {trial.location}
-                </span>
-                <span className="flex items-center gap-1">
-                  {/* Wallet Icon */}
-                  <Wallet className="h-4 w-4 text-primary mr-1" />
-                  {trial.price}
+      {/* Section Header */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[50%_50%] gap-8 lg:gap-16 items-start mb-14">
+            <div className="space-y-8">
+              <div className="flex items-center gap-3">
+                <span className="w-0.5 h-5 bg-red-600 shrink-0" />
+                <span className="text-xs font-medium text-gray-400 tracking-[0.15em] uppercase">
+                  Upcoming Trials
                 </span>
               </div>
-              <p className="text-gray-700 mb-2 text-base">{trial.description}</p>
-              <p className="text-gray-700 mb-4 text-base">{trial.more}</p>
-              <Link
-                href={trial.link}
-                className="text-base font-medium text-primary underline underline-offset-4 hover:text-red-700 transition-colors w-max"
-              >
-                Read more
-              </Link>
+              <div>
+                <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-3">
+                  Professional Football Trials
+                </h2>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  Our trials provide direct exposure to professional scouts from clubs across the UK and Europe. Each trial includes professional coaching, competitive match play, and individual assessments.
+                </p>
+              </div>
             </div>
           </div>
-        ))}
+
+          {/* Trial Listings */}
+          <div className="space-y-12">
+            {trials.map((trial, idx) => (
+              <div key={trial.id} className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+                <div className={idx % 2 === 1 ? 'lg:order-2' : ''}>
+                  <div className="relative h-[280px] md:h-[380px] overflow-hidden">
+                    <Image
+                      src={trial.image}
+                      alt={trial.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <div className={idx % 2 === 1 ? 'lg:order-1' : ''}>
+                  <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-3">{trial.title}</h3>
+                  <div className="flex flex-wrap gap-4 text-xs text-gray-400 mb-4">
+                    <span className="inline-flex items-center gap-1.5">
+                      <Calendar size="13" className="text-red-400" />
+                      {trial.date}
+                    </span>
+                    <span className="inline-flex items-center gap-1.5">
+                      <MapPin size="13" className="text-red-400" />
+                      {trial.location}
+                    </span>
+                    <span className="inline-flex items-center gap-1.5">
+                      <Wallet size="13" className="text-red-400" />
+                      {trial.price}
+                    </span>
+                  </div>
+                  <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mb-2">{trial.description}</p>
+                  <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mb-5">{trial.more}</p>
+                  <Link
+                    href={trial.link}
+                    className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-400 hover:text-gray-900 transition-colors"
+                  >
+                    Read More
+                    <ArrowRight size={13} />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
-    </main>
+
+      {/* CTA */}
+      <section className="py-20 bg-gradient-to-r from-red-700 to-red-600">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <div className="flex items-center justify-center gap-3 mb-5 border border-white/20 w-fit py-2 px-2 mx-auto">
+            <span className="text-[10px] font-medium text-white/60 tracking-[0.15em] uppercase">
+              Get Started
+            </span>
+          </div>
+          <h2 className="text-2xl md:text-3xl font-semibold text-white leading-snug mb-4">
+            Ready to Take the Next Step?
+          </h2>
+          <p className="text-sm md:text-[15px] text-white/70 max-w-xl mx-auto mb-8 leading-relaxed">
+            Contact us to register for an upcoming trial and showcase your talent to professional scouts.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-white text-red-700 text-sm font-medium px-6 py-3 hover:bg-gray-100 transition-colors"
+          >
+            Contact Us
+            <ArrowRight size={16} />
+          </Link>
+        </div>
+      </section>
+    </div>
   );
 }
