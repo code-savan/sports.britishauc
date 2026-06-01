@@ -188,7 +188,7 @@ function HeroSection() {
           <div className="max-w-[650px] flex flex-col gap-5">
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-green-400 animate-pulse" />
-              <span className="text-[11px] font-normal text-white/50 uppercase tracking-[0.15em]">
+              <span className="text-[11px] font-normal text-white/60 uppercase tracking-[0.15em]">
                 Where Talent Meets Opportunity
               </span>
             </div>
@@ -198,7 +198,7 @@ function HeroSection() {
               <span className="block">with British AUC Sport</span>
             </h1>
 
-            <p className="text-sm md:text-[14px] font-light tracking-wide text-white/50 max-w-[420px] leading-relaxed">
+            <p className="text-sm md:text-[14px] font-light tracking-wide text-white/80 max-w-[420px] leading-relaxed">
               Connecting talented athletes with exceptional opportunities, from professional trials to elite academy experiences.
             </p>
 
