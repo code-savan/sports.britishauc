@@ -149,7 +149,7 @@ export default function ManchesterAcademy() {
             </div>
             <div className="relative h-[350px] md:h-[450px] overflow-hidden">
               <Image
-                src="/mfa.png"
+                src="/mfa.jpg"
                 alt="Manchester Football Training"
                 fill
                 className="object-cover"
@@ -290,7 +290,7 @@ export default function ManchesterAcademy() {
             </div>
             <div className="space-y-5">
               <div className="relative h-[250px] overflow-hidden">
-                <Image src="/schedule1.png" alt="Training Session" fill className="object-cover" />
+                <Image src="/schedule1.jpg" alt="Training Session" fill className="object-cover" />
               </div>
               <div className="relative h-[250px] overflow-hidden">
                 <Image src="/schedule2.png" alt="Football Training" fill className="object-cover" />
@@ -329,10 +329,10 @@ export default function ManchesterAcademy() {
             </div>
             <div className="space-y-5">
               <div className="relative h-[250px] overflow-hidden">
-                <Image src="/devplan1.png" alt="Football Development" fill className="object-cover" />
+                <Image src="/devplan1.jpg" alt="Football Development" fill className="object-cover" />
               </div>
               <div className="relative h-[250px] overflow-hidden">
-                <Image src="/devplan2.png" alt="Skills Training" fill className="object-cover" />
+                <Image src="/devplan2.jpg" alt="Skills Training" fill className="object-cover" />
               </div>
             </div>
           </div>

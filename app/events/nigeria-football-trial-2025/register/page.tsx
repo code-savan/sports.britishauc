@@ -7,7 +7,7 @@ export default function NigeriaFootballTrial2025RegisterPage() {
     <Register
       eventId="nigeria-football-trial-2025"
       eventTitle="Nigeria Football Trial 2025"
-      heroImage="/nigeria-football.jpg"
+      heroImage="/event9.jpg"
       accentColor="blue"
       successRedirectPath="https://buy.stripe.com/fZu4gy12Ka2S23v3K49MY09"
     />

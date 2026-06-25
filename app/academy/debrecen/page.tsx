@@ -215,7 +215,7 @@ export default function DebrecenAcademy() {
           <div className="space-y-5">
             <div className="relative h-[350px] md:h-[450px] overflow-hidden">
               <Image
-                src="/dtg1.png"
+                src="/dtg1.jpg"
                 alt="Debrecen Training Facility"
                 fill
                 className="object-cover"
@@ -223,10 +223,10 @@ export default function DebrecenAcademy() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div className="relative h-[250px] overflow-hidden">
-                <Image src="/dtg2.png" alt="Training Pitch" fill className="object-cover" />
+                <Image src="/dtg2.jpg" alt="Training Pitch" fill className="object-cover" />
               </div>
               <div className="relative h-[250px] overflow-hidden">
-                <Image src="/dtg3.png" alt="Football Equipment" fill className="object-cover" />
+                <Image src="/dtg3.jpg" alt="Football Equipment" fill className="object-cover" />
               </div>
               <div className="relative h-[250px] overflow-hidden">
                 <Image src="/dtg4.png" alt="Indoor Facility" fill className="object-cover" />
@@ -290,7 +290,7 @@ export default function DebrecenAcademy() {
             </div>
             <div className="space-y-5">
               <div className="relative h-[250px] overflow-hidden">
-                <Image src="/dts1.png" alt="Training Session" fill className="object-cover" />
+                <Image src="/dts1.jpg" alt="Training Session" fill className="object-cover" />
               </div>
               <div className="relative h-[250px] overflow-hidden">
                 <Image src="/dts2.jpg" alt="Football Training" fill className="object-cover" />
@@ -329,7 +329,7 @@ export default function DebrecenAcademy() {
             </div>
             <div className="space-y-5">
               <div className="relative h-[250px] overflow-hidden">
-                <Image src="/devplan1.png" alt="Football Development" fill className="object-cover" />
+                <Image src="/devplan1.jpg" alt="Football Development" fill className="object-cover" />
               </div>
               <div className="relative h-[250px] overflow-hidden">
                 <Image src="/debdevplan2.jpg" alt="Skills Training" fill className="object-cover" />

@@ -290,7 +290,7 @@ export default function AlicanteAcademy() {
             </div>
             <div className="space-y-5">
               <div className="relative h-[250px] overflow-hidden">
-                <Image src="/schedule1.png" alt="Training Session" fill className="object-cover" />
+                <Image src="/schedule1.jpg" alt="Training Session" fill className="object-cover" />
               </div>
               <div className="relative h-[250px] overflow-hidden">
                 <Image src="/schedule2.png" alt="Football Training" fill className="object-cover" />
