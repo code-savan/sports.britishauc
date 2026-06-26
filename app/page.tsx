@@ -6,9 +6,9 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { ArrowRight, ArrowDown, ArrowLeft, Calendar, WholeWord, Globe, Globe2, Trophy, PhoneCall, Award, ArrowDownCircle } from 'lucide-react';
 
 const HERO_IMAGES = [
-  { src: '/hero.jpg', alt: 'Football stadium' },
-  { src: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1600', alt: 'Football action' },
-  { src: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1600', alt: 'Football field' },
+  { src: '/event6.jpg', alt: 'Football action' },
+  { src: '/event7.jpg', alt: 'Football training' },
+  { src: '/event8.jpg', alt: 'Football match' },
 ];
 
 const ACADEMIES = [

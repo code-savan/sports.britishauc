@@ -118,21 +118,14 @@ export function Navbar() {
       <div className={cn('transition-all duration-300', transparent ? 'bg-transparent' : 'bg-white border-b border-gray-200 shadow-sm')}>
         <div className="max-w-7xl mx-auto px-6">
           <nav className="flex items-center justify-between h-14 lg:h-[60px]">
-            <Link href="/" className="flex items-center gap-2.5 shrink-0">
+            <Link href="/" className="flex items-center shrink-0">
               <Image
-                src="/sporticon.jpeg"
+                src="/logo.png"
                 alt="British AUC Sport"
-                width={32}
-                height={32}
+                height={28}
+                width={54}
+                className="object-contain"
               />
-              <div className="leading-tight">
-                <span className={cn('text-xs tracking-[0.12em] uppercase font-medium', transparent ? 'text-white' : 'text-gray-900')}>
-                  British <span className="text-red-600">AUC</span>
-                </span>
-                <span className={cn('block text-[10px] font-medium tracking-wider uppercase', transparent ? 'text-white/60' : 'text-gray-500')}>
-                  Sport
-                </span>
-              </div>
             </Link>
 
             <div className="hidden lg:flex items-center justify-end flex-1 gap-0.5">
@@ -222,14 +215,8 @@ export function Navbar() {
       >
         <div className="flex flex-col h-full overflow-y-auto">
           <div className="flex items-center justify-between px-6 pt-5 pb-4 border-b border-gray-200">
-            <Link href="/" className="flex items-center gap-3" onClick={() => setIsMobileOpen(false)}>
-              <Image src="/sporticon.jpeg" alt="British AUC Sport" width={32} height={32} />
-              <div className="leading-tight">
-                <span className="text-xs font-medium tracking-[0.12em] text-gray-900 uppercase">
-                  British <span className="text-red-600">AUC</span>
-                </span>
-                <span className="block text-[10px] font-normal text-gray-400 tracking-wider uppercase">Sport</span>
-              </div>
+            <Link href="/" className="flex items-center" onClick={() => setIsMobileOpen(false)}>
+              <Image src="/logo.png" alt="British AUC Sport" height={28} width={54} className="object-contain" />
             </Link>
             <button onClick={() => setIsMobileOpen(false)} className="p-2 -mr-2" aria-label="Close menu">
               <X size={22} className="text-gray-900" />
