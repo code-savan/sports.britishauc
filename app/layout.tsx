@@ -15,7 +15,13 @@ export const metadata: Metadata = {
   title: 'British AUC Sport - Football Trials & Academy Trips',
   description: 'British AUC Sport provides exceptional sports opportunities for aspiring athletes through football trials, academy trips, and educational programs.',
   icons: {
-    icon: "/logo.png",
+    icon: "/sporticon.jpeg",
+  },
+  openGraph: {
+    title: 'British AUC Sport',
+    description: 'Football trials, academy trips & educational programmes for aspiring athletes.',
+    url: 'https://sports.britishauc.com',
+    images: [{ url: '/logo.png', width: 524, height: 274 }],
   },
 };
 
