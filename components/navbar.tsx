@@ -118,13 +118,13 @@ export function Navbar() {
       <div className={cn('transition-all duration-300', transparent ? 'bg-transparent' : 'bg-white border-b border-gray-200 shadow-sm')}>
         <div className="max-w-7xl mx-auto px-6">
           <nav className="flex items-center justify-between h-14 lg:h-[60px]">
-            <Link href="/" className="flex items-center shrink-0">
+            <Link href="/" className="flex items-center shrink-0 bg-white p-1">
               <Image
                 src="/logo.png"
                 alt="British AUC Sport"
-                height={28}
-                width={54}
-                className="object-contain"
+                height={24}
+                width={46}
+                className="block"
               />
             </Link>
 
@@ -215,8 +215,8 @@ export function Navbar() {
       >
         <div className="flex flex-col h-full overflow-y-auto">
           <div className="flex items-center justify-between px-6 pt-5 pb-4 border-b border-gray-200">
-            <Link href="/" className="flex items-center" onClick={() => setIsMobileOpen(false)}>
-              <Image src="/logo.png" alt="British AUC Sport" height={28} width={54} className="object-contain" />
+            <Link href="/" className="flex items-center bg-white p-1" onClick={() => setIsMobileOpen(false)}>
+              <Image src="/logo.png" alt="British AUC Sport" height={24} width={46} className="block" />
             </Link>
             <button onClick={() => setIsMobileOpen(false)} className="p-2 -mr-2" aria-label="Close menu">
               <X size={22} className="text-gray-900" />
