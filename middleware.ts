@@ -3,10 +3,10 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  if (pathname.startsWith('/_next') || pathname === '/index.html') {
-    return NextResponse.next();
+  if (pathname === '/') {
+    return NextResponse.rewrite(new URL('/index.html', request.url));
   }
-  return NextResponse.rewrite(new URL('/index.html', request.url));
+  return NextResponse.next();
 }
 
-export const config = { matcher: '/:path*' };
+export const config = { matcher: '/' };
