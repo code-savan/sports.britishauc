@@ -7,6 +7,17 @@ const { rangeText } = getDatesDisplay();
 
 const events = [
   {
+    id: 'football-summer-tour-2026',
+    title: 'Football Summer Tour 2026, United Kingdom',
+    date: '23rd - 28th August 2026',
+    description: 'Join our 5-day summer tour in Liverpool. Train with players from 20+ countries, elite coaching, pre-season friendlies, and full-board accommodation.',
+    image: '/preseasoncamphero.jpg',
+    location: 'Liverpool, UK',
+    price: '£1,250',
+    tag: 'International Tour',
+    link: '/events/football-summer-tour-2026',
+  },
+  {
     id: 'manchester-trial-2025',
     title: 'Manchester Football Trial 2025',
     date: '6th of October 2025',
