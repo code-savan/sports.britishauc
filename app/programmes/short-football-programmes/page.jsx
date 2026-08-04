@@ -5,6 +5,18 @@ import { ArrowRight, Calendar, MapPin, Wallet } from 'lucide-react';
 
 const events = [
   {
+    id: 'football-summer-tour-2026',
+    title: 'Football Summer Tour 2026, United Kingdom',
+    date: '23rd - 28th August 2026',
+    location: 'Liverpool, UK',
+    price: '£1,250',
+    image: '/preseasoncamphero.jpg',
+    tag: 'International Tour',
+    description: 'Join our 5-day summer tour in Liverpool. Train with players from 20+ countries, compete in pre-season friendlies, and experience elite coaching.',
+    more: 'Based at the Penny Lane Hotel, Liverpool. Includes full-board accommodation, 2 training sessions per day, technical/tactical/physical sessions, S&C, game analysis, fitness testing, cultural visits, guest speakers, and full academy kit. Ages 14-20. Minimum 10 students.',
+    link: '/events/football-summer-tour-2026',
+  },
+  {
     id: 'club-placement-testing-conditioning',
     title: 'Club Placement Testing & Conditioning',
     date: '10th - 14th November, 2025',
