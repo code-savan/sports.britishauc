@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Calendar, MapPin, Users, Globe, Mail, Phone, Dumbbell, Video, Award, Shield, UtensilsCrossed, Building, BookOpen } from 'lucide-react';
 
 export default function FootballSummerTour2026Page() {
   return (
@@ -24,7 +23,7 @@ export default function FootballSummerTour2026Page() {
               <span className="text-xs font-medium text-white/60 tracking-[0.15em] uppercase">5-Day Summer Tour</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-semibold text-white leading-tight mb-4">FOOTBALL SUMMER TOUR 2026<br />UNITED KINGDOM</h1>
-            <p className="text-sm md:text-[15px] text-white/60 leading-relaxed">23rd – 28th August 2026 &middot; Liverpool, UK</p>
+            <p className="text-sm md:text-[15px] text-white/60 leading-relaxed">23rd &ndash; 28th August 2026 &middot; Liverpool, UK</p>
           </div>
         </div>
       </section>
@@ -36,99 +35,73 @@ export default function FootballSummerTour2026Page() {
             {/* Main Information */}
             <div className="md:col-span-2 space-y-8">
               <div>
-                <div className="inline-block mb-2">
-                  <span className="border border-gray-200 py-1 px-2 text-[11px] text-gray-500">Global Squad &middot; 20+ Countries</span>
-                </div>
-                <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-4">ELITE SUMMER FOOTBALL EXPERIENCE</h2>
-                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mb-4">
-                  Join our 5-day Football Summer Tour 2026 in the United Kingdom, based in the iconic city of Liverpool. Train, compete, and connect with players from over 20 countries in a world-class football environment.
-                </p>
-                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mb-4">
-                  This summer tour combines high-performance football training with cultural visits and guest speaker sessions, offering a complete football experience both on and off the pitch.
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  Join the British AUC Football Summer Tour 2026 for an unforgettable 5-day elite football experience in the United Kingdom.
                 </p>
               </div>
 
               <div className="bg-white p-8 border border-gray-100">
-                <h2 className="text-base font-semibold text-gray-900 mb-3">PROGRAMME INCLUDES</h2>
-                <ul className="space-y-3 text-sm md:text-[15px] text-gray-500 leading-relaxed">
-                  <li className="flex items-start gap-2">
-                    <Shield size="15" className="text-red-400 shrink-0 mt-0.5" />
-                    <span>5 days of elite football training (2 sessions per day)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Dumbbell size="15" className="text-red-400 shrink-0 mt-0.5" />
-                    <span>Technical, tactical &amp; physical sessions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Users size="15" className="text-red-400 shrink-0 mt-0.5" />
-                    <span>Pre-season friendly matches</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Video size="15" className="text-red-400 shrink-0 mt-0.5" />
-                    <span>Game analysis &amp; video review</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Award size="15" className="text-red-400 shrink-0 mt-0.5" />
-                    <span>Strength &amp; Conditioning (S&amp;C) sessions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <BookOpen size="15" className="text-red-400 shrink-0 mt-0.5" />
-                    <span>Fitness testing &amp; player assessment</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Globe size="15" className="text-red-400 shrink-0 mt-0.5" />
-                    <span>Cultural visits in Liverpool</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Users size="15" className="text-red-400 shrink-0 mt-0.5" />
-                    <span>Guest speaker sessions with industry professionals</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Shield size="15" className="text-red-400 shrink-0 mt-0.5" />
-                    <span>Full academy training kit</span>
-                  </li>
-                </ul>
-
-                <h3 className="text-sm font-semibold mt-8 mb-2 text-gray-900">ACCOMMODATION</h3>
-                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
-                  Stay at the <strong>Penny Lane Hotel, Liverpool</strong> with full board (3 meals per day) included throughout the tour.
-                </p>
-
-                <h3 className="text-sm font-semibold mt-8 mb-2 text-gray-900">COST: &pound;1,250</h3>
-                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
-                  Full-board accommodation, all training sessions, fixtures, cultural visits, and academy kit included.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="text-base font-semibold text-gray-900 mb-3">GLOBAL SQUAD EXPERIENCE</h2>
-                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mb-4">
-                  This summer tour brings together aspiring footballers from over 20 countries, creating a truly international environment. Players train, compete, and build friendships with peers from around the world, developing both football skills and cultural awareness.
-                </p>
-                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mb-4">
-                  All sessions are led by qualified UEFA-licensed coaches, ensuring professional-level coaching and player development throughout the programme.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="text-base font-semibold text-gray-900 mb-3">ELIGIBILITY</h2>
-                <ul className="space-y-2 text-sm md:text-[15px] text-gray-500 leading-relaxed mb-4">
-                  <li><strong>Age Group:</strong> 14 &ndash; 20 years</li>
-                  <li><strong>Minimum Students:</strong> 10 (to run the programme)</li>
-                  <li><strong>Squad Size:</strong> Global intake from 20+ countries</li>
+                <h2 className="text-base font-semibold text-gray-900 mb-3">PROGRAMME INCLUDE:</h2>
+                <ul className="space-y-2 text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  <li>5 Days</li>
+                  <li>Accommodation At Penny Lane Hotel, Liverpool</li>
+                  <li>3 Meals A Day Made by Professional Nutritionist</li>
+                  <li>2 Sessions A Day</li>
+                  <li>Technical/Tactical/Physical Sessions</li>
+                  <li>Pre Season Friendlies</li>
+                  <li>Specialized S&amp;C Sessions</li>
+                  <li>Game Analysis</li>
+                  <li>Fitness Testing</li>
+                  <li>Cultural Visits</li>
+                  <li>Guest Speakers</li>
+                  <li>Academy Kit</li>
                 </ul>
               </div>
 
               <div>
-                <h2 className="text-base font-semibold text-gray-900 mb-3">REGISTRATION</h2>
-                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mb-4">
-                  Register your interest and secure your place on the Football Summer Tour 2026.
+                <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-4">JOIN A GLOBAL SQUAD</h2>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  Train and live with players from 20+ countries, sharing one thing &ndash; a hunger to get better on and off the pitch.
                 </p>
-                <Link href="/events/football-summer-tour-2026/register" className="bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-5 py-2.5 inline-block text-center">
-                  Register Now
-                </Link>
-                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mt-4">
-                  For inquiries, email <a href="mailto:collins@britishauc.com" className="text-red-600 font-semibold hover:underline">collins@britishauc.com</a> or call/whatsapp <a href="tel:+447840782759" className="text-red-600 font-semibold hover:underline">+447840782759</a>
+              </div>
+
+              <div>
+                <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-4">EVERYTHING YOU NEED, SORTED</h2>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  Full training kits, Hudi &amp; Player Tek access, sport science support, all meals, guest speakers, epic excursions plus so much more.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-4">EXCLUSIVE ACCOMMODATION</h2>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  Players stay together at our hotel on the world famous Penny Lane. Just 15 minutes from city center and 40 minutes from Manchester Airport.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 border border-gray-100">
+                <h2 className="text-base font-semibold text-gray-900 mb-3">PRICING: &pound;1,250</h2>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  Inclusive of accommodation, meals, excursion, and world-class football schedule.
+                </p>
+
+                <h3 className="text-sm font-semibold mt-8 mb-2 text-gray-900">DATE</h3>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">23rd - 28th August, 2026</p>
+
+                <h3 className="text-sm font-semibold mt-8 mb-2 text-gray-900">AGE</h3>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">14 - 20</p>
+
+                <h3 className="text-sm font-semibold mt-8 mb-2 text-gray-900">LIMITED SPACES</h3>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">Minimum of 10 students</p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug mb-4">REGISTER TODAY!</h2>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed mb-2">
+                  <a href="mailto:collins@britishauc.com" className="text-red-600 font-semibold hover:underline">collins@britishauc.com</a>
+                </p>
+                <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed">
+                  <a href="tel:+447840782759" className="text-red-600 font-semibold hover:underline">+44 7840 782759</a>
                 </p>
               </div>
             </div>
